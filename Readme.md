@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Лобова](https://up.htmlacademy.ru/adaptive/6/user/141041).
-* Наставник: `Неизвестно`.
+* Наставник: `Андрей Серёдкин`.
 
 ---
 
