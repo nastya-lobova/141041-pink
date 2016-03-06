@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <!-- Page wrapper -->
+    <div class="page-wrapper">
+
+      <!-- Page header -->
+      <header class="page-header">
+
+        <div class="page-header__logo">
+          <img scr="img/logo.svg" alt="Логотип «Pink»" width="" height="">
+        </div>
+
+        <!-- Main menu -->
+        <nav class="main-menu">
+
+          <button class="main-menu__btn" type="button">
+            <span class="icon-hamburger"><span>
+          </button>
+
+          <ul class="main-menu__list  main-menu__list--hide">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-menu__item  main-menu__item--active">
+              <a class="main-menu__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Html academy</a>
+            </li>
+          </ul>
+
+        </nav>
+        <!-- /Main menu -->
+
+        <h1 class="page-header__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+
+      </header>
+      <!-- /Page header -->
+
+      <!-- Form -->
+      <form class="give-story">
+
+        <header class="give-story__header">
+          <h1 class="give-story__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h1>
+        </header>
+
+        <!-- Introduction -->
+        <fieldset class="introduction">
+          <div class="introduction__item">
+            <label class="input-text__label" for="your-name">Имя:</label>
+            <input class="input-text" id="your-name" type="text" placeholder="Введите ваше имя">
+          </div>
+
+          <div class="introduction__item">
+            <label class="input-text__label" for="your-last-name">Фамилия:</label>
+            <input class="input-text" id="your-last-name" type="text" placeholder="Укажите фамилию">
+          </div>
+
+          <div class="introduction__item">
+            <label class="input-text__label" for="your-patronymic">Отчество:</label>
+            <input class="input-text" id="your-patronymic" type="text" placeholder="Ну и отчество тоже">
+          </div>
+        </fieldset>
+        <!-- /Introduction -->
+
+        <!-- Progress -->
+        <fieldset class="progress">
+
+          <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
+
+          <div class="progress__option">
+            <label class="input-checkbox__label" for="checkbox-selfie-shark">Сделал селфи с акулой</label>
+            <input class="input-checkbox" id="checkbox-selfie-shark" type="checkbox" checked>
+          </div>
+
+          <div class="progress__option">
+            <label class="input-checkbox__label" for="checkbox-sunburn">Обгорел на пляже</label>
+            <input class="input-checkbox" id="checkbox-sunburn" type="checkbox" checked>
+          </div>
+
+          <div class="progress__option">
+            <label class="input-checkbox__label" for="checkbox-film-star">Видел Чака Норриса</label>
+            <input class="input-checkbox" id="checkbox-film-star" type="checkbox">
+          </div>
+
+          <div class="progress__option">
+            <label class="input-checkbox__label" for="checkbox-gift">Накупил сувениров</label>
+            <input class="input-checkbox" id="checkbox-gift" type="checkbox">
+          </div>
+
+          <div class="progress__option">
+            <label class="input-checkbox__label" for="checkbox-hold-tower">Удержал башню</label>
+            <input class="input-checkbox" id="checkbox-hold-tower" type="checkbox" checked>
+          </div>
+
+          <div class="progress__option">
+            <label class="input-checkbox__label" for="checkbox-break-hotel">Разгромил отель</label>
+            <input class="input-checkbox" id="checkbox-break-hotel" type="checkbox">
+          </div>
+
+        </fieldset>
+        <!-- /Progress -->
+
+        <!-- Give contacts -->
+        <fieldset class="give-contacts">
+          <div class="give-contacts__tel">
+            <label class="input-text__label" for="your-tel">Номерок телефончика</label>
+            <input class="input-text" id="your-tel" type="tel"></input>
+          </div>
+
+          <div class="give-contacts__email">
+            <label class="input-text__label" for="your-email">Адресок почты</label>
+            <input class="input-text" id="your-email" type="email"></input>
+          </div>
+        </fieldset>
+        <!-- /Give contacts -->
+
+        <!-- Survey -->
+        <fieldset class="survey">
+          <legend class="survey__title">С каким приложением путешествовали?</legend>
+
+          <div class="survey__option">
+            <label class="input-radio__label" for="radio-ios">Pink для iOS</label>
+            <input class="input-radio" id="radio-ios" type="radio" checked>
+          </div>
+
+          <div class="survey__option">
+            <label class="input-radio__label" for="radio-android">Pink на Android</label>
+            <input class="input-radio" id="radio-android" type="radio">
+          </div>
+
+          <div class="survey__option">
+            <label class="input-radio__label" for="radio-window">Windows Phone</label>
+            <input class="input-radio" id="radio-window" type="radio">
+          </div>
+        </fieldset>
+        <!-- /Survey -->
+
+        <!-- Report -->
+        <fieldset class="report">
+            <label class="input-textarea__label" for="textarea-report">Опишите свои эмоции</label>
+            <input class="input-textarea" id="textarea-report" type="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях">
+        </fieldset>
+        <!-- /Report -->
+
+        <input class="btn" type="submit">
+        <p class="give-story__required"><span>*</span> — обязательные поля</p>
+
+      </form>
+      <!-- /Form -->
+
+      <!-- Page footer -->
+      <footer class="page-footer">
+
+        <div class="page-footer__logo">
+          <img scr="img/full-logo.svg" alt="Логотип «Pink»" width="" height="">
+        </div>
+
+        <div class="page-footer__social">
+          <ul class="social-links">
+            <li class="social-item">
+              <a class="social-link social-link--twitter" href="">Мы в Твиттере</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link--facebook" href="">Мы в Фейсбуке</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link--youtube" href="">Мы в Ютьюбе</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright">
+          <p class="copyright">Разработано</p>
+          <img class="copyright__icon" scr="img/htmlacademy.svg" alt="Логотип «Html academy»" width="" height="">
+        </div>
+
+      </footer>
+      <!-- Page footer -->
+
+    </div>
+    <!-- Page wrapper -->
+  </body>
+</html>
