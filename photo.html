@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+    <!-- Page wrapper -->
+    <div class="page-wrapper">
+
+      <!-- Page header -->
+      <header class="page-header">
+
+        <div class="page-header__logo">
+          <img scr="img/logo.svg" alt="Логотип «Pink»" width="" height="">
+        </div>
+
+        <!-- Main menu -->
+        <nav class="main-menu">
+
+          <button class="main-menu__btn" type="button">
+            <span class="icon-hamburger"><span>
+          </button>
+
+          <ul class="main-menu__list  main-menu__list--hide">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-menu__item  main-menu__item--active">
+              <a class="main-menu__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Html academy</a>
+            </li>
+          </ul>
+
+        </nav>
+        <!-- /Main menu -->
+
+        <h1 class="page-header__title">Фотографии пользователей</h1>
+
+      </header>
+      <!-- /Page header -->
+
+      <!-- Photo chat -->
+      <main class="photo-chat">
+
+        <header class="photo-chat__header">
+          <h2 class="photo-chat__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        </header>
+
+        <article class="photo-comment  photo-comment--day">
+          <img class="photo-comment__image" scr="" alt="" width="" height="">
+          <div class="photo-comment__wrapper">
+            <h3 class="photo-comment__author-name">Анна</h3>
+            <time class="photo-comment__time" datetime="" pubdate>5 минут назад</time>
+            <p class="photo-comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+            <p class="photo-comment__like">Нравится:<a href="#">215</a></p>
+          </div>
+        </article>
+
+        <article class="photo-comment">
+          <img class="photo-comment__image" scr="" alt="" width="" height="">
+          <div class="photo-comment__wrapper">
+            <h3 class="photo-comment__author-name">Левон</h3>
+            <time class="photo-comment__time" datetime="" pubdate>5 часов назад</time>
+            <p class="photo-comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="photo-comment__like">Нравится:<a href="#">356</a></p>
+          </div>
+        </article>
+
+        <article class="photo-comment">
+          <img class="photo-comment__image" scr="" alt="" width="" height="">
+          <div class="photo-comment__wrapper">
+            <h3 class="photo-comment__author-name">Антон</h3>
+            <time class="photo-comment__time" datetime="" pubdate>12 часов назад</time>
+            <p class="photo-comment__text">Соседи будут рады!</p>
+            <p class="photo-comment__like">Нравится:<a href="#">666</a></p>
+          </div>
+        </article>
+
+        <article class="photo-comment">
+          <img class="photo-comment__image" scr="" alt="" width="" height="">
+          <div class="photo-comment__wrapper">
+            <h3 class="photo-comment__author-name">Борис</h3>
+            <time class="photo-comment__time" datetime="" pubdate>20 часов назад</time>
+            <p class="photo-comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="photo-comment__like">Нравится:<a href="#">215</a></p>
+          </div>
+        </article>
+
+        <article class="photo-comment">
+          <img class="photo-comment__image" scr="" alt="" width="" height="">
+          <div class="photo-comment__wrapper">
+            <h3 class="photo-comment__author-name">Сергей</h3>
+            <time class="photo-comment__time" datetime="" pubdate>25 часов назад</time>
+            <p class="photo-comment__text">Самая кубанская в мире!</p>
+            <p class="photo-comment__like">Нравится:<a href="#">4</a></p>
+          </div>
+        </article>
+
+        <article class="photo-comment">
+          <img class="photo-comment__image" scr="" alt="" width="" height="">
+          <div class="photo-comment__wrapper">
+            <h3 class="photo-comment__author-name">Максим</h3>
+            <time class="photo-comment__time" datetime="" pubdate>40 часов назад</time>
+            <p class="photo-comment__text">Где снег-то?</p>
+            <p class="photo-comment__like">Нравится:<a href="#">150</a></p>
+          </div>
+        </article>
+
+        <article class="photo-comment">
+          <img class="photo-comment__image" scr="" alt="" width="" height="">
+          <div class="photo-comment__wrapper">
+            <h3 class="photo-comment__author-name">Надежда</h3>
+            <time class="photo-comment__time" datetime="" pubdate>45 часов назад</time>
+            <p class="photo-comment__text">Всем GM и взаимные лайки!</p>
+            <p class="photo-comment__like">Нравится:<a href="#">2560</a></p>
+          </div>
+        </article>
+
+        <!-- Upload-photo -->
+        <form class="upload-photo">
+
+          <h2 class="upload-photo__title">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</h2>
+
+          <fieldset class="upload-photo__item">
+            <img class="upload-photo__image" src="" alt="" width="" height="">
+            <div class="upload-photo__tools">
+              <ul class="photo-tools">
+                <li class="photo-tools__crop"></li>
+                <li class="photo-tools__fill"></li>
+                <li class="photo-tools__contrast"></li>
+              </ul>
+              <input class="input-range" id="range-tools" type="range" min="1" max="10">
+            </div>
+          </fieldset>
+
+          <div class="upload-photo__buttons">
+            <button class="upload-photo__btn" type="submit">Запостить</button>
+            <button class="upload-photo__btn" type="reset">Отмена</button>
+          </div>
+
+        </form>
+        <!-- Upload-photo -->
+
+      </main>
+      <!-- Photo chat -->
+
+      <!-- Page footer -->
+      <footer class="page-footer">
+
+        <div class="page-footer__logo">
+          <img scr="img/full-logo.svg" alt="Логотип «Pink»" width="" height="">
+        </div>
+
+        <div class="page-footer__social">
+          <ul class="social-links">
+            <li class="social-item">
+              <a class="social-link social-link--twitter" href="">Мы в Твиттере</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link--facebook" href="">Мы в Фейсбуке</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link--youtube" href="">Мы в Ютьюбе</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright">
+          <p class="copyright">Разработано</p>
+          <img class="copyright__icon" scr="img/htmlacademy.svg" alt="Логотип «Html academy»" width="" height="">
+        </div>
+
+      </footer>
+      <!-- Page footer -->
+    </div>
+    <!-- Page wrapper -->
+
+
+  </body>
+</html>
