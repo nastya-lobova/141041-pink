@@ -1,12 +1,262 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
+
   <body>
+    <!-- Page wrapper -->
+    <div class="page-wrapper">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <!-- Page header -->
+      <header class="page-header">
 
+        <div class="page-header__logo">
+          <img scr="img/logo.svg" alt="Логотип «Pink»" width="" height="">
+        </div>
+
+        <!-- Main menu -->
+        <nav class="main-menu">
+
+          <button class="main-menu__btn" type="button">
+            Меню
+            <span class="icon-hamburger"><span>
+          </button>
+
+          <ul class="main-menu__list  main-menu__list--hide">
+            <li class="main-menu__item  main-menu__item--active">
+              <a class="main-menu__link" href="index.html">Информация</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Возможности</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="form.html">Отзывы</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Стоимость</a>
+            </li>
+          </ul>
+
+        </nav>
+        <!-- /Main menu -->
+
+        <h1 class="page-header__slogan">Взгляните на жизнь иначе!</h1>
+        <img class="page-header__slogan-img" src="img/slogan.jpg" alt="Картинка слогана" widht="" height="">
+
+      </header>
+      <!-- /Page header -->
+
+      <!-- Installation -->
+      <div class="install">
+
+        <button class="install__btn" type="button">Скачать приложение</button>
+
+        <ul class="install__list">
+          <li class="install__item">
+            <a class="install__link">
+              <img class="install__icon" src="img/icon-apple.svg" alt="Иконка Apple" width="" height="">
+            </a>
+          </li>
+          <li class="install__item">
+            <a class="install__link">
+              <img class="install__icon" src="img/icon-android.svg" alt="Иконка Android" width="" height="">
+            </a>
+          </li>
+          <li class="install__item">
+            <a class="install__link">
+              <img class="install__icon" src="img/icon-windows.svg" alt="Иконка Windows" width="" height="">
+            </a>
+          </li>
+        </ul>
+
+        <p class="install__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+
+      </div>
+      <!-- /Installation -->
+
+      <!-- Suggestion -->
+      <article class="suggestion">
+
+        <header class="suggestion__header">
+          <h1 class="suggestion__title">Устали от серости мегаполиса?</h1>
+          <h1 class="suggestion__title">Нам есть что вам предложить!</h1>
+        </header>
+
+        <section class="suggestion__item">
+          <h2 class="suggestion__item-title">Поднимает настроение</h2>
+          <p class="suggestion__item-text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+        </section>
+
+        <section class="suggestion__item">
+          <h2 class="suggestion__item-title">Меняет мир вокруг</h2>
+          <p class="suggestion__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </section>
+
+        <section class="suggestion__item">
+          <h2 class="suggestion__item-title">Заводит новых друзей</h2>
+          <p class="suggestion__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </section>
+
+        <img class="suggestion__image" src="" alt="Изображение телефона">
+
+      </article>
+      <!-- /Suggestion -->
+
+      <!-- Review -->
+      <div class="reviews">
+
+        <div class="reviews__list">
+          <article class="review">
+            <h3 class="review__author">Николай Петров</h3>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </article>
+
+          <article class="review">
+            <h3 class="review__author"></h3>
+            <p class="review__text"></p>
+          </article>
+
+          <article class="review">
+            <h3 class="review__author-name"></h3>
+            <p class="review__text"></p>
+          </article>
+        </div>
+
+        <!-- Reviews indicators -->
+        <ul class="reviews__indicators">
+          <li class="reviews__indicator">
+            <input class="input-toggle" id="review-btn1" type="radio" name="reviews-toggle" checked>
+            <label class="input-toggle__label" id="review-btn1"></label>
+          </li>
+          <li class="review__indicator">
+            <input class="input-toggle" id="review-btn2" type="radio" name="reviews-toggle">
+            <label class="input-toggle__label" id="review-btn2"></label>
+          </li>
+          <li class="review__indicator">
+            <input class="input-toggle" id="review-btn3" type="radio" name="reviews-toggle">
+            <label class="input-toggle__label" id="review-btn3"></label>
+          </li>
+        </ul>
+        <!-- /Reviews indicators -->
+
+      </div>
+      <!-- /Reviews -->
+
+      <!-- Offers -->
+      <div class="offers">
+
+        <div class="offers__list">
+          <!-- Offer -->
+          <table class="offers__item">
+            <tr>
+              <th class="offers__name">Стандарт</th>
+              <th class="offers__value">3,99 usd</th>
+            </tr>
+            <tr>
+              <td class="offers__option offers__option--pink-filter">Розовый фильтр</td>
+            </tr>
+            <tr>
+              <td class="offers__option offers__option--smiles">Смайлики</td>
+            </tr>
+            <tr>
+              <td class="offers__option offers__option--comment">Комментарии</td>
+            </tr>
+          </table>
+          <!-- /Offer -->
+
+          <!-- Offer -->
+          <table class="offers__item">
+            <tr>
+              <th class="offers__name"></th>
+              <th class="offers__value"></th>
+            </tr>
+            <tr>
+              <td class="offers__option"></td>
+            </tr>
+            <tr>
+              <td class="offers__option"></td>
+            </tr>
+            <tr>
+              <td class="offers__option"></td>
+            </tr>
+          </table>
+          <!-- /Offer -->
+
+          <!-- Offer -->
+          <table class="offers__item">
+            <tr>
+              <th class="offers__name"></th>
+              <th class="offers__value"></th>
+            </tr>
+            <tr>
+              <td class="offers__option"></td>
+            </tr>
+            <tr>
+              <td class="offers__option"></td>
+            </tr>
+            <tr>
+              <td class="offers__option"></td>
+            </tr>
+          </table>
+          <!-- /Offer -->
+        </div>
+
+        <!-- Offers indicators -->
+        <ul class="offers__indicators">
+          <li class="offers__indicator">
+            <input class="input-toggle" id="offer-btn1" type="radio" name="offers-toggle" checked>
+            <label class="input-toggle__label" id="offer-btn1"></label>
+          </li>
+          <li class="offers__indicator">
+            <input class="input-toggle" id="offer-btn2" type="radio" name="offers-toggle">
+            <label class="input-toggle__label" id="offer-btn2"></label>
+          </li>
+          <li class="offers__indicator">
+            <input class="input-toggle" id="offer-btn3" type="radio" name="offers-toggle">
+            <label class="input-toggle__label" id="offer-btn3"></label>
+          </li>
+        </ul>
+        <!-- /Offers indicators -->
+
+      </div>
+      <!-- /Offers -->
+
+      <!-- Footer -->
+      <footer class="page-footer">
+
+        <!-- Contacts -->
+        <div class="page-footer__contacts">
+
+          <h1 class="page-footer__title">Остались вопросы?<br>Свяжитесь с нами!</h1>
+          <p class="page-footer__tel">
+            <b>Звоните:</b><br>
+            <a href="">+7 (812) 555-66-66</a>
+          </p>
+          <p class="page-footer__email">
+            <b>Пишите:</b><br>
+            <a href="">mail@htmlacademy.ru</a>
+          </p>
+          <p class="page-footer__address">
+            <b>Приходите в гости:</b><br>
+            ул. Большая Конюшенная, 19/8
+          </p>
+
+        </div>
+        <!-- /Contacts -->
+
+        <!-- Map -->
+        <div class="map" id="map"></div>
+        <!-- /Map -->
+
+      </footer>
+      <!-- /Footer -->
+
+    </div>
+    <!-- /Page wrapper -->
   </body>
 </html>
