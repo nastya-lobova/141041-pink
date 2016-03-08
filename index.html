@@ -8,249 +8,220 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
 
-  <body>
-    <!-- Page wrapper -->
-    <div class="page-wrapper">
+  <body class="page">
 
-      <!-- Page header -->
-      <header class="page-header">
-
-        <div class="page-header__logo">
-          <img scr="img/logo.svg" alt="Логотип «Pink»" width="" height="">
-        </div>
-
-        <!-- Main menu -->
-        <nav class="main-menu">
-
-          <button class="main-menu__btn" type="button">
-            Меню
-            <span class="icon-hamburger"><span>
-          </button>
-
-          <ul class="main-menu__list  main-menu__list--hide">
-            <li class="main-menu__item  main-menu__item--active">
-              <a class="main-menu__link" href="index.html">Информация</a>
-            </li>
-            <li class="main-menu__item">
-              <a class="main-menu__link" href="#">Возможности</a>
-            </li>
-            <li class="main-menu__item">
-              <a class="main-menu__link" href="form.html">Отзывы</a>
-            </li>
-            <li class="main-menu__item">
-              <a class="main-menu__link" href="#">Стоимость</a>
-            </li>
-          </ul>
-
-        </nav>
-        <!-- /Main menu -->
-
-        <h1 class="page-header__slogan">Взгляните на жизнь иначе!</h1>
-        <img class="page-header__slogan-img" src="img/slogan.jpg" alt="Картинка слогана" widht="" height="">
-
-      </header>
-      <!-- /Page header -->
-
-      <!-- Installation -->
-      <div class="install">
-
-        <button class="install__btn" type="button">Скачать приложение</button>
-
-        <div class="install__list">
-            <a class="install__link">
-              <img class="install__icon" src="img/icon-apple.svg" alt="Иконка Apple" width="" height="">
-            </a>
-            <a class="install__link">
-              <img class="install__icon" src="img/icon-android.svg" alt="Иконка Android" width="" height="">
-            </a>
-            <a class="install__link">
-              <img class="install__icon" src="img/icon-windows.svg" alt="Иконка Windows" width="" height="">
-            </a>
-        </div>
-
-        <p class="install__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-
+    <!-- Page header -->
+    <header class="page-header">
+      <div class="page-header__logo  logo">
+        <a class="logo__link" href="index.html">
+          <img class="logo__image" scr="img/logo.svg" alt="Логотип «Pink»" width="" height="">
+        </a>
       </div>
-      <!-- /Installation -->
 
-      <!-- Suggestion -->
-      <article class="suggestion">
+      <!-- Main menu -->
+      <nav class="main-menu">
 
-        <header class="suggestion__header">
-          <h1 class="suggestion__title">Устали от серости мегаполиса?</h1>
-          <h1 class="suggestion__title">Нам есть что вам предложить!</h1>
-        </header>
+        <button class="main-menu__btn" type="button">
+          <span class="icon-hamburger">Меню<span>
+        </button>
 
-        <section class="suggestion__item">
-          <h2 class="suggestion__item-title">Поднимает настроение</h2>
-          <p class="suggestion__item-text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-        </section>
-
-        <section class="suggestion__item">
-          <h2 class="suggestion__item-title">Меняет мир вокруг</h2>
-          <p class="suggestion__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </section>
-
-        <section class="suggestion__item">
-          <h2 class="suggestion__item-title">Заводит новых друзей</h2>
-          <p class="suggestion__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-        </section>
-
-        <img class="suggestion__image" src="" alt="Изображение телефона">
-
-      </article>
-      <!-- /Suggestion -->
-
-      <!-- Review -->
-      <div class="reviews">
-
-        <div class="reviews__list">
-          <blockquote class="review">
-            <cite class="review__author">Николай Петров</cite>
-            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
-
-          <blockquote class="review">
-            <cite class="review__author"></cite>
-            <p class="review__text"></p>
-          </blockquote>
-
-          <blockquote class="review">
-            <cite class="review__author-name"></cite>
-            <p class="review__text"></p>
-          </blockquote>
-        </div>
-
-        <!-- Reviews indicators -->
-        <ul class="reviews__indicators">
-          <li class="reviews__indicator">
-            <input class="input-toggle" id="review-btn1" type="radio" name="reviews-toggle" checked>
-            <label class="input-toggle__label" id="review-btn1"></label>
+        <ul class="main-menu__list">
+          <li class="main-menu__item  main-menu__item--active">
+            <a class="main-menu__link link" href="index.html">Информация</a>
           </li>
-          <li class="review__indicator">
-            <input class="input-toggle" id="review-btn2" type="radio" name="reviews-toggle">
-            <label class="input-toggle__label" id="review-btn2"></label>
+          <li class="main-menu__item">
+            <a class="main-menu__link link" href="#">Возможности</a>
           </li>
-          <li class="review__indicator">
-            <input class="input-toggle" id="review-btn3" type="radio" name="reviews-toggle">
-            <label class="input-toggle__label" id="review-btn3"></label>
+          <li class="main-menu__item">
+            <a class="main-menu__link link" href="form.html">Отзывы</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link link" href="#">Стоимость</a>
           </li>
         </ul>
-        <!-- /Reviews indicators -->
 
+      </nav>
+      <!-- /Main menu -->
+
+      <div class="intro">
+        <h1 class="intro__title  title">Взгляните на жизнь иначе!</h1>
       </div>
-      <!-- /Reviews -->
+    </header>
+    <!-- /Page header -->
 
-      <!-- Offers -->
-      <div class="offers">
+    <!-- Installation -->
+    <div class="install">
+      <a class="install__btn" href="#">Скачать приложение</a>
 
-        <div class="offers__list">
-          <!-- Offer -->
-          <table class="offers__item">
-            <tr>
-              <th class="offers__name">Стандарт</th>
-              <th class="offers__value">3,99 usd</th>
-            </tr>
-            <tr>
-              <td class="offers__option offers__option--pink-filter">Розовый фильтр</td>
-            </tr>
-            <tr>
-              <td class="offers__option offers__option--smiles">Смайлики</td>
-            </tr>
-            <tr>
-              <td class="offers__option offers__option--comment">Комментарии</td>
-            </tr>
-          </table>
-          <!-- /Offer -->
-
-          <!-- Offer -->
-          <table class="offers__item">
-            <tr>
-              <th class="offers__name"></th>
-              <th class="offers__value"></th>
-            </tr>
-            <tr>
-              <td class="offers__option"></td>
-            </tr>
-            <tr>
-              <td class="offers__option"></td>
-            </tr>
-            <tr>
-              <td class="offers__option"></td>
-            </tr>
-          </table>
-          <!-- /Offer -->
-
-          <!-- Offer -->
-          <table class="offers__item">
-            <tr>
-              <th class="offers__name"></th>
-              <th class="offers__value"></th>
-            </tr>
-            <tr>
-              <td class="offers__option"></td>
-            </tr>
-            <tr>
-              <td class="offers__option"></td>
-            </tr>
-            <tr>
-              <td class="offers__option"></td>
-            </tr>
-          </table>
-          <!-- /Offer -->
-        </div>
-
-        <!-- Offers indicators -->
-        <ul class="offers__indicators">
-          <li class="offers__indicator">
-            <input class="input-toggle" id="offer-btn1" type="radio" name="offers-toggle" checked>
-            <label class="input-toggle__label" id="offer-btn1"></label>
-          </li>
-          <li class="offers__indicator">
-            <input class="input-toggle" id="offer-btn2" type="radio" name="offers-toggle">
-            <label class="input-toggle__label" id="offer-btn2"></label>
-          </li>
-          <li class="offers__indicator">
-            <input class="input-toggle" id="offer-btn3" type="radio" name="offers-toggle">
-            <label class="input-toggle__label" id="offer-btn3"></label>
-          </li>
-        </ul>
-        <!-- /Offers indicators -->
-
+      <div class="install__list">
+          <a class="install__link" href="#">
+            <img class="install__icon" src="img/icon-apple.svg" alt="Иконка Apple" width="" height="">
+          </a>
+          <a class="install__link" href="#">
+            <img class="install__icon" src="img/icon-android.svg" alt="Иконка Android" width="" height="">
+          </a>
+          <a class="install__link" href="#">
+            <img class="install__icon" src="img/icon-windows.svg" alt="Иконка Windows" width="" height="">
+          </a>
       </div>
-      <!-- /Offers -->
 
-      <!-- Footer -->
-      <footer class="page-footer">
-
-        <!-- Contacts -->
-        <div class="page-footer__contacts">
-
-          <h1 class="page-footer__title">Остались вопросы?<br>Свяжитесь с нами!</h1>
-          <p class="page-footer__tel">
-            <b>Звоните:</b><br>
-            <a href="">+7 (812) 555-66-66</a>
-          </p>
-          <p class="page-footer__email">
-            <b>Пишите:</b><br>
-            <a href="">mail@htmlacademy.ru</a>
-          </p>
-          <p class="page-footer__address">
-            <b>Приходите в гости:</b><br>
-            ул. Большая Конюшенная, 19/8
-          </p>
-
-        </div>
-        <!-- /Contacts -->
-
-        <!-- Map -->
-        <div class="map" id="map"></div>
-        <!-- /Map -->
-
-      </footer>
-      <!-- /Footer -->
-
+      <p class="install__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
-    <!-- /Page wrapper -->
+    <!-- /Installation -->
+
+    <!-- Information -->
+    <div class="info">
+      <header class="info__header">
+        <h2 class="info__title  title">Устали от серости мегаполиса?</h2>
+        <h2 class="info__title  title">Нам есть что вам предложить!</h2>
+      </header>
+
+      <div class="info__list">
+        <section class="info__item">
+          <h3 class="info__heading  heading">Поднимает настроение</h3>
+          <p class="info__text  text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+        </section>
+
+        <section class="info__item">
+          <h3 class="info__heading  heading">Меняет мир вокруг</h3>
+          <p class="info__text  text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </section>
+
+        <section class="info__item">
+          <h3 class="info__heading  heading">Заводит новых друзей</h3>
+          <p class="info__text  text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </section>
+      </div>
+    </div>
+    <!-- /Information -->
+
+    <!-- Review -->
+    <div class="reviews">
+      <div class="reviews__list">
+        <blockquote class="review">
+          <cite class="review__author">Николай Петров</cite>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+
+        <blockquote class="review">
+          <cite class="review__author">Николай Петров</cite>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+
+        <blockquote class="review">
+          <cite class="review__author-name heading">Николай Петров</cite>
+          <p class="review__text  text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+      </div>
+
+      <!-- Reviews indicators -->
+      <div class="reviews__indicators">
+        <input class="radio" id="review-btn1" type="radio" name="reviews-radio" checked>
+        <input class="radio" id="review-btn2" type="radio" name="reviews-radio">
+        <input class="radio" id="review-btn3" type="radio" name="reviews-radio">
+        <label class="label-slider" for="review-btn1">1</label>
+        <label class="label-slider" for="review-btn2">2</label>
+        <label class="label-slider" for="review-btn3">3</label>
+      </div>
+      <!-- /Reviews indicators -->
+    </div>
+    <!-- /Reviews -->
+
+    <!-- Prices -->
+    <div class="prices">
+        <!-- Price -->
+        <div class="price">
+          <header class="price__header">
+            <h3 class="price__name  heading">Стандарт</h3>
+            <span class="price__value">3,99 usd</span>
+          </header>
+          <div class="price__item">
+            <p class="price__option  price__option--pink-filter">Розовый фильтр</p>
+          </div>
+          <div class="price__item">
+            <p class="price__option  price__option--smiles">Смайлики</p>
+          </div>
+          <div class="price__item">
+            <p class="price__option  price__option--comment">Комментарии</p>
+          </div>
+        </div>
+        <!-- /Price -->
+
+        <!-- Price -->
+        <div class="price">
+          <header class="price__header">
+            <h3 class="price__name  heading">Стандарт</h3>
+            <span class="price__value">3,99 usd</span>
+          </header>
+          <div class="price__item">
+            <p class="price__option  price__option--pink-filter">Розовый фильтр</p>
+          </div>
+          <div class="price__item">
+            <p class="price__option  price__option--smiles">Смайлики</p>
+          </div>
+          <div class="price__item">
+            <p class="price__option  price__option--comment">Комментарии</p>
+          </div>
+        </div>
+        <!-- /Price -->
+
+        <!-- Price -->
+        <div class="price">
+          <header class="price__header">
+            <h3 class="price__name  heading">Стандарт</h3>
+            <span class="price__value">3,99 usd</span>
+          </header>
+          <div class="price__item">
+            <p class="price__option  price__option--pink-filter">Розовый фильтр</p>
+          </div>
+          <div class="price__item">
+            <p class="price__option  price__option--smiles">Смайлики</p>
+          </div>
+          <div class="price__item">
+            <p class="price__option  price__option--comment">Комментарии</p>
+          </div>
+        </div>
+        <!-- /Price -->
+      </div>
+
+      <!-- Price indicators -->
+      <div class="prices__indicators">
+          <input class="radio" id="price-btn1" type="radio" name="prices-radio" checked>
+          <input class="radio" id="price-btn2" type="radio" name="prices-radio">
+          <input class="radio" id="price-btn3" type="radio" name="prices-radio">
+          <label class="label-slider" for="offer-btn1">1</label>
+          <label class="label-slider" for="offer-btn2">2</label>
+          <label class="label-slider" for="offer-btn3">3</label>
+      </div>
+      <!-- /Price indicators -->
+    </div>
+    <!-- /Prices -->
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <!-- Contacts -->
+      <div class="page-footer__contacts">
+        <h2 class="page-footer__title  title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <p class="page-footer__tel">
+          <b>Звоните:</b><br>
+          <a class="" href="tel:78125556666">+7 (812) 555-66-66</a>
+        </p>
+        <p class="page-footer__email">
+          <b>Пишите:</b><br>
+          <a href="#">mail@htmlacademy.ru</a>
+        </p>
+        <p class="page-footer__address">
+          <b>Приходите в гости:</b><br>
+          ул. Большая Конюшенная, 19/8
+        </p>
+      </div>
+      <!-- /Contacts -->
+
+      <!-- Map -->
+      <div class="map" id="map"></div>
+      <!-- /Map -->
+    </footer>
+    <!-- /Footer -->
+
   </body>
 </html>
