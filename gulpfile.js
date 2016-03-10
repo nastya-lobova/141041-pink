@@ -1,17 +1,27 @@
 "use strict";
 
 var gulp = require("gulp");
-var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var importcss = require("postcss-import");
+var nestedcss = require("postcss-nested");
+var variables = require("postcss-css-variables");
+var mixins = require("postcss-mixins");
+var minmax = require("postcss-media-minmax");
+var mqpacker = require("css-mqpacker");
 var server = require("browser-sync");
+//var srcstyle = "postcss/style.css";
 
 gulp.task("style", function() {
-  gulp.src("sass/style.scss")
+  gulp.src("postcss/style.css")
     .pipe(plumber())
-    .pipe(sass())
     .pipe(postcss([
+      importcss(),
+      nestedcss(),
+      variables(),
+      mixins(),
+      mqpacker(),
       autoprefixer({browsers: [
         "last 1 version",
         "last 2 Chrome versions",
@@ -32,6 +42,6 @@ gulp.task("serve", ["style"], function() {
     ui: false
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("postcss/**/*.css", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
 });
