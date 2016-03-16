@@ -1,3 +1,46 @@
 .info {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(0, 255, 82, 0.2);
+  min-height: 1000px;
+
+  &__header {
+    background-color: rgba(232, 218, 17, 0.2);
+    min-height: 217px;
+    text-align: center;
+  }
+
+  &__list {
+    background-color: rgba(0, 214, 255, 0.2);
+    min-height: 703px;
+    padding-top: 80px;
+  }
+
+  @media ($tablet-width) {
+    height: 1100px;
+
+    &__header {
+      min-height: 190px;
+      padding-top: 50px;
+    }
+
+    &__list {
+      min-height: 405px;
+      padding-left: 350px;
+      padding-right: 40px;
+    }
+  }
+
+  @media ($desktop-width) {
+    height: 1313px;
+    padding-bottom: 50px;
+
+    &__header {
+      height: 260px;
+    }
+    
+    &__list {
+      display: flex;
+      min-height: 120px;
+      padding: 360px 130px 0;
+    }
+  }
 }

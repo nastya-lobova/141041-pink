@@ -7,29 +7,31 @@ var autoprefixer = require("autoprefixer");
 var importcss = require("postcss-import");
 var nestedcss = require("postcss-nested");
 var variables = require("postcss-css-variables");
+var sassvar = require("postcss-advanced-variables")
 var mixins = require("postcss-mixins");
 var minmax = require("postcss-media-minmax");
 var mqpacker = require("css-mqpacker");
 var server = require("browser-sync");
-//var srcstyle = "postcss/style.css";
+var mystyle = "postcss/style.css";
+var pluginList = [
+  importcss(),
+  mixins(),
+  nestedcss(),
+  sassvar(),
+  mqpacker(),
+  autoprefixer({browsers: [
+    "last 1 version",
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Opera versions",
+    "last 2 Edge versions"
+  ]})
+]
 
 gulp.task("style", function() {
-  gulp.src("postcss/style.css")
+  gulp.src(mystyle)
     .pipe(plumber())
-    .pipe(postcss([
-      importcss(),
-      nestedcss(),
-      variables(),
-      mixins(),
-      mqpacker(),
-      autoprefixer({browsers: [
-        "last 1 version",
-        "last 2 Chrome versions",
-        "last 2 Firefox versions",
-        "last 2 Opera versions",
-        "last 2 Edge versions"
-      ]})
-    ]))
+    .pipe(postcss(pluginList))
     .pipe(gulp.dest("css"))
     .pipe(server.reload({stream: true}));
 });

@@ -1,3 +1,8 @@
 .input {
-  outline: 1px solid #ff2e00;
+  height: 62px;
+  width: 280px;
+
+  @media ($tablet-width) {
+    flex-grow: 1;
+  }
 }

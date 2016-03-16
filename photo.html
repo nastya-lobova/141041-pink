@@ -13,40 +13,43 @@
 
     <!-- Page header -->
     <header class="page-header">
-      <div class="page-header__logo  logo">
-        <a class="logo__link" href="index.html">
-          <img class="logo__image" scr="img/logo.svg" alt="Логотип «Pink»" width="" height="">
-        </a>
+
+      <div class="page-header__wrap">
+
+        <div class="page-header__logo  logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__image" scr="img/logo.svg" alt="Логотип «Pink»" width="" height="">
+          </a>
+        </div>
+
+        <!-- Main menu -->
+        <nav class="main-menu">
+
+          <button class="main-menu__btn" type="button">
+            <span class="icon-hamburger">Меню<span>
+          </button>
+
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link  link" href="index.html">Главная</a>
+            </li>
+            <li class="main-menu__item  main-menu__item--active">
+              <a class="main-menu__link  link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link  link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link  link" href="#">Html academy</a>
+            </li>
+          </ul>
+
+        </nav>
+        <!-- /Main menu -->
       </div>
 
-      <!-- Main menu -->
-      <nav class="main-menu">
+      <h1 class="intro__title  title">Фотографии пользователей</h1>
 
-        <button class="main-menu__btn" type="button">
-          <span class="icon-hamburger">Меню<span>
-        </button>
-
-        <ul class="main-menu__list">
-          <li class="main-menu__item">
-            <a class="main-menu__link  link" href="index.html">Главная</a>
-          </li>
-          <li class="main-menu__item  main-menu__item--active">
-            <a class="main-menu__link  link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link  link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link  link" href="#">Html academy</a>
-          </li>
-        </ul>
-
-      </nav>
-      <!-- /Main menu -->
-
-      <div class="intro">
-        <h1 class="intro__title  title">Фотографии пользователей</h1>
-      </div>
     </header>
     <!-- /Page header -->
 
@@ -57,95 +60,103 @@
       </header>
 
       <article class="post  post--day">
-        <img class="post__image" scr="" alt="" width="" height="">
-        <div class="post__wrapper">
-          <h3 class="post__author-name">Анна</h3>
-          <time class="post__time" datetime="" pubdate>5 минут назад</time>
-          <p class="post__text  text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-          <p class="post__like  text">Нравится:<a href="#">215</a></p>
-        </div>
+        <a class="post__image  post__image--day" href="">
+          <img scr="" alt="" width="" height="">
+        </a>
+        <h3 class="post__author-name">Анна</h3>
+        <time class="post__time" datetime="" pubdate>5 минут назад</time>
+        <p class="post__text  text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+        <p class="post__like  text">Нравится:<a href="#">215</a></p>
       </article>
 
-      <article class="post">
-        <img class="post__image" scr="" alt="" width="" height="">
-        <div class="post__wrapper">
+      <div class="photo__posts">
+        <article class="post">
+          <a class="post__image" href="">
+            <img scr="" alt="" width="" height="">
+          </a>
           <h3 class="post__author-name">Левон</h3>
           <time class="post__time" datetime="" pubdate>5 часов назад</time>
           <p class="post__text  text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <p class="post__like  text">Нравится:<a href="#">356</a></p>
-        </div>
-      </article>
+        </article>
 
-      <article class="post">
-        <img class="post__image" scr="" alt="" width="" height="">
-        <div class="post__wrapper">
+        <article class="post">
+          <a class="post__image" href="">
+            <img scr="" alt="" width="" height="">
+          </a>
           <h3 class="post__author-name">Антон</h3>
           <time class="post__time" datetime="" pubdate>12 часов назад</time>
           <p class="post__text">Соседи будут рады!</p>
           <p class="post__like">Нравится:<a href="#">666</a></p>
-        </div>
-      </article>
+        </article>
 
-      <article class="post">
-        <img class="post__image" scr="" alt="" width="" height="">
-        <div class="post__wrapper">
+        <article class="post">
+          <a class="post__image" href="">
+            <img scr="" alt="" width="" height="">
+          </a>
           <h3 class="post__author-name">Борис</h3>
           <time class="post__time" datetime="" pubdate>20 часов назад</time>
           <p class="post__text  text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <p class="post__like  text">Нравится:<a href="#">215</a></p>
-        </div>
-      </article>
+        </article>
 
-      <article class="post">
-        <img class="post__image" scr="" alt="" width="" height="">
-        <div class="post__wrapper">
+        <article class="post">
+          <a class="post__image" href="">
+            <img scr="" alt="" width="" height="">
+          </a>
           <h3 class="post__author-name">Сергей</h3>
           <time class="post__time" datetime="" pubdate>25 часов назад</time>
           <p class="post__text  text">Самая кубанская в мире!</p>
           <p class="post__like  text">Нравится:<a href="#">4</a></p>
-        </div>
-      </article>
+        </article>
 
-      <article class="post">
-        <img class="post__image" scr="" alt="" width="" height="">
-        <div class="post__wrapper">
+        <article class="post">
+          <a class="post__image" href="">
+            <img scr="" alt="" width="" height="">
+          </a>
           <h3 class="post__author-name">Максим</h3>
           <time class="post__time" datetime="" pubdate>40 часов назад</time>
           <p class="post__text  text">Где снег-то?</p>
           <p class="post__like  text">Нравится:<a href="#">150</a></p>
-        </div>
-      </article>
+        </article>
 
-      <article class="post">
-        <img class="post__image" scr="" alt="" width="" height="">
-        <div class="post__wrapper">
+        <article class="post">
+          <a class="post__image" href="">
+            <img scr="" alt="" width="" height="">
+          </a>
           <h3 class="post__author-name">Надежда</h3>
           <time class="post__time" datetime="" pubdate>45 часов назад</time>
           <p class="post__text  text">Всем GM и взаимные лайки!</p>
           <p class="post__like  text">Нравится:<a href="#">2560</a></p>
-        </div>
-      </article>
+        </article>
+      </div>
 
       <!-- Form -->
       <form class="form">
-        <p class="form__text  text">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</p>
+        <header class="form__header">
+          <p class="form__text  text">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</p>
+        </header>
 
         <fieldset class="upload-photo">
           <img class="upload-photo__image" src="" alt="" width="" height="">
-          <div class="upload-photo__tools">
-            <ul class="photo-tools">
-              <li class="photo-tools__crop"></li>
-              <li class="photo-tools__fill"></li>
-              <li class="photo-tools__contrast"></li>
-            </ul>
-            <input class="input-range" id="range-tools" type="range" min="1" max="10">
+          <div class="upload-photo__wrap">
+            <div class="upload-photo__tools">
+              <ul class="photo-tools">
+                <li class="photo-tools__crop">Crop</li>
+                <li class="photo-tools__fill">Fill</li>
+                <li class="photo-tools__contrast">Contrast</li>
+              </ul>
+              <input class="input-range" id="range-tool1" type="range" min="1" max="10">
+              <input class="input-range" id="range-tool2" type="range" min="1" max="10">
+              <input class="input-range" id="range-tool3" type="range" min="1" max="10">
+            </div>
+            <div class="upload-photo__buttons">
+              <button class="upload-photo__btn" type="submit">Запостить</button>
+              <button class="upload-photo__btn" type="reset" disabled>Отмена</button>
+            </div>
           </div>
         </fieldset>
 
-        <div class="form__buttons">
-          <button class="upload-photo__btn" type="submit">Запостить</button>
-          <button class="upload-photo__btn" type="reset" disabled>Отмена</button>
-        </div>
       </form>
       <!-- /Form -->
     </main>

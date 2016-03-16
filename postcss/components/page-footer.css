@@ -1,3 +1,42 @@
 .page-footer {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(255, 242, 0, 0.2);
+  min-height: 235px;
+  padding: 45px 0 20px;
+
+  &--hide {
+    display: none;
+  }
+
+  &__logo {
+    margin: 0 auto 50px;
+  }
+
+  &__social {
+    margin: 0 auto 40px;
+  }
+
+  &__copyright {
+    margin: 0 auto;
+  }
+
+  @media ($tablet-width) {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 129px;
+    padding: 0 40px;
+
+    &__logo {
+      margin: 0 auto;
+    }
+    &__social {
+      margin: 0 auto;
+    }
+  }
+
+  @media ($desktop-width) {
+    height: 196px;
+    padding: 0 130px;
+  }
 }

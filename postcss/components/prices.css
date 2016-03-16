@@ -1,3 +1,29 @@
 .prices {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(0, 255, 82, 0.2);
+  padding: 92px 0 0;
+  min-height: 200px;
+
+  &__list {
+    margin-bottom: 40px;
+  }
+
+  &__indicators{
+    @mixin indicators;
+  }
+
+  @media ($tablet-width) {
+    padding: 90px 40px 68px;
+
+    &__list {
+      margin-bottom: 0;
+    }
+
+    &__indicators {
+      display: none;
+    }
+  }
+
+  @media ($desktop-width) {
+    padding: 150px 130px 95px;
+  }
 }

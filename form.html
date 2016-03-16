@@ -10,43 +10,43 @@
   </head>
 
   <body class="page">
-
     <!-- Page header -->
     <header class="page-header">
-      <div class="page-header__logo  logo">
-        <a class="logo__link" href="index.html">
-          <img class="logo__image" scr="img/logo.svg" alt="Логотип «Pink»" width="" height="">
-        </a>
+
+      <div class="page-header__wrap">
+
+        <div class="page-header__logo  logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__image" scr="img/logo.svg" alt="Логотип «Pink»" width="" height="">
+          </a>
+        </div>
+
+        <!-- Main menu -->
+        <nav class="page-header__main-menu  main-menu">
+          <button class="main-menu__btn" type="button">
+            <span class="icon-hamburger">Меню<span>
+          </button>
+
+          <ul class="main-menu__list  main-menu__list--hide">
+            <li class="main-menu__item">
+              <a class="main-menu__link link" href="index.html">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-menu__item  main-menu__item--active">
+              <a class="main-menu__link link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link link" href="#">Html Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /Main menu -->
       </div>
 
-      <!-- Main menu -->
-      <nav class="main-menu">
+      <h1 class="page-header__title  title">Конкурс на самое безбашеное путешествие с Пинк</h1>
 
-        <button class="main-menu__btn" type="button">
-          <span class="icon-hamburger">Меню<span>
-        </button>
-
-        <ul class="main-menu__list">
-          <li class="main-menu__item">
-            <a class="main-menu__link  link" href="index.html">Главная</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link  link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-menu__item  main-menu__item--active">
-            <a class="main-menu__link  link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link  link" href="#">Html academy</a>
-          </li>
-        </ul>
-
-      </nav>
-      <!-- /Main menu -->
-
-      <div class="intro">
-        <h1 class="intro__title  title">Конкурс на самое безбашеное путешествие с Пинк</h1>
-      </div>
     </header>
     <!-- /Page header -->
 
@@ -56,105 +56,116 @@
         <p class="form__text  text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </header>
 
-      <!-- Fieldset -->
-      <fieldset class="fieldset">
-        <div class="fieldset__item">
-          <label class="label" for="your-name">Имя:</label>
-          <input class="input" id="your-name" type="text" placeholder="Введите ваше имя">
-        </div>
+      <div class="form__wrap">
+        <!-- Fieldset -->
+        <fieldset class="fieldset  fieldset--name">
+          <div class="fieldset__item">
+            <label class="label" for="your-name">Имя:</label>
+            <input class="input" id="your-name" type="text" placeholder="Введите ваше имя">
+          </div>
 
-        <div class="fieldset__item">
-          <label class="label" for="your-last-name">Фамилия:</label>
-          <input class="input" id="your-last-name" type="text" placeholder="Укажите фамилию">
-        </div>
+          <div class="fieldset__item">
+            <label class="label" for="your-last-name">Фамилия:</label>
+            <input class="input" id="your-last-name" type="text" placeholder="Укажите фамилию">
+          </div>
 
-        <div class="fieldset__item">
-          <label class="label" for="your-patronymic">Отчество:</label>
-          <input class="input" id="your-patronymic" type="text" placeholder="Ну и отчество тоже">
-        </div>
-      </fieldset>
-      <!-- /Fieldset -->
+          <div class="fieldset__item">
+            <label class="label" for="your-patronymic">Отчество:</label>
+            <input class="input" id="your-patronymic" type="text" placeholder="Ну и отчество тоже">
+          </div>
+        </fieldset>
+        <!-- /Fieldset -->
 
-      <!-- Fieldset -->
-      <fieldset class="fieldset">
-        <legend class="fieldset__title  label">Ваши безбашенные достижения в путешествии</legend>
+        <!-- Fieldset -->
+        <fieldset class="fieldset  fieldset--border  fieldset--checkbox">
+          <legend class="fieldset__title">Ваши безбашенные достижения в путешествии</legend>
 
-        <div class="fieldset__option">
-          <label class="label-checkbox" for="checkbox-selfie-shark">Сделал селфи с акулой</label>
-          <input class="checkbox" id="checkbox-selfie-shark" type="checkbox" checked>
-        </div>
+          <div class="fieldset__options  fieldset__options--checkbox">
 
-        <div class="fieldset__option">
-          <label class="label-checkbox" for="checkbox-sunburn">Обгорел на пляже</label>
-          <input class="checkbox" id="checkbox-sunburn" type="checkbox" checked>
-        </div>
+            <div class="fieldset__option">
+              <label class="label-checkbox" for="checkbox-selfie-shark">Сделал селфи с акулой</label>
+              <input class="checkbox" id="checkbox-selfie-shark" type="checkbox" checked>
+            </div>
 
-        <div class="fieldset__option">
-          <label class="label-checkbox" for="checkbox-film-star">Видел Чака Норриса</label>
-          <input class="checkbox" id="checkbox-film-star" type="checkbox">
-        </div>
+            <div class="fieldset__option">
+              <label class="label-checkbox" for="checkbox-sunburn">Обгорел на пляже</label>
+              <input class="checkbox" id="checkbox-sunburn" type="checkbox" checked>
+            </div>
 
-        <div class="fieldset__option">
-          <label class="label-checkbox" for="checkbox-gift">Накупил сувениров</label>
-          <input class="checkbox" id="checkbox-gift" type="checkbox">
-        </div>
+            <div class="fieldset__option">
+              <label class="label-checkbox" for="checkbox-film-star">Видел Чака Норриса</label>
+              <input class="checkbox" id="checkbox-film-star" type="checkbox">
+            </div>
 
-        <div class="fieldset__option">
-          <label class="label-checkbox" for="checkbox-hold-tower">Удержал башню</label>
-          <input class="checkbox" id="checkbox-hold-tower" type="checkbox" checked>
-        </div>
+            <div class="fieldset__option">
+              <label class="label-checkbox" for="checkbox-gift">Накупил сувениров</label>
+              <input class="checkbox" id="checkbox-gift" type="checkbox">
+            </div>
 
-        <div class="fieldset__option">
-          <label class="label-checkbox" for="checkbox-break-hotel">Разгромил отель</label>
-          <input class="checkbox" id="checkbox-break-hotel" type="checkbox">
-        </div>
-      </fieldset>
-      <!-- /Fieldset -->
+            <div class="fieldset__option">
+              <label class="label-checkbox" for="checkbox-hold-tower">Удержал башню</label>
+              <input class="checkbox" id="checkbox-hold-tower" type="checkbox" checked>
+            </div>
 
-      <!-- Fieldset -->
-      <fieldset class="fieldset">
-        <div class="fieldset__tel">
-          <label class="label" for="your-tel">Номерок телефончика</label>
-          <input class="input" id="your-tel" type="tel"></input>
-        </div>
+            <div class="fieldset__option">
+              <label class="label-checkbox" for="checkbox-break-hotel">Разгромил отель</label>
+              <input class="checkbox" id="checkbox-break-hotel" type="checkbox">
+            </div>
+          </div>
+        </fieldset>
+        <!-- /Fieldset -->
 
-        <div class="fieldset__email">
-          <label class="label" for="your-email">Адресок почты</label>
-          <input class="input" id="your-email" type="email"></input>
-        </div>
-      </fieldset>
-      <!-- /Fieldset -->
+        <!-- Fieldset -->
+        <fieldset class="fieldset  fieldset--contacts">
+          <div class="fieldset__wrap">
+            <div class="fieldset__item  fieldset__item--half">
+              <label class="label  label--down" for="your-tel">Номерок телефончика</label>
+              <input class="input" id="your-tel" type="tel"></input>
+            </div>
 
-      <!-- Fieldset -->
-      <fieldset class="fieldset">
-        <legend class="fieldset__title  label">С каким приложением путешествовали?</legend>
+            <div class="fieldset__item  fieldset__item--half">
+              <label class="label  label--down" for="your-email">Адресок почты</label>
+              <input class="input" id="your-email" type="email"></input>
+            </div>
+          </div>
+        </fieldset>
+        <!-- /Fieldset -->
 
-        <div class="fieldset__option">
-          <label class="label-radio" for="radio-ios">Pink для iOS</label>
-          <input class="radio" id="radio-ios" type="radio" checked>
-        </div>
+        <!-- Fieldset -->
+        <fieldset class="fieldset  fieldset--radio">
+          <legend class="fieldset__title  label">С каким приложением путешествовали?</legend>
 
-        <div class="fieldset__option">
-          <label class="label-radio" for="radio-android">Pink на Android</label>
-          <input class="radio" id="radio-android" type="radio">
-        </div>
+          <div class="fieldset__options">
 
-        <div class="fieldset__option">
-          <label class="label-radio" for="radio-window">Windows Phone</label>
-          <input class="radio" id="radio-window" type="radio">
-        </div>
-      </fieldset>
-      <!-- /Fieldset -->
+            <div class="fieldset__option">
+              <label class="label-radio" for="radio-ios">Pink для iOS</label>
+              <input class="radio" id="radio-ios" type="radio" checked>
+            </div>
 
-      <!-- Fieldset -->
-      <fieldset class="fieldset">
-          <label class="label-textarea" for="textarea-report">Опишите свои эмоции</label>
+            <div class="fieldset__option">
+              <label class="label-radio" for="radio-android">Pink на Android</label>
+              <input class="radio" id="radio-android" type="radio">
+            </div>
+
+            <div class="fieldset__option">
+              <label class="label-radio" for="radio-window">Windows Phone</label>
+              <input class="radio" id="radio-window" type="radio">
+            </div>
+          </div>
+        </fieldset>
+        <!-- /Fieldset -->
+
+        <!-- Fieldset -->
+        <fieldset class="fieldset  fieldset--textarea">
+          <legend class="fieldset__title">Опишите свои эмоции</legend>
           <input class="textarea" id="textarea-report" type="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях">
-      </fieldset>
-      <!-- /Fieldset -->
-
-      <button class="btn" type="submit">Отправить форму</button>
-      <p class="form__required"><span>*</span> — обязательные поля</p>
+        </fieldset>
+        <!-- /Fieldset -->
+      </div>
+      <div class="form__wrap">
+        <button class="form__btn  btn" type="submit">Отправить форму</button>
+        <p class="form__required"><span>*</span> — обязательные поля</p>
+      </div>
     </form>
     <!-- /Form -->
 

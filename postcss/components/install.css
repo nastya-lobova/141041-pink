@@ -1,3 +1,15 @@
 .install {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(115, 0, 255, 0.2);
+  min-height: 210px;
+  padding: 30px 20px;
+
+  @media ($tablet-width) {
+    width: 300px;
+    min-height: 260px;
+    padding: 0;
+  }
+
+  @media ($desktop-width) {
+    min-height: 280px;
+  }
 }

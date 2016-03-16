@@ -6,69 +6,72 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page">
 
     <!-- Page header -->
-    <header class="page-header">
-      <div class="page-header__logo  logo">
-        <a class="logo__link" href="index.html">
-          <img class="logo__image" scr="img/logo.svg" alt="Логотип «Pink»" width="" height="">
-        </a>
+    <header class="page-header  page-header--main">
+
+      <div class="page-header__wrap">
+
+        <div class="page-header__logo  logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__image" scr="img/logo.svg" alt="Логотип «Pink»" width="" height="">
+          </a>
+        </div>
+
+        <!-- Main menu -->
+        <nav class="page-header__main-menu  main-menu">
+          <button class="main-menu__btn" type="button">
+            <span class="icon-hamburger">Меню<span>
+          </button>
+
+          <ul class="main-menu__list  main-menu__list--hide">
+            <li class="main-menu__item  main-menu__item--active">
+              <a class="main-menu__link link" href="index.html">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link link" href="#">Фотографии</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link link" href="#">Html Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /Main menu -->
       </div>
 
-      <!-- Main menu -->
-      <nav class="main-menu">
-
-        <button class="main-menu__btn" type="button">
-          <span class="icon-hamburger">Меню<span>
-        </button>
-
-        <ul class="main-menu__list">
-          <li class="main-menu__item  main-menu__item--active">
-            <a class="main-menu__link link" href="index.html">Информация</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link link" href="#">Возможности</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link link" href="form.html">Отзывы</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link link" href="#">Стоимость</a>
-          </li>
-        </ul>
-
-      </nav>
-      <!-- /Main menu -->
-
-      <div class="intro">
+      <div class="page-header__intro  intro">
         <h1 class="intro__title  title">Взгляните на жизнь иначе!</h1>
       </div>
+
+      <!-- Installation -->
+      <div class="page-header__install  install">
+        <a class="install__btn" href="#">Скачать приложение</a>
+
+        <div class="install__list">
+            <a class="install__link" href="#">
+              <img class="install__icon" src="img/icon-apple.svg" alt="Иконка Apple" width="" height="">
+            </a>
+            <a class="install__link" href="#">
+              <img class="install__icon" src="img/icon-android.svg" alt="Иконка Android" width="" height="">
+            </a>
+            <a class="install__link" href="#">
+              <img class="install__icon" src="img/icon-windows.svg" alt="Иконка Windows" width="" height="">
+            </a>
+        </div>
+        <p class="install__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+      <!-- /Installation -->
+
     </header>
     <!-- /Page header -->
-
-    <!-- Installation -->
-    <div class="install">
-      <a class="install__btn" href="#">Скачать приложение</a>
-
-      <div class="install__list">
-          <a class="install__link" href="#">
-            <img class="install__icon" src="img/icon-apple.svg" alt="Иконка Apple" width="" height="">
-          </a>
-          <a class="install__link" href="#">
-            <img class="install__icon" src="img/icon-android.svg" alt="Иконка Android" width="" height="">
-          </a>
-          <a class="install__link" href="#">
-            <img class="install__icon" src="img/icon-windows.svg" alt="Иконка Windows" width="" height="">
-          </a>
-      </div>
-
-      <p class="install__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </div>
-    <!-- /Installation -->
 
     <!-- Information -->
     <div class="info">
@@ -88,10 +91,15 @@
           <p class="info-item__text  text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </section>
 
-        <section class="info-item__item">
+        <section class="info-item">
           <h3 class="info-item__heading  heading">Заводит новых друзей</h3>
           <p class="info-item__text  text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
         </section>
+      </div>
+      <div class="info-item  info-item--left">
+        <h3 class="info-item__heading  heading">Эффект на 24 часа!</h3>
+        <p class="info-item__text  text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки</p>
+        <a class="info-item__link" href="">Узнать больше об иследовании</a>
       </div>
     </div>
     <!-- /Information -->
@@ -130,6 +138,7 @@
 
     <!-- Prices -->
     <div class="prices">
+      <div class="prices__list">
         <!-- Price -->
         <div class="price">
           <header class="price__header">
@@ -198,29 +207,52 @@
     </div>
     <!-- /Prices -->
 
-    <!-- Footer -->
-    <footer class="page-footer">
-      <!-- Contacts -->
-      <div class="page-footer__contacts">
-        <h2 class="page-footer__title  title">Остались вопросы?<br>Свяжитесь с нами!</h2>
-        <p class="page-footer__tel">
+    <!-- Contacts -->
+    <div class="contacts">
+      <h2 class="contacts__title  title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+      <div class="contacts__list">
+        <p class="contacts__item">
           <b>Звоните:</b><br>
           <a class="" href="tel:78125556666">+7 (812) 555-66-66</a>
         </p>
-        <p class="page-footer__email">
+        <p class="contacts__item">
           <b>Пишите:</b><br>
           <a href="#">mail@htmlacademy.ru</a>
         </p>
-        <p class="page-footer__address">
+        <p class="contacts__item">
           <b>Приходите в гости:</b><br>
           ул. Большая Конюшенная, 19/8
         </p>
       </div>
-      <!-- /Contacts -->
+    </div>
+    <!-- /Contacts -->
 
-      <!-- Map -->
-      <div class="map" id="map"></div>
-      <!-- /Map -->
+    <!-- Map -->
+    <div class="map" id="map"></div>
+    <!-- /Map -->
+
+    <!-- Footer -->
+    <footer class="page-footer  page-footer--hide">
+      <div class="page-footer__logo  logo">
+        <a class="logo__link" href="index.html">
+          <img class="logo__image" scr="img/logo.svg" alt="Логотип «Pink»" width="" height="">
+        </a>
+      </div>
+
+      <div class="page-footer__social">
+        <div class="social-links">
+          <a class="social-link social-link--twitter" href="#">Мы в Твиттере</a>
+          <a class="social-link social-link--facebook" href="#">Мы в Фейсбуке</a>
+          <a class="social-link social-link--youtube" href="#">Мы в Ютьюбе</a>
+        </div>
+      </div>
+
+      <div class="page-footer__copyright  copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="htmlacademy.ru">
+          <img class="copyright__icon" scr="img/htmlacademy.svg" alt="Логотип «Html academy»" width="" height="">
+        </a>
+      </div>
     </footer>
     <!-- /Footer -->
 

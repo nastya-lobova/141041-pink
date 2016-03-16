@@ -1,3 +1,6 @@
 .social-links {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(254, 13, 255, 0.2);
+  height: 55px;
+  width: 180px;
+  margin: 0 auto;
 }

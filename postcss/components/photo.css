@@ -1,3 +1,21 @@
 .photo {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(255, 235, 0, 0.2);
+
+  &__posts {
+    @mixin container;
+  }
+
+  &__header {
+    background-color: rgba(232, 57, 0, 0.2);
+    padding: 45px 20px;
+    min-height: 95px;
+  }
+
+  @media ($tablet-width) {
+    &__posts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
 }

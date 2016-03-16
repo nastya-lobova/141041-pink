@@ -1,3 +1,17 @@
 .page {
-  outline: 1px solid #ff2e00;
+  width: 320px;
+  margin: 0 auto;
+
+  h1, h2, h3, p{
+    margin: 0;
+  }
+
+  @media ($tablet-width) {
+    width: 700px;
+  }
+  
+  @media ($desktop-width) {
+    width: 1200px;
+  }
+
 }

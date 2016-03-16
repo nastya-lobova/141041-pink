@@ -1,3 +1,13 @@
 .copyright {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(254, 13, 255, 0.2);
+  width: 130px;
+  height: 45px;
+
+  @media ($tablet-width) {
+    height: 45px;
+  }
+
+  @media ($desktop-width) {
+    width: 150px;
+  }
 }
