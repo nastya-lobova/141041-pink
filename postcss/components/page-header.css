@@ -1,3 +1,77 @@
 .page-header {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(254, 13, 255, 0.2);
+  position: relative;
+  min-height: 237px;
+
+  &--main {
+    height: 730px;
+  }
+
+  &__wrap {
+    background-color: rgba(13, 35, 255, 0.2);
+    padding: 20px 20px 0;
+    height: 49px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__intro {
+    display: none;
+  }
+
+  &__install {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media ($tablet-width) {
+    min-height: 441px;
+
+    &--main {
+      height: 728px;
+    }
+
+    &__wrap {
+      height: 83px;
+      padding: 27px 40px 0;
+    }
+
+    &__intro {
+      margin-top: 100px;
+      display: block;
+      margin-left: 40px;
+    }
+
+    &__install {
+      position: static;
+      margin-left: 40px;
+    }
+  }
+
+  @media ($desktop-width) {
+    min-height: 394px;
+
+    &--main {
+    height: 853px;
+    }
+
+    &__wrap {
+      display: flex;
+      height: 54px;
+      padding: 28px 130px 28px;
+    }
+
+    &__intro {
+      margin-top: 110px;
+      margin-left: 130px;
+    }
+
+    &__install {
+      position: static;
+      margin-left: 130px;
+    }
+  }
 }

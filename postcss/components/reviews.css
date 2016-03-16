@@ -1,3 +1,30 @@
 .reviews {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(255, 242, 0, 0.2);
+  padding: 48px 20px 30px;
+  min-height: 275px;
+
+  &__list {
+    margin-bottom: 30px;
+  }
+
+  &__indicators {
+    @mixin indicators;
+  }
+
+  @media ($tablet-width) {
+    padding: 60px 40px 10px;
+    min-height: 200px;
+  }
+
+  @media ($desktop-width) {
+    padding: 170px 130px 22px;
+
+    &__indicators {
+      display: none;
+    }
+
+    &__list {
+      margin-bottom: 0;
+    }
+  }
 }

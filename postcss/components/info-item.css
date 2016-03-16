@@ -1,0 +1,35 @@
+.info-item{
+  background-color: rgba(0, 31, 232, 0.2);
+  height: 140px;
+  text-align: center;
+
+  &--left {
+    display: none;
+  }
+
+  @media ($tablet-width) {
+    height: 125px;
+    text-align: left;
+
+    &--left {
+      display: block;
+      height: 225px;
+      padding-left: 350px;
+      padding-right: 40px;
+      padding-top: 97px;
+    }
+  }
+
+  @media ($desktop-width) {
+    height: 220px;
+    text-align: center;
+
+    &--left {
+      text-align: left;
+      padding-left: 495px;
+      padding-right: 130px;
+      padding-top: 150px;
+      padding-bottom: 40px;
+    }
+  }
+}

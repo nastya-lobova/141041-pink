@@ -1,3 +1,11 @@
 .map {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(254, 13, 255, 0.2);
+  height: 203px;
+
+  @media ($tablet-width) {
+    height: 383px;
+  }
+  @media ($desktop-width) {
+    height: 503px;
+  }
 }

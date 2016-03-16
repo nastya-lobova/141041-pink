@@ -1,9 +1,11 @@
 @import "variables.css";
 @import "mixins.css";
 
+@import "components/page.css";
 @import "components/btn.css";
 @import "components/checkbox.css";
 @import "components/copyright.css";
+@import "components/contacts.css";
 @import "components/fieldset.css";
 @import "components/form.css";
 @import "components/heading.css";
@@ -24,7 +26,7 @@
 @import "components/map.css";
 @import "components/page-footer.css";
 @import "components/page-header.css";
-@import "components/page.css";
+
 @import "components/photo-tools.css";
 @import "components/photo.css";
 @import "components/post.css";

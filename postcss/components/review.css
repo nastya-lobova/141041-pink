@@ -1,3 +1,18 @@
 .review {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(255, 242, 0, 0.3);
+  min-height: 216px;
+  margin: 0;
+
+  &:nth-child(n+2) {
+    display: none;
+  }
+  
+  @media ($tablet-width) {
+    min-height: 190px;
+  }
+
+  @media ($desktop-width) {
+    min-height: 220px;
+  }
+
 }

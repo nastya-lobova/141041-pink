@@ -1,3 +1,14 @@
 .textarea {
-  outline: 1px solid #ff2e00;
+  width: 280px;
+  height: 200px;
+
+  @media ($tablet-width) {
+    width: 500px;
+    height: 200px;
+  }
+
+  @media ($desktop-width) {
+    width: 810px;
+    height: 120px;
+  }
 }

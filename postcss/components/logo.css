@@ -1,3 +1,14 @@
 .logo {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(255, 242, 0, 0.3);
+  width: 80px;
+  height: 30px;
+
+  @media ($tablet-width) {
+    height: 50px;
+    width: 150px;
+  }
+
+  @media ($desktop-width) {
+
+  }
 }

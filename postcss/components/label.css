@@ -1,3 +1,14 @@
 .label {
-  outline: 1px solid #ff2e00;
+  margin-left: 23px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--down{
+     order: 2;
+    }
+  }
 }

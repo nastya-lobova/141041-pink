@@ -1,3 +1,16 @@
 .price {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(232, 218, 17, 0.2);
+  min-height: 280px;
+
+  &:nth-child(n+2) {
+    display: none;
+  }
+
+  @media ($tablet-width) {
+    min-height: 220px;
+  }
+
+  @media ($desktop-width) {
+    min-height: 280px;
+  }
 }

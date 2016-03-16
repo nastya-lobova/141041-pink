@@ -1,3 +1,50 @@
 .form {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(255, 235, 0, 0.2);
+
+  &__header {
+    min-height: 80px;
+    padding: 50px 20px 20px;
+  }
+
+  &__btn {
+    display: block;
+    height: 62px;
+    width: 280px;
+    margin: 30px auto 40px;
+  }
+
+  &__required {
+    text-align: center;
+  }
+
+  &__text {
+    min-height: 75px;
+    padding: 30px 0;
+  }
+
+  @media ($tablet-width) {
+    @mixin container;
+    &__wrap {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__header {
+      min-height: 150px;
+    }
+
+    &__btn {
+      margin: 0;
+    }
+  }
+  @media ($desktop-width) {
+
+    &__wrap {
+      justify-content: space-between;
+    }
+
+    &__header {
+      min-height: 160px;
+    }
+  }
 }

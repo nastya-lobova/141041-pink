@@ -1,3 +1,40 @@
 .upload-photo {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(255, 235, 0, 0.2);
+  min-height: 557px;
+  margin: 0;
+  padding: 20px;
+  border: none;
+
+  &__image {
+    background-color: rgba(0, 232, 217, 0.2);
+    display: block;
+    width: 280px;
+    min-height: 375px;
+  }
+
+  &__wrap {
+    background-color: rgba(0, 232, 217, 0.2);
+  }
+
+  &__buttons {
+    min-height: 200px;
+  }
+
+  @media ($tablet-width) {
+    min-height: 390px;
+    padding: 60px 40px;
+
+    &__image {
+      float: left;
+    }
+
+    &__wrap {
+      min-height: 375px;
+      margin-left: 300px;
+    }
+  }
+
+  @media ($desktop-width) {
+     padding: 60px 80px;
+  }
 }

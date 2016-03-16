@@ -1,0 +1,16 @@
+@define-mixin container {
+  width: 280px;
+  margin: 0 auto;
+  @media ($tablet-width) {
+    width: 620px;
+  }
+  @media ($desktop-width) {
+    width: 940px;
+  }
+}
+@define-mixin indicators {
+  width: 65px;
+  display: flex;
+  margin: 0 auto;
+  justify-content:space-between;
+}

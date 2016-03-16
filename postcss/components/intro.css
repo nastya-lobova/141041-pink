@@ -1,3 +1,14 @@
 .intro {
-  outline: 1px solid #ff2e00;
+  background-color: rgba(167, 255, 25, 0.2);
+
+  @media ($tablet-width) {
+    width: 300px;
+    min-height: 157px;
+    text-align: center;
+  }
+
+  @media ($desktop-width) {
+    min-height: 180px;
+    margin-bottom: 50px;
+  }
 }
