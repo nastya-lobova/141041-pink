@@ -1,10 +1,24 @@
 .map {
-  background-color: rgba(254, 13, 255, 0.2);
+
   height: 203px;
+  z-index: 3;
+
+  &:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 30px;
+    content: "";
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat;
+    background-size: contain;
+    z-index: 2;
+  }
 
   @media ($tablet-width) {
     height: 383px;
   }
+  
   @media ($desktop-width) {
     height: 503px;
   }

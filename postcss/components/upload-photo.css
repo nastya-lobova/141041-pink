@@ -1,40 +1,76 @@
 .upload-photo {
-  background-color: rgba(255, 235, 0, 0.2);
-  min-height: 557px;
+  background-color: $light-grey;
   margin: 0;
   padding: 20px;
   border: none;
 
   &__image {
-    background-color: rgba(0, 232, 217, 0.2);
+    background-color: #8092bb;
     display: block;
     width: 280px;
-    min-height: 375px;
+    height: 375px;
+    margin: 0 auto 40px;
   }
 
-  &__wrap {
-    background-color: rgba(0, 232, 217, 0.2);
+  &__tools {
+    margin-bottom: 69px;
+    position: relative;
   }
 
   &__buttons {
-    min-height: 200px;
+    margin: 0 -20px;
+    border-top: 2px solid #dddfe0;
+    padding: 37px 20px 10px;
+  }
+
+  &__btn {
+    margin: 0 auto;
+    margin-bottom: 12px;
   }
 
   @media ($tablet-width) {
-    min-height: 390px;
-    padding: 60px 40px;
-
-    &__image {
-      float: left;
-    }
+    padding: 56px 40px 15px;
+    width: 620px;
+    margin: 0 auto;
 
     &__wrap {
-      min-height: 375px;
-      margin-left: 300px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__image {
+      width: 300px;
+      height: 400px;
+      margin: 0;
+    }
+
+    &__tools {
+      margin-bottom: 70px;
+    }
+
+    &__buttons {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    &__btn {
+      margin: 0;
+      margin-bottom: 25px;
     }
   }
 
   @media ($desktop-width) {
-     padding: 60px 80px;
+     padding: 55px 60px 35px 80px;
+     width: 810px;
+
+     &__buttons {
+       display: flex;
+       justify-content: space-between;
+     }
+
+     &__tools {
+       margin-bottom: 147px;
+     }
   }
 }

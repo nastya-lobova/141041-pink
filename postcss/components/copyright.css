@@ -1,13 +1,31 @@
 .copyright {
-  background-color: rgba(254, 13, 255, 0.2);
+  display: flex;
+  align-items: center;
   width: 130px;
-  height: 45px;
+  position: relative;
+
+  &__text {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+
+  &__link {
+    position: absolute;
+    top: -5px;
+  }
 
   @media ($tablet-width) {
-    height: 45px;
+
+    &__link {
+      vertical-align: bottom;
+    }
   }
 
   @media ($desktop-width) {
-    width: 150px;
+    width: 155px;
+
+    &__text {
+      font-size: 18px;
+    }
   }
 }

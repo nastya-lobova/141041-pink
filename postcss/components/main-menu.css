@@ -1,10 +1,16 @@
 .main-menu {
-  background-color: rgba(171, 12, 232, 0.2);
+  padding: 20px 6.5% 20px;
+  height: 29px;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &--open {
+    background-color: #283645;
+    border-bottom: 1px solid #000;
+  }
 
   &__list {
-    background-color: rgba(255, 242, 0, 0.2);
     position: absolute;
-    top: 69px;
+    top: 70px;
     left: 0;
     width: 100%;
     height: 257px;
@@ -12,32 +18,57 @@
     padding: 0;
     list-style: none;
     z-index: 1;
-  }
 
-  &__item {
-    height: 63px;
-    text-align: center;
-    cursor: pointer;
+    &--hide {
+      display: none;
+    }
   }
 
   &__link {
-    line-height: 63px;
+    display: block;
+    padding: 15px 0 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #283645;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 32px;
+
+    &:hover {
+      color: $hover;
+    }
   }
 
   &__btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
     display: block;
-    width: 60px;
-    height: 30px;
+    margin-left: auto;
     border: none;
     padding: 0;
     background-color: transparent;
-    background-color: rgba(255, 242, 0, 0.3);
+    cursor: pointer;
+
+    &-hamburger {
+
+      &--hide {
+        display: none;
+      }
+    }
+
+    &-cross {
+      display: none;
+
+      &--show {
+        display: block;
+      }
+    }
   }
 
   @media ($tablet-width) {
+    padding: 44px 5.7% 36px;
 
     &__list {
       top: 110px;
@@ -46,28 +77,30 @@
     &__item {
       height: auto;
     }
-
-    &__btn {
-      background-color: rgba(115, 0, 255, 0.2);
-      top: 40px;
-      right: 40px;
-    }
   }
 
   @media ($desktop-width) {
-    margin-left: auto;
+    height: auto;
+    padding: 26px 130px 27px;
 
     &__list {
       position: static;
       display: flex;
       height: auto;
       justify-content:space-between;
-      width: 623px;
+      width: 620px;
       align-items: center;
+      margin-left: auto;
     }
-
+    
     &__link {
       line-height: 54px;
+      background-color: transparent;
+      border: none;
+      font-weight: normal;
+      font-size: 18px;
+      text-transform: none;
+      line-height: normal;
     }
 
     &__btn {

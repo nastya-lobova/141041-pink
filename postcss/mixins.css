@@ -9,8 +9,49 @@
   }
 }
 @define-mixin indicators {
-  width: 65px;
+  width: 58px;
   display: flex;
   margin: 0 auto;
   justify-content:space-between;
+  align-items: center;
+}
+
+@define-mixin title $color: $dark-grey {
+  font-size: 24px;
+  font-weight: lighter;
+  color: $color;
+
+  @media ($tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  @media ($desktop-width) {
+    font-size: 50px;
+  }
+}
+
+@define-mixin text $color: $dark-grey {
+  font-size: 14px;
+  font-weight: normal;
+  color: $color;
+  line-height: 24px;
+
+  @media ($desktop-width) {
+    font-size: 18px;
+  }
+}
+
+@define-mixin heading $color: $black{
+  font-size: 18px;
+  font-weight: bold;
+  color: $color;
+}
+
+@define-mixin form-text $color: $dark-grey {
+  font-size: 18px;
+  font-weight: normal;
+  color: $color;
+}
+@define-mixin link {
+  text-decoration: none;
 }

@@ -1,10 +1,8 @@
 .reviews {
-  background-color: rgba(255, 242, 0, 0.2);
-  padding: 48px 20px 30px;
-  min-height: 275px;
+  padding: 44px 20px 30px;
 
   &__list {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 
   &__indicators {

@@ -1,0 +1,83 @@
+.fieldset-radio {
+  background-color: $light-grey;
+  padding: 32px 20px 0;
+
+  &__title {
+    @mixin text $pink;
+    position: absolute;
+    top: 36px;
+    left: -3px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 40px 0;
+    line-height: 18px;
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__options {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 83px;
+  }
+
+  &__option {
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 56px;
+
+    &--radio {
+      margin-bottom: 48px;
+    }
+  }
+  @media ($tablet-width) {
+    order:2;
+    background-color: transparent;
+    border: 2px solid $border-color2;
+    border-radius: 2px;
+    padding: 56px 0 18px;
+    margin-bottom: 65px;
+
+    &__options {
+      width: auto;
+      margin: 0;
+      padding-left: 60px;
+    }
+
+    &__title {
+      background-color: $white;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &--hide {
+        display: block;
+      }
+    }
+  }
+
+  @media ($desktop-width) {
+    width: 436px;
+    height: auto;
+    padding: 0;
+
+    &__options {
+      margin-top: 50px;
+
+      &--checkbox {
+        display: flex;
+        padding:0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+      }
+    }
+
+    &__option {
+      width: 70%;
+      padding-left: 60px;
+    }
+  }
+}

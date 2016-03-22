@@ -1,14 +1,13 @@
 .page-footer {
-  background-color: rgba(255, 242, 0, 0.2);
-  min-height: 235px;
-  padding: 45px 0 20px;
+  height: 235px;
+  padding: 38px 0 20px;
 
   &--hide {
     display: none;
   }
 
   &__logo {
-    margin: 0 auto 50px;
+    margin: 0 auto 51px;
   }
 
   &__social {
@@ -24,19 +23,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 129px;
+    height: 126px;
     padding: 0 40px;
 
     &__logo {
-      margin: 0 auto;
+      margin: 0;
     }
     &__social {
-      margin: 0 auto;
+      margin: 0;
+    }
+    &__copyright {
+      margin: 0;
     }
   }
 
   @media ($desktop-width) {
-    height: 196px;
-    padding: 0 130px;
+    height: 226px;
+    padding: 12px 130px 0;
   }
 }

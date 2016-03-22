@@ -1,0 +1,56 @@
+.fieldset-textarea {
+  padding: 93px 0 0;
+
+  &__wrap {
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @mixin text $pink;
+    position: absolute;
+    top: 60px;
+    text-transform: uppercase;
+    line-height: 18px;
+    transform: translateX(50%);
+    margin-left: -50px;
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  @media ($tablet-width) {
+    order:5;
+    border: 2px solid $border-color2;
+    border-radius: 2px;
+    padding: 45px 0 45px;
+
+    &__title {
+      background-color: $white;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &--hide {
+        display: block;
+      }
+    }
+
+    &__wrap {
+      width: auto;
+      margin: 0;
+      padding: 0 60px;
+    }
+
+    @media ($desktop-width) {
+      min-height: 170px;
+      width: 940px;
+
+      &__title {
+        font-size: 14px;
+      }
+    }
+  }
+}

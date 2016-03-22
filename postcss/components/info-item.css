@@ -1,28 +1,55 @@
 .info-item{
-  background-color: rgba(0, 31, 232, 0.2);
-  height: 140px;
+  padding: 15px 20px;
   text-align: center;
 
   &--left {
     display: none;
   }
 
+  &__heading {
+    @mixin heading;
+    margin-bottom: 13px;
+  }
+  &__text {
+    @mixin text;
+  }
+
   @media ($tablet-width) {
-    height: 125px;
     text-align: left;
+    padding: 15px 20px 17px;
 
     &--left {
       display: block;
       height: 225px;
       padding-left: 350px;
       padding-right: 40px;
-      padding-top: 97px;
+      padding-top: 96px;
+    }
+
+    &__heading {
+      margin-bottom: 12px;
+
+      &--left {
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+
+    &__text {
+
+      &--left {
+        margin-bottom: 10px;
+      }
     }
   }
 
   @media ($desktop-width) {
     height: 220px;
     text-align: center;
+
+    &__heading {
+      font-size: 30px;
+    }
 
     &--left {
       text-align: left;

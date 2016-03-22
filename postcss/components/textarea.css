@@ -1,14 +1,25 @@
 .textarea {
-  width: 280px;
-  height: 200px;
+  width: 235px;
+  height: 160px;
+  border: 2px solid $border-color2;
+  border-radius: 2px;
+  padding: 20px;
+  font-family: "Open sans";
 
   @media ($tablet-width) {
-    width: 500px;
-    height: 200px;
+    width: 460px;
+    height: 150px;
   }
 
   @media ($desktop-width) {
-    width: 810px;
+    width: 760px;
     height: 120px;
   }
+}
+
+textarea::-webkit-input-placeholder{
+  @mixin form-text;
+}
+textarea::-moz-placeholder {
+  @mixin form-text;
 }

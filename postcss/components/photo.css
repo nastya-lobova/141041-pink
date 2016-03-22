@@ -1,21 +1,43 @@
 .photo {
-  background-color: rgba(255, 235, 0, 0.2);
+
+  &__text {
+    @mixin text;
+    line-height: 30px;
+  }
 
   &__posts {
     @mixin container;
   }
 
   &__header {
-    background-color: rgba(232, 57, 0, 0.2);
-    padding: 45px 20px;
+    padding: 46px 35px 43px;
     min-height: 95px;
+    text-align: center;
   }
 
+
   @media ($tablet-width) {
+
     &__posts {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+
+    &__text{
+      line-height: 30px;
+      font-size: 18px;
+    }
+
+    &__header {
+      padding: 90px 70px 43px;
+    }
+  }
+
+  @media ($desktop-width){
+    
+    &__header{
+      padding: 92px 300px 55px;
     }
   }
 }

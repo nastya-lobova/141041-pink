@@ -1,8 +1,21 @@
 .input {
   height: 62px;
   width: 280px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  border: 2px solid $border-color2;
+  border-radius: 2px;
+  font-family: "Open sans";
 
   @media ($tablet-width) {
     flex-grow: 1;
+    width: 100%;
   }
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  @mixin form-text;
+}
+input[type="text"]::-moz-placeholder {
+  @mixin form-text;
 }

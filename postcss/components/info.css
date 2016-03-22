@@ -1,31 +1,50 @@
 .info {
-  background-color: rgba(0, 255, 82, 0.2);
-  min-height: 1000px;
 
   &__header {
-    background-color: rgba(232, 218, 17, 0.2);
-    min-height: 217px;
+    background-color: #fff;
     text-align: center;
+    padding: 40px 40px 30px;
+  }
+
+  &__title {
+    @mixin title;
+    line-height: 28px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__list {
-    background-color: rgba(0, 214, 255, 0.2);
-    min-height: 703px;
-    padding-top: 80px;
+    background: url("../img/bg-triangle-white.svg"),
+    url("../img/iphone-screen-mobile.png");
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-position: top left, 50% 110%;
+    background-size: contain, auto;
+    padding-top: 68px;
+    padding-bottom: 299px;
   }
+
 
   @media ($tablet-width) {
     height: 1100px;
 
     &__header {
-      min-height: 190px;
-      padding-top: 50px;
+      padding: 49px 40px 45px;
     }
 
     &__list {
-      min-height: 405px;
-      padding-left: 350px;
-      padding-right: 40px;
+      background-image: none;
+      padding-left: 329px;
+      padding-right: 30px;
+      padding-top: 61px;
+      padding-bottom: 0;
+    }
+    
+    &__title{
+      margin-bottom: 0;
     }
   }
 
@@ -36,7 +55,7 @@
     &__header {
       height: 260px;
     }
-    
+
     &__list {
       display: flex;
       min-height: 120px;

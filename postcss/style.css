@@ -7,6 +7,11 @@
 @import "components/copyright.css";
 @import "components/contacts.css";
 @import "components/fieldset.css";
+@import "components/fieldset-name.css";
+@import "components/fieldset-checkbox.css";
+@import "components/fieldset-contacts.css";
+@import "components/fieldset-radio.css";
+@import "components/fieldset-textarea.css";
 @import "components/form.css";
 @import "components/heading.css";
 @import "components/info-item.css";
@@ -15,8 +20,8 @@
 @import "components/input.css";
 @import "components/install.css";
 @import "components/intro.css";
-@import "components/label-checkbox.css";
 @import "components/label-radio.css";
+@import "components/label-checkbox.css";
 @import "components/label-slider.css";
 @import "components/label-textarea.css";
 @import "components/label.css";
@@ -39,4 +44,5 @@
 @import "components/social-links.css";
 @import "components/text.css";
 @import "components/textarea.css";
+@import "components/title.css";
 @import "components/upload-photo.css";

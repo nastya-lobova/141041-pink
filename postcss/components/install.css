@@ -1,15 +1,66 @@
 .install {
-  background-color: rgba(115, 0, 255, 0.2);
-  min-height: 210px;
-  padding: 30px 20px;
+  background-color: #1d2631;
+  width: 100%;
+  padding: 30px 0;
+
+  &__wrap {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  &__btn {
+    height: 51px;
+    width: 275px;
+    margin-bottom: 30px;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 51px;
+    @mixin heading $white;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 38px;
+    margin-bottom: 19px;
+  }
+
+  &__description {
+    @mixin text $white;
+    text-align: center;
+    font-weight: lighter;
+  }
 
   @media ($tablet-width) {
     width: 300px;
     min-height: 260px;
     padding: 0;
+    background: transparent;
+
+    &__btn {
+      width: 295px;
+      margin-bottom: 45px;
+    }
+
+    &__list {
+      padding: 0 47px;
+      margin-bottom: 32px;
+    }
+
+    &__description {
+      font-size: 18px;
+    }
   }
 
   @media ($desktop-width) {
     min-height: 280px;
+
+    &__btn {
+      font-size: 21px;
+    }
   }
 }

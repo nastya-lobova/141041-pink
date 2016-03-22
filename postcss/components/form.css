@@ -1,50 +1,93 @@
 .form {
-  background-color: rgba(255, 235, 0, 0.2);
 
   &__header {
-    min-height: 80px;
-    padding: 50px 20px 20px;
+    padding: 45px 20px 22px;
+
+    &--photo {
+    padding: 20px 20px 40px;
+    }
   }
 
   &__btn {
     display: block;
-    height: 62px;
+    height: 65px;
     width: 280px;
-    margin: 30px auto 40px;
+    margin: 40px auto 40px;
   }
 
   &__required {
     text-align: center;
+    margin-bottom: 20px;
+
+    &-pink {
+      color: $pink;
+    }
   }
 
   &__text {
-    min-height: 75px;
-    padding: 30px 0;
+    @mixin text;
+    text-align: center;
+    line-height: 30px;
+
+    &-hide {
+      display: none;
+    }
   }
 
   @media ($tablet-width) {
-    @mixin container;
+
+    &--photo{
+      width: auto;
+      margin: 0;
+    }
+
     &__wrap {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 620px;
+      margin: 0 auto 50px;
     }
 
     &__header {
-      min-height: 150px;
+      padding: 90px 70px 31px;
+
+      &--photo{
+      padding: 42px 20px 70px;
+      }
+    }
+
+    &__text{
+      font-size: 18px;
+
+      &-hide{
+        display: inline;
+      }
     }
 
     &__btn {
       margin: 0;
     }
   }
+
   @media ($desktop-width) {
 
     &__wrap {
+      width: 940px;
       justify-content: space-between;
     }
 
     &__header {
-      min-height: 160px;
+      padding: 90px 70px 75px;
+
+      &--photo{
+      padding: 4px 20px 70px;
+      }
+    }
+    
+    &--radio{
+      padding: 15px 0;
     }
   }
 }

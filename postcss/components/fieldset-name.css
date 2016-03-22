@@ -1,0 +1,45 @@
+.fieldset-name {
+  padding: 15px 20px 24px;
+
+  &__item {
+    margin-bottom: 21px;
+  }
+
+  &__wrap {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  @media ($tablet-width) {
+    order:1;
+    margin-bottom: 0;
+    padding: 42px 0 13px;
+
+    &__wrap {
+      width: auto;
+      margin: 0;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 53px;
+    }
+  }
+
+  @media ($desktop-width) {
+    width: 436px;
+    min-height: 295px;
+    padding: 0;
+    margin-bottom: 60px;
+
+    &__item {
+      min-height: 65px;
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,41 +1,158 @@
 .post {
-  background-color: rgba(111, 0, 255, 0.2);
-  margin-bottom: 24px;
-  padding: 0 15px 20px;
+  background-color: $light-grey;
+  margin-bottom: 23px;
+  padding: 0 15px 40px;
+  position: relative;
 
   &--day {
-    margin: 0 20px 24px;
+    width: 250px;
+    margin: 0 auto 22px;
+
+    &:before {
+      position:absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      width: 140px;
+      height: 36px;
+      content: "Панорама дня";
+      text-align: center;
+      font-weight: bold;
+      font-size: 12px;
+      text-transform: uppercase;
+      line-height: 36px;
+      background-color: $pink;
+      color: $white;
+    }
   }
 
   &__image {
     background-color: rgba(0, 232, 217, 0.2);
     display: block;
-    min-height: 183px;
-    margin: 0 -15px 15px;
+    height: 180px;
+    margin: 0 -15px 17px;
 
     &--day {
-      min-height: 138px;
-      margin: 0 -35px 15px;
+      height: 138px;
+      margin: 0 -35px 17px;
+    }
+  }
+
+  &__author-name {
+    @mixin text;
+    font-weight: bold;
+  }
+
+  &__time {
+    font-size: 12px;
+    font-weight: lighter;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @mixin text;
+    margin-bottom: 12px;
+  }
+
+  &__like {
+    position: absolute;
+    bottom: 23px;
+    font-size: 12px;
+    color: $pink;
+    text-transform: uppercase;
+    margin-left: 33px;
+
+    &:before {
+      position: absolute;
+      top: 3px;
+      left: -32px;
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url(../img/icon-heart.svg) no-repeat;
+    }
+
+    &-link {
+      color: $pink;
+      text-decoration: none;
     }
   }
 
   @media ($tablet-width) {
     width: 240px;
-    padding: 0 30px 30px;
+    padding: 0 32px 55px;
 
     &--day {
-      width: auto;
-      margin: 0 40px 20px;
+      width: 560px;
+      margin: 0 auto 50px;
+      padding: 0 30px 23px;
+
+      &:before {
+        top: 56px;
+      }
     }
 
     &__image {
-      min-height: 300px;
-      margin: 0 -30px 30px;
+      height: 300px;
+      margin: 0 -30px 25px;
 
       &--day {
-        min-height: 510px;
-        margin: 0 -70px;
+        height: 510px;
+        margin: 0 -70px  23px;
       }
+    }
+    &__text {
+      margin-bottom: 0;
+    }
+
+    &__like {
+      margin-left: 0;
+      bottom: 26px;
+
+      &:before {
+        left: auto;
+        right: -159px;
+      }
+
+      &--day {
+        top: 535px;
+        right: 60px;
+
+        &:before {
+          right: -36px;
+        }
+      }
+    }
+  }
+
+  @media ($desktop-width) {
+    width: 240px;
+    padding: 0 32px 58px;
+    margin-bottom: 55px;
+
+    &--day {
+      width: 880px;
+      margin: 0 auto 50px;
+      padding: 0 30px 23px;
+
+      &:before {
+        top: 52px;
+      }
+    }
+
+    &__image {
+      height: 400px;
+      margin: 0 -30px 25px;
+
+      &--day {
+        height: 505px;
+        margin: 0 -160px  23px;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
     }
   }
 }

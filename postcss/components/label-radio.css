@@ -1,3 +1,16 @@
 .label-radio {
+  @mixin form-text;
   
+  &:before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: 2px solid #e5e5e5;
+    background-color: $white;
+  }
 }

@@ -1,20 +1,23 @@
 .page-header {
-  background-color: rgba(254, 13, 255, 0.2);
   position: relative;
   min-height: 237px;
+  background-color: #2c3c4c;
 
   &--main {
     height: 730px;
   }
 
-  &__wrap {
-    background-color: rgba(13, 35, 255, 0.2);
-    padding: 20px 20px 0;
-    height: 49px;
+  &__logo {
+    position: absolute;
+    top: 21px;
+    left: 6.25%;
   }
 
   &__title {
+    @mixin title $white;
     text-align: center;
+    margin-top: 27px;
+    line-height: 29px;
   }
 
   &__intro {
@@ -34,15 +37,27 @@
       height: 728px;
     }
 
+    &__logo {
+      top: 26px;
+      left: 5.7%;
+    }
+
     &__wrap {
       height: 83px;
       padding: 27px 40px 0;
     }
 
+    &__title {
+      font-size: 50px;
+      line-height: 59px;
+      margin-top: 72px;
+    }
+
     &__intro {
-      margin-top: 100px;
+      margin-top: 93px;
       display: block;
-      margin-left: 40px;
+      margin-left: 90px;
+      margin-bottom: 19px;
     }
 
     &__install {
@@ -58,15 +73,22 @@
     height: 853px;
     }
 
+    &__logo {
+      left: 130px;
+    }
+
     &__wrap {
       display: flex;
       height: 54px;
       padding: 28px 130px 28px;
     }
+    &__title {
+      margin-top: 65px;
+    }
 
     &__intro {
-      margin-top: 110px;
-      margin-left: 130px;
+      margin-top: 150px;
+      margin-left: 160px;
     }
 
     &__install {

@@ -1,14 +1,21 @@
 .intro {
-  background-color: rgba(167, 255, 25, 0.2);
+
+  &__title {
+    @mixin title $white;
+    line-height: 48px;
+  }
 
   @media ($tablet-width) {
-    width: 300px;
+    width: 200px;
     min-height: 157px;
     text-align: center;
+    color: #fff;
   }
 
   @media ($desktop-width) {
     min-height: 180px;
+    margin-left: 140px;
     margin-bottom: 50px;
+    width: 300px;
   }
 }
