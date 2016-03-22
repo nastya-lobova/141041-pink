@@ -13,3 +13,7 @@
     background-color: $white;
   }
 }
+
+.checkbox:checked + .label-checkbox:before {
+    background: url(../img/icon-yes-pink.svg) 50% 50% no-repeat;
+}
