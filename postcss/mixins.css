@@ -55,3 +55,22 @@
 @define-mixin link {
   text-decoration: none;
 }
+
+@define-mixin legend {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $pink;
+  @media ($tablet-width) {
+    top: -10px;
+    padding: 0 20px;
+    background-color: $white;
+  }
+}

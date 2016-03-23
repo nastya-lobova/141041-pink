@@ -6,14 +6,6 @@
   }
 
   &__title {
-    @mixin text $pink;
-    position: absolute;
-    top: 36px;
-    left: -3px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0 40px 0;
-    line-height: 18px;
 
     &--hide {
       display: none;
@@ -48,10 +40,7 @@
       }
     }
     &__title {
-      background-color: $white;
-      top: -10px;
-      left: 50%;
-      transform: translateX(-50%);
+      @mixin legend;
 
       &--hide {
         display: block;

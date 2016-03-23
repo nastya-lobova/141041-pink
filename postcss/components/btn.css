@@ -6,7 +6,7 @@
   border-radius: 30px;
   text-decoration: none;
   text-align: center;
-  @mixin heading $white;
+  
 
   &--pink {
     height: 55px;

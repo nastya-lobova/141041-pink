@@ -8,13 +8,7 @@
   }
 
   &__title {
-    @mixin text $pink;
-    position: absolute;
-    top: 60px;
-    text-transform: uppercase;
-    line-height: 18px;
-    transform: translateX(50%);
-    margin-left: -50px;
+    @mixin legend;
 
     &--hide {
       display: none;
@@ -28,10 +22,7 @@
     padding: 45px 0 45px;
 
     &__title {
-      background-color: $white;
-      top: -10px;
-      left: 50%;
-      transform: translateX(-50%);
+      max-width: 30%;
 
       &--hide {
         display: block;
@@ -49,7 +40,7 @@
       width: 940px;
 
       &__title {
-        font-size: 14px;
+        max-width: 20%;
       }
     }
   }
