@@ -1,8 +1,10 @@
 .input {
   height: 62px;
   width: 280px;
+  display: block;
   box-sizing: border-box;
   padding: 0 20px;
+  font-size: 18px;
   border: 2px solid $border-color2;
   border-radius: 2px;
   font-family: "Open sans";
