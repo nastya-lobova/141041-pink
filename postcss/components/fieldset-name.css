@@ -1,13 +1,16 @@
 .fieldset-name {
-  padding: 15px 20px 24px;
+  padding: 15px 6.25% 45px;
 
   &__item {
     margin-bottom: 21px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__wrap {
-    width: 320px;
-    margin: 0 auto;
+
   }
 
   @media ($tablet-width) {

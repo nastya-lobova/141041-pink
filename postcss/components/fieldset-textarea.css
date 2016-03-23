@@ -1,14 +1,13 @@
 .fieldset-textarea {
-  padding: 93px 0 0;
+  padding: 93px 6.25% 46px;
 
   &__wrap {
-    width: 280px;
-    padding: 0 20px;
-    margin: 0 auto;
+
   }
 
   &__title {
     @mixin legend;
+    top: 59px;
 
     &--hide {
       display: none;

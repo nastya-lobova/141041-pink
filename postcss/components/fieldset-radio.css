@@ -4,7 +4,6 @@
 
   &__title {
     @mixin legend;
-    max-width: 80%;
 
     &--hide {
       display: none;
@@ -12,9 +11,9 @@
   }
 
   &__options {
-    width: 320px;
+    width: 280px;
     margin: 0 auto;
-    margin-top: 83px;
+    margin-top: 82px;
     padding: 0 20px;
   }
 
@@ -42,6 +41,7 @@
     }
 
     &__title {
+      max-width: 55%;
 
       &--hide {
         display: block;

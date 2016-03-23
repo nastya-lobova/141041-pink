@@ -12,11 +12,13 @@
     display: block;
     height: 65px;
     width: 280px;
-    margin: 40px auto 40px;
+    margin: 0 auto 40px;
   }
 
   &__required {
+    font-size: 14px;
     text-align: center;
+    text-transform: uppercase;
     margin-bottom: 20px;
 
     &-pink {
@@ -85,7 +87,7 @@
       padding: 4px 20px 70px;
       }
     }
-    
+
     &--radio{
       padding: 15px 0;
     }

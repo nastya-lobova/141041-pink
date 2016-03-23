@@ -1,6 +1,6 @@
 .input {
   height: 62px;
-  width: 280px;
+  width: 100%;
   display: block;
   box-sizing: border-box;
   padding: 0 20px;
@@ -20,4 +20,19 @@ input[type="text"]::-webkit-input-placeholder {
 }
 input[type="text"]::-moz-placeholder {
   @mixin form-text;
+  opacity: 1;
+}
+input[type="email"]::-webkit-input-placeholder {
+  @mixin form-text;
+}
+input[type="email"]::-moz-placeholder {
+  @mixin form-text;
+  opacity: 1;
+}
+input[type="tel"]::-webkit-input-placeholder {
+  @mixin form-text;
+}
+input[type="tel"]::-moz-placeholder {
+  @mixin form-text;
+  opacity: 1;
 }
