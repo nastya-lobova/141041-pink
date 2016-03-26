@@ -1,0 +1,86 @@
+.fieldset-contacts {
+  padding: 32px 6.25% 54px;
+
+  @media ($tablet-width) {
+    order:3;
+    padding: 38px 0 28px;
+    background-color: transparent;
+    border: 2px solid $color-border;
+    border-radius: 2px;
+    margin-bottom: 58px;
+  }
+
+  @media ($desktop-width) {
+    min-height: 115px;
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+    padding-bottom: 16px;
+    padding-top: 33px;
+  }
+
+  &__item {
+    margin-bottom: 21px;
+
+    @media ($tablet-width) {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+
+    @media ($desktop-width) {
+      min-height: 65px;
+      margin-bottom: 50px;
+      width: 374px;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    &-hide {
+
+      @media ($tablet-width) {
+        display: none;
+      }
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+
+      @media ($desktop-width) {
+          margin-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+
+    @media ($tablet-width) {
+      @mixin legend;
+      max-width: 35%;
+    }
+
+    &--hide {
+      display: none;
+
+      @media ($tablet-width) {
+        display: block;
+      }
+    }
+  }
+
+  &__wrap {
+
+    @media ($tablet-width) {
+      width: auto;
+      margin: 0;
+      padding: 0 60px;
+    }
+
+    @media ($desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 60px;
+    }
+  }
+}

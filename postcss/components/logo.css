@@ -1,5 +1,4 @@
 .logo {
-  background-color: rgba(255, 242, 0, 0.3);
   width: 80px;
   height: 30px;
 
@@ -8,7 +7,26 @@
     width: 150px;
   }
 
-  @media ($desktop-width) {
+  &--full {
+    width: 150px;
+  }
 
+  &__icon {
+
+    &--full {
+      display: none;
+    }
+
+    @media ($tablet-width) {
+      fill: #fff;
+
+      &--short {
+        display: none;
+      }
+
+      &--full {
+        display: block;
+      }
+    }
   }
 }

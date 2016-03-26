@@ -1,3 +1,25 @@
 .btn {
-  
+  display: inline-block;
+  padding: 15px 36px 17px;
+  border: 2px solid $white;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  @mixin heading $white;
+
+  &--pink {
+    color: $pink;
+    border: 2px solid $pink;
+    background-color: transparent;
+  }
+
+  &--disabled {
+    border-color: #dddfe0;
+    color: #dddfe0;
+    background-color: transparent;
+  }
+
+  &--square {
+    border-radius: 2px;
+  }
 }

@@ -1,30 +1,78 @@
 .reviews {
-  background-color: rgba(255, 242, 0, 0.2);
-  padding: 48px 20px 30px;
-  min-height: 275px;
+
+  &__wrap{
+    width: 280px;
+    margin: 0 auto;
+    padding: 48px 0 55px;
+
+    @media ($tablet-width) {
+      width: 620px;
+      margin: 0 auto;
+      padding: 62px 0 25px;
+    }
+
+    @media ($desktop-width) {
+      width: 940px;
+      margin: 0 auto;
+      padding: 60px 0 5px;
+    }
+  }
 
   &__list {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+    
+    @media ($tablet-width) {
+      margin: 0;
+      padding-bottom: 24px;
+    }
+
+    @media ($desktop-width) {
+      padding: 125px 120px 0;
+    }
   }
 
-  &__indicators {
-    @mixin indicators;
+  & .flickity-prev-next-button {
+    display: none;
+
+    @media ($desktop-width) {
+      display: block;
+
+      &.next {
+        right: -10px;
+      }
+
+      &.previous {
+        left: -10px;
+      }
+    }
   }
+    /* position dots in carousel */
+  & .flickity-page-dots {
+    bottom: -44px;
 
-  @media ($tablet-width) {
-    padding: 60px 40px 10px;
-    min-height: 200px;
-  }
+    @media ($tablet-width) {
+      bottom: -6px;
+    }
 
-  @media ($desktop-width) {
-    padding: 170px 130px 22px;
-
-    &__indicators {
+    @media ($desktop-width) {
       display: none;
     }
-
-    &__list {
-      margin-bottom: 0;
-    }
+  }
+  /* white circles */
+  & .flickity-page-dots .dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 9px;
+    opacity: 1;
+    background: #bec2c7;
+    vertical-align: middle;
+  }
+  /* fill-in selected dot */
+  & .flickity-page-dots .dot.is-selected {
+    border: 3px solid $dark-grey;
+    background: white;
+  }
+  .carousel-cell {
+    height: auto; /* height of carousel */
   }
 }

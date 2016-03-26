@@ -1,17 +1,15 @@
 .page {
-  width: 320px;
-  margin: 0 auto;
-
-  h1, h2, h3, p{
-    margin: 0;
-  }
+  min-width: 320px;
+  margin: 0;
+  font-family: $font-family;
+  font-size: $font-size-sm;
+  color: $dark-grey;
 
   @media ($tablet-width) {
-    width: 700px;
-  }
-  
-  @media ($desktop-width) {
-    width: 1200px;
+    min-width: 700px;
   }
 
+  @media ($desktop-width) {
+    min-width: 1200px;
+  }
 }

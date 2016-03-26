@@ -1,16 +1,238 @@
 .price {
-  background-color: rgba(232, 218, 17, 0.2);
-  min-height: 280px;
-
-  &:nth-child(n+2) {
-    display: none;
-  }
+  border-right: 2px solid #e5e5e5;
 
   @media ($tablet-width) {
-    min-height: 220px;
+    width: 153px;
   }
 
   @media ($desktop-width) {
-    min-height: 280px;
+    width: 233px;
   }
+
+  &__header {
+    position: relative;
+    background-color: $dark-grey;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 22px 0 19px;
+    color: #fff;
+
+    @media ($tablet-width) {
+      padding: 19px 0 13px;
+    }
+
+    @media ($desktop-width) {
+      padding: 22px 0 19px;
+    }
+
+    &--hit:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      display: block;
+      width: 74px;
+      height: 74px;
+      background: url(../img/bg-hit.svg) 0 0 no-repeat;
+
+      @media ($tablet-width) {
+        background-position: -9px 0;
+      }
+
+      @media ($desktop-width) {
+        left: 0;
+        background-position: -12px 0;
+      }
+    }
+
+    &--hit:after {
+      position: absolute;
+      top: 17px;
+      left: 11px;
+      content: "хит";
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      transform: rotate(-45deg);
+
+      @media ($tablet-width) {
+        top: 9px;
+        left: 8px;
+      }
+
+      @media ($desktop-width) {
+        top: 9px;
+        left: 8px;
+      }
+    }
+  }
+
+  &--options {
+    display: none;
+
+    @media ($tablet-width) {
+      display: block;
+      align-self: flex-end;
+      border-left: 2px solid #e5e5e5;
+      border-top: 2px solid #e5e5e5;
+    }
+  }
+
+  &__name {
+    @mixin heading $white;
+    margin-bottom: 6px;
+
+    @media ($tablet-width) {
+      font-size: 16px;
+      margin-bottom: 7px;
+    }
+
+    @media ($desktop-width) {
+      font-size: $font-size-md;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__value {
+    font-weight: lighter;
+    font-size: $font-size-lg;
+
+    @media ($tablet-width) {
+      font-weight: lighter;
+      font-size: $font-size-md;
+    }
+
+    @media ($desktop-width) {
+      font-size: $font-size-lg;
+    }
+  }
+
+  &__item {
+    padding: 18px 24px 17px;
+    background-color: #fff;
+    border-bottom: 2px solid #e5e5e5;
+    position: relative;
+    vertical-align: middle;
+
+    @media ($tablet-width) {
+      height: 45px;
+      padding: 0;
+    }
+
+    @media ($desktop-width) {
+      height: 59px;
+      padding: 0;
+    }
+
+    &--options{
+      @media ($tablet-width) {
+        height: auto;
+        padding: 11px 14px 10.5px;
+      }
+
+      @media ($desktop-width) {
+        height: auto;
+        padding: 14px 20px 15px;
+
+      }
+    }
+  }
+
+  &__option {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: $font-size-text;
+    line-height: 1.7em;
+    color: $dark-grey;
+
+    @media ($tablet-width) {
+      text-transform: none;
+
+      &-hide{
+      padding: 0;
+      font: 0/0 a;
+      color: transparent;
+    }
+  }
+
+    @media ($desktop-width) {
+      font-size: $font-size-md;
+    }
+  }
+
+  &__plus {
+    position: absolute;
+    right: 38px;
+    top: 32px;
+    display: block;
+    width: 15px;
+    height: 4px;
+    border-radius: 25px;
+    background-color: #3dc644;
+    transform: rotate(45deg);
+    font: 0/0 a;
+    color: transparent;
+
+    @media ($tablet-width) {
+      right: 50%;
+      top: 25px;
+    }
+
+    @media ($desktop-width) {
+       top: 33px;
+       right: 51%;
+    }
+
+    &:after {
+      position: absolute;
+      right: -15px;
+      top: -13px;
+      content: "";
+      display: block;
+      width: 30px;
+      height: 4px;
+      border-radius: 50px;
+      background-color: #3dc644;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__minus {
+    position: absolute;
+    right: 16px;
+    top: 26px;
+    display: block;
+    width: 38px;
+    height: 4px;
+    border-radius: 25px;
+    background-color: #f25b26;
+    transform: rotate(45deg);
+    font: 0/0 a;
+    color: transparent;
+
+    @media ($tablet-width) {
+      top: 20px;
+      left: 40%;
+      right: 0;
+    }
+
+    @media ($desktop-width) {
+      left: 42%;
+      top: 26px;
+    }
+
+    &:after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      content: "";
+      display: block;
+      width: 38px;
+      height: 4px;
+      border-radius: 50px;
+      background-color: #f25b26;
+      transform: rotate(90deg);
+    }
+  }
+
 }

@@ -1,3 +1,5 @@
+@import "../node_modules/normalize.css/normalize.css";
+@import "../node_modules/flickity/dist/flickity.min.css";
 @import "variables.css";
 @import "mixins.css";
 
@@ -7,17 +9,20 @@
 @import "components/copyright.css";
 @import "components/contacts.css";
 @import "components/fieldset.css";
+@import "components/fieldset-name.css";
+@import "components/fieldset-checkbox.css";
+@import "components/fieldset-contacts.css";
+@import "components/fieldset-radio.css";
+@import "components/fieldset-textarea.css";
 @import "components/form.css";
-@import "components/heading.css";
 @import "components/info-item.css";
 @import "components/info.css";
 @import "components/input-range.css";
 @import "components/input.css";
 @import "components/install.css";
 @import "components/intro.css";
-@import "components/label-checkbox.css";
 @import "components/label-radio.css";
-@import "components/label-slider.css";
+@import "components/label-checkbox.css";
 @import "components/label-textarea.css";
 @import "components/label.css";
 @import "components/link.css";
@@ -26,7 +31,6 @@
 @import "components/map.css";
 @import "components/page-footer.css";
 @import "components/page-header.css";
-
 @import "components/photo-tools.css";
 @import "components/photo.css";
 @import "components/post.css";
@@ -37,6 +41,5 @@
 @import "components/reviews.css";
 @import "components/social-link.css";
 @import "components/social-links.css";
-@import "components/text.css";
 @import "components/textarea.css";
 @import "components/upload-photo.css";

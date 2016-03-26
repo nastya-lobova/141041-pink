@@ -8,9 +8,69 @@
     width: 940px;
   }
 }
-@define-mixin indicators {
-  width: 65px;
-  display: flex;
-  margin: 0 auto;
-  justify-content:space-between;
+
+@define-mixin title $color: $dark-grey {
+  margin: 0;
+  font-size: $font-size-lg;
+  font-weight: lighter;
+  line-height: 1.2em;
+  color: $color;
+
+  @media ($tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  @media ($desktop-width) {
+    font-size: 50px;
+  }
+}
+
+@define-mixin text $color: $dark-grey {
+  margin: 0;
+  font-size: $font-size-sm;
+  font-weight: normal;
+  color: $color;
+  line-height: 1.7em;
+
+  @media ($desktop-width) {
+    font-size: $font-size-md;
+  }
+}
+
+@define-mixin heading $color: $black{
+  margin: 0;
+  font-size: $font-size-md;
+  font-weight: bold;
+  color: $color;
+  line-height: 1em;
+}
+
+@define-mixin form-text $color: $dark-grey {
+  margin: 0;
+  font-size: $font-size-md;
+  font-weight: normal;
+  color: $color;
+}
+@define-mixin link {
+  text-decoration: none;
+}
+
+@define-mixin legend {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $pink;
+
+  @media ($tablet-width) {
+    position: static;
+    padding: 0 20px;
+    background-color: $white;
+  }
 }

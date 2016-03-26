@@ -1,46 +1,70 @@
 .info {
-  background-color: rgba(0, 255, 82, 0.2);
-  min-height: 1000px;
-
-  &__header {
-    background-color: rgba(232, 218, 17, 0.2);
-    min-height: 217px;
-    text-align: center;
-  }
-
-  &__list {
-    background-color: rgba(0, 214, 255, 0.2);
-    min-height: 703px;
-    padding-top: 80px;
-  }
-
-  @media ($tablet-width) {
-    height: 1100px;
-
-    &__header {
-      min-height: 190px;
-      padding-top: 50px;
-    }
-
-    &__list {
-      min-height: 405px;
-      padding-left: 350px;
-      padding-right: 40px;
-    }
-  }
 
   @media ($desktop-width) {
     height: 1313px;
     padding-bottom: 50px;
+  }
 
-    &__header {
-      height: 260px;
+  &__header-wrap{
+    padding: 40px 0 30px;
+    margin: 0 6.25%;
+    background-color: #fff;
+    text-align: center;
+
+    @media ($tablet-width) {
+      padding: 49px 0 48px;
+      margin: 0 5.7%;
     }
-    
-    &__list {
+
+    @media ($desktop-width) {
+      padding: 67px 0 78px;
+      width: 940px;
+      margin: 0 auto;
+
+    }
+  }
+
+  &__title {
+    @mixin title;
+    margin: 0;
+    margin-bottom: 29px;
+
+    @media ($tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media ($desktop-width) {
+      line-height: 1.2em;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__items{
+    background: $light-grey url("../img/bg-triangle-white.svg") top left no-repeat;
+    background-size: contain;
+  }
+
+  &__list-wrap{
+    position: relative;
+    margin: 0 6.25%;
+    padding-top: 85px;
+    padding-bottom: 284px;
+
+    @media ($tablet-width) {
+      padding-left: 311px;
+      padding-bottom: 5px;
+      padding-top: 77px;
+      margin: 0 5.7%;
+    }
+
+    @media ($desktop-width) {
       display: flex;
-      min-height: 120px;
-      padding: 360px 130px 0;
+      padding: 0;
+      width: 940px;
+      margin: 0 auto;
     }
   }
 }

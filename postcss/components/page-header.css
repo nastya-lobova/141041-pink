@@ -1,77 +1,135 @@
 .page-header {
-  background-color: rgba(254, 13, 255, 0.2);
   position: relative;
-  min-height: 237px;
+  background-color: #2c3c4c;
 
   &--main {
     height: 730px;
+
+    @media ($tablet-width) {
+      height: 728px;
+    }
+
+    @media ($desktop-width) {
+      height: 853px;
+    }
   }
 
-  &__wrap {
-    background-color: rgba(13, 35, 255, 0.2);
-    padding: 20px 20px 0;
-    height: 49px;
+  &__menu{
+    background-color: rgba(0, 0, 0, 0.3);
+
+    &--open {
+      background-color: $color-text;
+      box-shadow: inset 0 -2px 0 -1px $black;
+
+      @media ($desktop-width) {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__menu-wrap{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 21px 6.25% 19px;
+
+    @media ($tablet-width) {
+      padding: 44px 5.7% 33px;
+    }
+    @media ($desktop-width) {
+      padding: 26px 0 29px;
+      width: 940px;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    @media ($tablet-width) {
+      margin-top: -17px;
+    }
+    @media ($desktop-width) {
+      margin-top: 0;
+    }
   }
 
   &__title {
+    @mixin title $white;
     text-align: center;
+
+    @media ($tablet-width) {
+      font-size: 50px;
+      line-height: 1.2em;
+      margin-top: 0;
+    }
+
+    @media ($desktop-width) {
+      margin-top: 0;
+    }
+
+    &--main{
+      display: none;
+
+      @media ($tablet-width) {
+        width: 240px;
+        font-size: 40px;
+        margin-top: 0;
+        display: block;
+        margin-bottom: 33px;
+        padding: 0 30px;
+        line-height: 1.2;
+      }
+
+      @media ($desktop-width) {
+        width: 300px;
+        margin-top: 0;
+        margin-bottom: 53px;
+        padding: 0;
+      }
+    }
   }
 
   &__intro {
-    display: none;
+    padding-bottom: 53px;
+    padding-top: 27px;
+
+    @media ($tablet-width) {
+      width: 640px;
+      margin: 0 auto;
+      padding-top: 69px;
+      padding-bottom: 80px;
+    }
+
+    @media ($desktop-width) {
+      width: 940px;
+      padding-top: 61px;
+      padding-bottom: 102px;
+    }
+
+    &--main {
+      padding-bottom: 660px;
+      padding-top: 0;
+
+      @media ($tablet-width) {
+        width: 640px;
+        margin: 0 auto;
+        padding-top: 92px;
+      }
+
+      @media ($desktop-width) {
+        width: 940px;
+        padding-top: 107px;
+        padding-bottom: 124px;
+      }
+    }
   }
 
   &__install {
     position:absolute;
     bottom: 0;
     left: 0;
-  }
 
-  @media ($tablet-width) {
-    min-height: 441px;
-
-    &--main {
-      height: 728px;
-    }
-
-    &__wrap {
-      height: 83px;
-      padding: 27px 40px 0;
-    }
-
-    &__intro {
-      margin-top: 100px;
-      display: block;
-      margin-left: 40px;
-    }
-
-    &__install {
+    @media ($tablet-width) {
       position: static;
-      margin-left: 40px;
-    }
-  }
-
-  @media ($desktop-width) {
-    min-height: 394px;
-
-    &--main {
-    height: 853px;
-    }
-
-    &__wrap {
-      display: flex;
-      height: 54px;
-      padding: 28px 130px 28px;
-    }
-
-    &__intro {
-      margin-top: 110px;
-      margin-left: 130px;
-    }
-
-    &__install {
-      position: static;
-      margin-left: 130px;
     }
   }
 }
