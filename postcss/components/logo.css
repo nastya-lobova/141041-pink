@@ -2,7 +2,12 @@
   width: 80px;
   height: 30px;
 
-  &--full{
+  @media ($tablet-width) {
+    height: 50px;
+    width: 150px;
+  }
+
+  &--full {
     width: 150px;
   }
 
@@ -11,13 +16,8 @@
     &--full {
       display: none;
     }
-  }
 
-  @media ($tablet-width) {
-    height: 50px;
-    width: 150px;
-
-    &__icon {
+    @media ($tablet-width) {
       fill: #fff;
 
       &--short {
@@ -28,9 +28,5 @@
         display: block;
       }
     }
-  }
-
-  @media ($desktop-width) {
-
   }
 }

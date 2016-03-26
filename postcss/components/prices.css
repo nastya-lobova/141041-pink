@@ -1,38 +1,56 @@
 .prices {
   background: $light-grey url("../img/bg-triangle-white.svg") no-repeat;
   background-size: contain;
-  padding: 100px 0  47px;
-  overflow-x: hidden;
+
+  &__wrap{
+    padding-top: 92px;
+    padding-bottom: 98px;
+
+    @media ($tablet-width) {
+      display: flex;
+      width: 620px;
+      margin: 0 auto;
+      padding: 89px 0 68px;
+    }
+
+    @media ($desktop-width) {
+      width: 940px;
+      margin: 0 auto;
+      padding: 151px 0 95px;
+    }
+  }
 
   &__list {
-    margin-bottom: 40px;
-    display: flex;
-    width: 874px;
-    padding: 0 20px;
-    transform: translateX(-278px);
-  }
 
-  &__indicators {
-    @mixin indicators;
-  }
-
-  @media ($tablet-width) {
-    padding: 94px 40px 68px;
-
-    &__list {
-      width: 620px;
-      margin-bottom: 0;
-      padding: 0;
-      transform: translateX(0);
-      margin: 0 auto;
-    }
-
-    &__indicators {
-      display: none;
+    @media ($tablet-width) {
+      display: flex;
     }
   }
 
-  @media ($desktop-width) {
-    padding: 150px 130px 95px;
+  & .flickity-prev-next-button {
+    display: none;
+  }
+    /* position dots in carousel */
+  & .flickity-page-dots {
+    bottom: -52px;
+  }
+  /* white circles */
+  & .flickity-page-dots .dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 9px;
+    opacity: 1;
+    background: #bec2c7;
+    vertical-align: middle;
+  }
+  /* fill-in selected dot */
+  & .flickity-page-dots .dot.is-selected {
+    border: 3px solid $dark-grey;
+    background: white;
+  }
+  .carousel-cell {
+    width: 282px;
+    height: auto; /* height of carousel */
+    margin-right: 0;
   }
 }

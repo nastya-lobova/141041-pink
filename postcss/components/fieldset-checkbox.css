@@ -2,9 +2,28 @@
   background-color: $light-grey;
   padding: 35px 0 56px;
 
+  @media ($tablet-width) {
+    order:4;
+    background-color: transparent;
+    border: 2px solid $color-border;
+    border-radius: 2px;
+    padding: 50px 0 55px;
+    margin-bottom: 56px;
+  }
+
+  @media ($desktop-width) {
+    width: 940px;
+    padding: 49px 0 62px;
+    margin-bottom: 58px;
+  }
+
   &__title {
     @mixin legend;
     max-width: 70%;
+
+    @media ($tablet-width) {
+      max-width: 65%;
+    }
   }
 
   &__options {
@@ -12,6 +31,21 @@
     margin: 0 auto;
     padding: 0 20px;
     margin-top: 82px;
+
+    @media ($tablet-width) {
+      width: auto;
+      margin: 0;
+      padding-left: 60px;
+    }
+
+    @media ($desktop-width) {
+      margin-top: 50px;
+      display: flex;
+      padding: 0 58px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0;
+    }
   }
 
   &__option {
@@ -19,49 +53,24 @@
     padding-left: 70px;
     margin-bottom: 56px;
 
+    @media ($tablet-width) {
+      padding-left: 58px;
+    }
+
+    @media ($desktop-width) {
+      width: 25%;
+      padding-left: 60px;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
-  }
 
-  @media ($tablet-width) {
-    order:4;
-    background-color: transparent;
-    border: 2px solid $border-color2;
-    border-radius: 2px;
-    padding: 65px 0 0;
+    &:nth-last-child(-n+3) {
 
-    &__options {
-      width: auto;
-      margin: 0;
-      padding-left: 60px;
-    }
-
-    &__title {
-      max-width: 65%;
-    }
-  }
-  @media ($desktop-width) {
-    min-height: 185px;
-    width: 940px;
-    padding: 55px 0 0;
-
-    &__title {
-
-    }
-
-    &__options {
-      margin-top: 50px;
-      display: flex;
-      padding:0 60px;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 0;
-    }
-
-    &__option {
-      width: 25%;
-      padding-left: 60px;
+      @media ($desktop-width) {
+        margin-bottom: 0;
+      }
     }
   }
 }

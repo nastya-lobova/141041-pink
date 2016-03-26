@@ -1,3 +1,41 @@
 .radio {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+
+  &__indicator{
+    position: absolute;
+    top: -5px;
+    left: -70px;
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $white;
+    border: 2px solid $color-border;
+
+    &:before{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: transparent;
+    }
+  }
+
+  @media ($tablet-width) {
+
+    &__indicator{
+      left: -60px;
+    }
+  }
+}
+
+.radio:checked ~ .radio__indicator:before {
+  background-color: $pink;
 }

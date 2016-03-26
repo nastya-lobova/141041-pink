@@ -9,13 +9,13 @@
   resize: none;
 
   @media ($tablet-width) {
-    width: 460px;
-    height: 150px;
+    height: 192px;
+    padding: 14px 16px;
   }
 
   @media ($desktop-width) {
     width: 760px;
-    height: 120px;
+    height: 125px;
   }
 }
 

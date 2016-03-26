@@ -1,62 +1,132 @@
 .info-item{
-  padding: 15px 20px;
+  padding: 0;
+  margin-bottom: 34px;
   text-align: center;
+
+  @media ($tablet-width) {
+    text-align: left;
+    margin-bottom: 38px;
+  }
+
+  @media ($desktop-width) {
+    text-align: center;
+    width: 33.334%;
+    padding: 0 37px;
+  }
 
   &--left {
     display: none;
+
+    @media ($tablet-width) {
+      margin: 0;
+    }
+
+    @media ($desktop-width) {
+      margin: 0;
+      padding: 0;
+      width: auto;
+    }
+  }
+
+  &__wrap{
+
+    &--left{
+      display: none;
+
+      @media ($tablet-width) {
+        display: block;
+        padding-left: 309px;
+        padding-top: 95px;
+        padding-bottom: 50px;
+        background-color: $white;
+      }
+
+      @media ($desktop-width) {
+        text-align: left;
+        padding-left: 366px;
+        padding-right: 0;
+        padding-top: 140px;
+        padding-bottom: 97px;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__image{
+    position: absolute;
+    width: 170px;
+    height: 280px;
+    background-color: $pink;
+    bottom: 0;
+    left: 50%;
+    margin-left: -85px;
+
+    @media ($tablet-width) {
+      width: 270px;
+      height: 480px;
+      left: 0;
+      margin-left: 0;
+    }
+
+    @media ($desktop-width) {
+      position: static;
+      width: 180px;
+      height: 300px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 54px;
+    }
   }
 
   &__heading {
     @mixin heading;
-    margin-bottom: 13px;
-  }
-  &__text {
-    @mixin text;
-  }
+    margin-bottom: 16px;
 
-  @media ($tablet-width) {
-    text-align: left;
-    padding: 15px 20px 17px;
-
-    &--left {
-      display: block;
-      height: 225px;
-      padding-left: 350px;
-      padding-right: 40px;
-      padding-top: 96px;
-    }
-
-    &__heading {
-      margin-bottom: 12px;
+    @media ($tablet-width) {
+      margin-bottom: 15px;
 
       &--left {
         font-size: 30px;
-        line-height: 36px;
+        line-height: 1.2em;
+        margin-bottom: 12px;
       }
     }
 
-    &__text {
+    @media ($desktop-width) {
+      font-size: 30px;
+      margin: 0;
 
       &--left {
-        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 1.2em;
+        margin-bottom: 12px;
+        margin-bottom: 23px;
       }
     }
   }
+  &__text {
+    @mixin text;
 
-  @media ($desktop-width) {
-    height: 220px;
-    text-align: center;
-
-    &__heading {
-      font-size: 30px;
+    @media ($tablet-width) {
+      &--left {
+        margin-bottom: 9px;
+      }
     }
 
-    &--left {
-      text-align: left;
-      padding-left: 495px;
-      padding-right: 130px;
-      padding-top: 150px;
-      padding-bottom: 40px;
+    @media ($desktop-width) {
+      &--left {
+        margin-bottom: 31px;
+      }
+    }
+  }
+  &__link{
+    @media ($tablet-width) {
+      font-size: $font-size-sm;
+      color: $pink;
+    }
+
+    @media ($desktop-width) {
+      font-size: $font-size-md;
     }
   }
 }

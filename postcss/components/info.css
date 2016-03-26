@@ -1,65 +1,70 @@
 .info {
 
-  &__header {
+  @media ($desktop-width) {
+    height: 1313px;
+    padding-bottom: 50px;
+  }
+
+  &__header-wrap{
+    padding: 40px 0 30px;
+    margin: 0 6.25%;
     background-color: #fff;
     text-align: center;
-    padding: 40px 40px 30px;
+
+    @media ($tablet-width) {
+      padding: 49px 0 48px;
+      margin: 0 5.7%;
+    }
+
+    @media ($desktop-width) {
+      padding: 67px 0 78px;
+      width: 940px;
+      margin: 0 auto;
+
+    }
   }
 
   &__title {
     @mixin title;
-    line-height: 28px;
-    margin-bottom: 30px;
+    margin: 0;
+    margin-bottom: 29px;
+
+    @media ($tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media ($desktop-width) {
+      line-height: 1.2em;
+    }
 
     &:last-child {
       margin-bottom: 0;
     }
   }
 
-  &__list {
-    background: url("../img/bg-triangle-white.svg"),
-    url("../img/iphone-screen-mobile.png");
-    background-color: #f2f2f2;
-    background-repeat: no-repeat;
-    background-position: top left, 50% 110%;
-    background-size: contain, auto;
-    padding-top: 68px;
-    padding-bottom: 299px;
+  &__items{
+    background: $light-grey url("../img/bg-triangle-white.svg") top left no-repeat;
+    background-size: contain;
   }
 
+  &__list-wrap{
+    position: relative;
+    margin: 0 6.25%;
+    padding-top: 85px;
+    padding-bottom: 284px;
 
-  @media ($tablet-width) {
-    height: 1100px;
-
-    &__header {
-      padding: 49px 40px 45px;
+    @media ($tablet-width) {
+      padding-left: 311px;
+      padding-bottom: 5px;
+      padding-top: 77px;
+      margin: 0 5.7%;
     }
 
-    &__list {
-      background-image: none;
-      padding-left: 329px;
-      padding-right: 30px;
-      padding-top: 61px;
-      padding-bottom: 0;
-    }
-    
-    &__title{
-      margin-bottom: 0;
-    }
-  }
-
-  @media ($desktop-width) {
-    height: 1313px;
-    padding-bottom: 50px;
-
-    &__header {
-      height: 260px;
-    }
-
-    &__list {
+    @media ($desktop-width) {
       display: flex;
-      min-height: 120px;
-      padding: 360px 130px 0;
+      padding: 0;
+      width: 940px;
+      margin: 0 auto;
     }
   }
 }

@@ -3,64 +3,70 @@
   width: 100%;
   padding: 30px 0;
 
+  @media ($tablet-width) {
+    width: 300px;
+    padding: 0;
+    background: transparent;
+  }
+
   &__wrap {
     width: 280px;
     margin: 0 auto;
+
+    @media ($tablet-width) {
+      width: auto;
+    }
   }
 
   &__btn {
-    height: 51px;
-    width: 275px;
     margin-bottom: 30px;
-    display: block;
-    border: 2px solid #fff;
-    border-radius: 30px;
     text-decoration: none;
-    text-align: center;
-    line-height: 51px;
-    @mixin heading $white;
+
+    @media ($tablet-width) {
+      padding: 15px 46px 17px;
+      margin-bottom: 45px;
+    }
+
+    @media ($desktop-width) {
+      font-size: 21px;
+      padding: 13px 29px 16px;
+      margin-bottom: 66px;
+    }
   }
 
   &__list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 38px;
+    justify-content: center;;
+    align-items: baseline;
+    padding: 0;
     margin-bottom: 19px;
+
+    @media ($tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    @media ($desktop-width) {
+      margin-bottom: 49px;
+    }
+  }
+
+  &__link{
+    margin-right: 37px;
+
+    &:last-child{
+      margin-right: 0;
+    }
   }
 
   &__description {
     @mixin text $white;
     text-align: center;
     font-weight: lighter;
-  }
+    margin: 0;
 
-  @media ($tablet-width) {
-    width: 300px;
-    min-height: 260px;
-    padding: 0;
-    background: transparent;
-
-    &__btn {
-      width: 295px;
-      margin-bottom: 45px;
-    }
-
-    &__list {
-      padding: 0 47px;
-      margin-bottom: 32px;
-    }
-
-    &__description {
-      font-size: 18px;
-    }
-  }
-
-  @media ($desktop-width) {
-    min-height: 280px;
-
-    &__btn {
-      font-size: 21px;
+    @media ($tablet-width) {
+      font-size: $font-size-md;
+      line-height: 1.4em;
     }
   }
 }

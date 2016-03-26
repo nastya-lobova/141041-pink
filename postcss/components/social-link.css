@@ -8,4 +8,9 @@
   height: 45px;
   border-radius: 50%;
   border: 3px solid $border-color;
+  margin-right: 10px;
+
+  &:last-child{
+    margin-right: 0;
+  }
 }

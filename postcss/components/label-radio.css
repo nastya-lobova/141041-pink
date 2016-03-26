@@ -1,32 +1,6 @@
 .label-radio {
+  position: relative;
+  display: inline-block;
   @mixin form-text;
-
-  &:before {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    content: "";
-    display: block;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: $white;
-    border: 2px solid #e5e5e5;
-  }
-
-  &:after {
-    position: absolute;
-    top: 7px;
-    left: 12px;
-    content: "";
-    display: block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: transparent;
-  }
-}
-
-input[type="radio"]:checked + .label-radio:after {
-  background-color: $pink;
+  cursor: pointer;
 }

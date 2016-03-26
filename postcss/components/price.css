@@ -1,66 +1,168 @@
 .price {
-  width: 278px;
   border-right: 2px solid #e5e5e5;
+
+  @media ($tablet-width) {
+    width: 153px;
+  }
+
+  @media ($desktop-width) {
+    width: 233px;
+  }
 
   &__header {
     position: relative;
     background-color: $dark-grey;
     text-align: center;
     text-transform: uppercase;
-    padding: 19px 0;
+    padding: 22px 0 19px;
     color: #fff;
+
+    @media ($tablet-width) {
+      padding: 19px 0 13px;
+    }
+
+    @media ($desktop-width) {
+      padding: 22px 0 19px;
+    }
 
     &--hit:before {
       position: absolute;
       top: 0;
-      left: -2px;
+      left: 0;
       content: "";
       display: block;
       width: 74px;
       height: 74px;
       background: url(../img/bg-hit.svg) 0 0 no-repeat;
+
+      @media ($tablet-width) {
+        background-position: -9px 0;
+      }
+
+      @media ($desktop-width) {
+        left: 0;
+        background-position: -12px 0;
+      }
     }
 
     &--hit:after {
       position: absolute;
       top: 17px;
-      left: 9px;
+      left: 11px;
       content: "хит";
       display: block;
       font-size: 14px;
       font-weight: 600;
       transform: rotate(-45deg);
+
+      @media ($tablet-width) {
+        top: 9px;
+        left: 8px;
+      }
+
+      @media ($desktop-width) {
+        top: 9px;
+        left: 8px;
+      }
     }
   }
 
   &--options {
     display: none;
+
+    @media ($tablet-width) {
+      display: block;
+      align-self: flex-end;
+      border-left: 2px solid #e5e5e5;
+      border-top: 2px solid #e5e5e5;
+    }
   }
 
   &__name {
     @mixin heading $white;
+    margin-bottom: 6px;
+
+    @media ($tablet-width) {
+      font-size: 16px;
+      margin-bottom: 7px;
+    }
+
+    @media ($desktop-width) {
+      font-size: $font-size-md;
+      margin-bottom: 6px;
+    }
   }
 
   &__value {
     font-weight: lighter;
-    font-size: 24px;
+    font-size: $font-size-lg;
+
+    @media ($tablet-width) {
+      font-weight: lighter;
+      font-size: $font-size-md;
+    }
+
+    @media ($desktop-width) {
+      font-size: $font-size-lg;
+    }
   }
 
   &__item {
-    padding: 17.5px 21px;
+    padding: 18px 24px 17px;
     background-color: #fff;
     border-bottom: 2px solid #e5e5e5;
     position: relative;
     vertical-align: middle;
+
+    @media ($tablet-width) {
+      height: 45px;
+      padding: 0;
+    }
+
+    @media ($desktop-width) {
+      height: 59px;
+      padding: 0;
+    }
+
+    &--options{
+      @media ($tablet-width) {
+        height: auto;
+        padding: 11px 14px 10.5px;
+      }
+
+      @media ($desktop-width) {
+        height: auto;
+        padding: 14px 20px 15px;
+
+      }
+    }
   }
 
   &__option {
+    margin: 0;
     text-transform: uppercase;
+    font-size: $font-size-text;
+    line-height: 1.7em;
+    color: $dark-grey;
+
+    @media ($tablet-width) {
+      text-transform: none;
+
+      &-hide{
+      padding: 0;
+      font: 0/0 a;
+      color: transparent;
+    }
+  }
+
+    @media ($desktop-width) {
+      font-size: $font-size-md;
+    }
   }
 
   &__plus {
     position: absolute;
-    right: 37px;
+    right: 38px;
     top: 32px;
     display: block;
     width: 15px;
@@ -70,6 +172,16 @@
     transform: rotate(45deg);
     font: 0/0 a;
     color: transparent;
+
+    @media ($tablet-width) {
+      right: 50%;
+      top: 25px;
+    }
+
+    @media ($desktop-width) {
+       top: 33px;
+       right: 51%;
+    }
 
     &:after {
       position: absolute;
@@ -87,7 +199,7 @@
 
   &__minus {
     position: absolute;
-    right: 15px;
+    right: 16px;
     top: 26px;
     display: block;
     width: 38px;
@@ -97,6 +209,17 @@
     transform: rotate(45deg);
     font: 0/0 a;
     color: transparent;
+
+    @media ($tablet-width) {
+      top: 20px;
+      left: 40%;
+      right: 0;
+    }
+
+    @media ($desktop-width) {
+      left: 42%;
+      top: 26px;
+    }
 
     &:after {
       position: absolute;
@@ -112,100 +235,4 @@
     }
   }
 
-  @media ($tablet-width) {
-    width: 155px;
-
-    &__name {
-      font-size: 16px;
-      margin-bottom: 3px;
-    }
-
-    &--options {
-      display: block;
-      align-self: flex-end;
-      border-left: 2px solid #e5e5e5;
-      border-top: 2px solid #e5e5e5;
-    }
-
-    &__value {
-      font-weight: lighter;
-      font-size: 18px;
-    }
-    &__header {
-      padding: 15px 0 13px;
-
-      &--hit:before {
-        left: 0;
-        background-position: -12px 0;
-      }
-
-      &--hit:after {
-        left: 6px;
-        top: 8px;
-      }
-    }
-
-    &__option {
-      padding: 0;
-      font: 0/0 a;
-      color: transparent;
-    }
-
-    &__item {
-      height: 45px;
-      padding: 0;
-    }
-
-    &__plus {
-      right: 50%;
-      top: 25px;
-    }
-
-    &__minus {
-      left: 40%;
-      top: 21px;
-    }
-  }
-
-  @media ($desktop-width) {
-    width: 235px;
-
-    &__name {
-      font-size: 18px;
-    }
-
-    &__header {
-      padding: 17px 0 19px;
-
-      &--hit:before {
-        background-position: 0 0;
-      }
-
-      &--hit:after {
-        top: 16px;
-        left: 9px;
-      }
-    }
-
-    &__item {
-      height: 59px;
-      padding: 0;
-    }
-
-    &__name {
-      margin-bottom: 2px;
-    }
-
-    &__value {
-      font-size: 24px;
-    }
-
-    &__plus {
-      top: 30px;
-    }
-
-    &__minus {
-      top: 25px;
-    }
-  }
 }

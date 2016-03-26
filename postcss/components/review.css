@@ -1,11 +1,10 @@
 .review {
-  min-height: 216px;
   margin: 0;
   text-align: center;
 
   &__author {
     @mixin heading;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
 
     & cite{
       font-style: normal;
@@ -18,29 +17,35 @@
 
   &__text {
     @mixin text;
-    line-height: 30px;
-  }
+    line-height: 2.15em;
 
-  &:nth-child(n+2) {
-    display: none;
+    @media ($tablet-width){
+      line-height: 1.7em;
+    }
+    @media ($tablet-width){
+      margin-bottom: 15px;
+    }
   }
 
   @media ($tablet-width) {
-    min-height: 190px;
     display: flex;
     flex-wrap: wrap;
 
     &__text {
-      margin-bottom: 10px;
+      font-size: 18px;
+      margin-bottom: 29px;
     }
 
     &__author {
       font-size: 20px;
       order: 2;
       width: 100%;
+      line-height: 40px;
     }
 
     &__prof {
+      display: block;
+      line-height: 40px;
       @mixin text;
     }
   }
@@ -51,5 +56,19 @@
     &__author {
       font-size: 24px;
     }
+
+    &__text{
+      margin-bottom: 10px;
+
+      &-hide{
+        display: none;
+      }
+    }
   }
+}
+
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 160px; /* height of carousel */
+  margin-right: 10px;
 }

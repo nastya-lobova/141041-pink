@@ -1,25 +1,89 @@
 .form {
 
+  @media ($tablet-width) {
+    margin-bottom: 48px;
+  }
+
+  &__wrap{
+
+    @media ($tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 620px;
+      margin: 0 auto 0;
+    }
+
+    @media ($desktop-width) {
+      width: 940px;
+      justify-content: space-between;
+    }
+  }
+
   &__header {
     padding: 45px 20px 22px;
 
+    @media ($tablet-width) {
+      padding: 93px 40px 29px;
+    }
+
+    @media ($desktop-width) {
+      padding: 90px 70px 70px;
+    }
+
     &--photo {
-    padding: 20px 20px 40px;
+      padding: 20px 20px 40px;
+
+      @media ($tablet-width) {
+        padding: 42px 20px 70px;
+      }
+
+      @media ($desktop-width) {
+        padding: 4px 20px 70px;
+      }
     }
   }
 
   &__btn {
     display: block;
     height: 65px;
-    width: 280px;
+    min-width: 280px;
     margin: 0 auto 40px;
+    background-color: #2aab6d;
+    color: $white;
+
+    @media ($tablet-width) {
+      margin: 0;
+    }
+
+    @media ($desktop-width) {
+      min-width: 300px;
+    }
   }
 
   &__required {
-    font-size: 14px;
     text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+
+
+    @media ($tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media ($desktop-width) {
+      font-size: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    &-hide {
+      display: none;
+
+      @media ($desktop-width) {
+        display: inline;
+      }
+    }
 
     &-pink {
       color: $pink;
@@ -29,67 +93,19 @@
   &__text {
     @mixin text;
     text-align: center;
-    line-height: 30px;
+    line-height: 2.2em;
+
+    @media ($tablet-width) {
+      font-size: $font-size-lg;
+      line-height: 1.7em;
+    }
 
     &-hide {
       display: none;
-    }
-  }
 
-  @media ($tablet-width) {
-
-    &--photo{
-      width: auto;
-      margin: 0;
-    }
-
-    &__wrap {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      width: 620px;
-      margin: 0 auto 50px;
-    }
-
-    &__header {
-      padding: 90px 70px 31px;
-
-      &--photo{
-      padding: 42px 20px 70px;
-      }
-    }
-
-    &__text{
-      font-size: 18px;
-
-      &-hide{
+      @media ($tablet-width) {
         display: inline;
       }
-    }
-
-    &__btn {
-      margin: 0;
-    }
-  }
-
-  @media ($desktop-width) {
-
-    &__wrap {
-      width: 940px;
-      justify-content: space-between;
-    }
-
-    &__header {
-      padding: 90px 70px 75px;
-
-      &--photo{
-      padding: 4px 20px 70px;
-      }
-    }
-
-    &--radio{
-      padding: 15px 0;
     }
   }
 }

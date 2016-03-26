@@ -1,84 +1,83 @@
 .fieldset-contacts {
   padding: 32px 6.25% 54px;
 
-  &__item {
-    margin-bottom: 21px;
-    &:last-child{
-      margin-bottom: 0;
-    }
-  }
-
-  &__title {
-
-    &--hide {
-      display: none;
-    }
-  }
-
-  &__wrap {
-
-  }
-
   @media ($tablet-width) {
     order:3;
-    padding: 45px 0 0;
+    padding: 38px 0 28px;
     background-color: transparent;
-    border: 2px solid $border-color2;
+    border: 2px solid $color-border;
     border-radius: 2px;
-
-    &__item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 53px;
-
-      &--half {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 32px;
-      }
-
-      &-hide {
-        display: none;
-      }
-    }
-    &__title {
-      @mixin legend;
-      max-width: 35%;
-
-      &--hide {
-        display: block;
-      }
-    }
-
-    &__wrap {
-      width: auto;
-      margin: 0;
-      padding: 0 60px;
-    }
+    margin-bottom: 58px;
   }
 
   @media ($desktop-width) {
     min-height: 115px;
     width: 940px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
+    padding-bottom: 16px;
+    padding-top: 33px;
+  }
 
-    &__item {
+  &__item {
+    margin-bottom: 21px;
+
+    @media ($tablet-width) {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+
+    @media ($desktop-width) {
       min-height: 65px;
       margin-bottom: 50px;
+      width: 374px;
+      margin: 0;
+      flex-wrap: wrap;
+    }
 
-      &:last-child {
-        margin-bottom: 0;
-      }
+    &-hide {
 
-      &--half {
-        width: 374px;
-        margin: 0;
-        flex-wrap: wrap;
+      @media ($tablet-width) {
+        display: none;
       }
     }
 
-    &__wrap {
+    &:last-child{
+      margin-bottom: 0;
+
+      @media ($desktop-width) {
+          margin-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+
+    @media ($tablet-width) {
+      @mixin legend;
+      max-width: 35%;
+    }
+
+    &--hide {
+      display: none;
+
+      @media ($tablet-width) {
+        display: block;
+      }
+    }
+  }
+
+  &__wrap {
+
+    @media ($tablet-width) {
+      width: auto;
+      margin: 0;
+      padding: 0 60px;
+    }
+
+    @media ($desktop-width) {
       display: flex;
       justify-content: space-between;
       padding: 0 60px;

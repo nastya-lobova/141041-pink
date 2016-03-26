@@ -1,11 +1,9 @@
-h1, h2, h3, p{
-  margin: 0;
-}
-
 .page {
   min-width: 320px;
   margin: 0;
-  font-family: "Open sans";
+  font-family: $font-family;
+  font-size: $font-size-sm;
+  color: $dark-grey;
 
   @media ($tablet-width) {
     min-width: 700px;

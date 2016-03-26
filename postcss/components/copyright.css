@@ -4,28 +4,31 @@
   width: 130px;
   position: relative;
 
+  @media ($desktop-width) {
+    width: 155px;
+  }
+
   &__text {
-    font-size: 14px;
+    font-size: $font-size-sm;
     margin-right: 15px;
-  }
+    vertical-align:middle;
 
-  &__link {
-    position: absolute;
-    top: -5px;
-  }
-
-  @media ($tablet-width) {
-
-    &__link {
-      vertical-align: bottom;
+    @media ($desktop-width) {
+      font-size: $font-size-md;
     }
   }
 
-  @media ($desktop-width) {
-    width: 155px;
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 40px;
+    font: 0/0 a;
+    color: transparent;
+    background: url(../img/logo-htmlacademy.svg) no-repeat center;
 
-    &__text {
-      font-size: 18px;
+    @media ($tablet-width) {
+      vertical-align: bottom;
     }
   }
 }

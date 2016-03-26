@@ -1,17 +1,13 @@
 .btn {
-  height: 51px;
-  width: 275px;
-  display: block;
-  border: 2px solid #fff;
+  display: inline-block;
+  padding: 15px 36px 17px;
+  border: 2px solid $white;
   border-radius: 30px;
   text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
   @mixin heading $white;
 
   &--pink {
-    height: 55px;
-    width: 280px;
     color: $pink;
     border: 2px solid $pink;
     background-color: transparent;
@@ -20,37 +16,10 @@
   &--disabled {
     border-color: #dddfe0;
     color: #dddfe0;
-    height: 55px;
-    width: 280px;
     background-color: transparent;
   }
 
   &--square {
     border-radius: 2px;
-    background-color: #2aab6d;
-    color: $white;
-    height: 65px;
-  }
-
-  @media ($tablet-width) {
-
-    &--pink {
-      width: 260px;
-    }
-
-    &--disabled {
-      width: 260px;
-    }
-  }
-
-  @media ($desktop-width) {
-
-    &--pink {
-      width: 180px;
-    }
-
-    &--disabled{
-      width: 180px;
-    }
   }
 }

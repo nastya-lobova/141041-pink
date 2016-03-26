@@ -1,45 +1,45 @@
 .fieldset-textarea {
   padding: 93px 6.25% 46px;
 
+  @media ($tablet-width) {
+    order:5;
+    border: 2px solid $color-border;
+    border-radius: 2px;
+    padding: 40px 0 51px;
+    margin-bottom: 66px;
+  }
+
+  @media ($desktop-width) {
+    width: 940px;
+    padding: 34px 0 45px;
+  }
+
   &__wrap {
 
+    @media ($tablet-width) {
+      width: auto;
+      margin: 0;
+      padding: 0 60px;
+    }
   }
 
   &__title {
     @mixin legend;
     top: 59px;
 
-    &--hide {
-      display: none;
-    }
-  }
-
-  @media ($tablet-width) {
-    order:5;
-    border: 2px solid $border-color2;
-    border-radius: 2px;
-    padding: 45px 0 45px;
-
-    &__title {
-      max-width: 30%;
-
-      &--hide {
-        display: block;
-      }
-    }
-
-    &__wrap {
-      width: auto;
-      margin: 0;
-      padding: 0 60px;
+    @media ($tablet-width) {
+       max-width: auto;
     }
 
     @media ($desktop-width) {
-      min-height: 170px;
-      width: 940px;
+      max-width: 20%;
+    }
 
-      &__title {
-        max-width: 20%;
+    &--hide {
+      display: none;
+
+      @media ($tablet-width) {
+         display: block;
       }
     }
   }

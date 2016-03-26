@@ -8,17 +8,12 @@
     width: 940px;
   }
 }
-@define-mixin indicators {
-  width: 58px;
-  display: flex;
-  margin: 0 auto;
-  justify-content:space-between;
-  align-items: center;
-}
 
 @define-mixin title $color: $dark-grey {
-  font-size: 24px;
+  margin: 0;
+  font-size: $font-size-lg;
   font-weight: lighter;
+  line-height: 1.2em;
   color: $color;
 
   @media ($tablet-width) {
@@ -31,24 +26,28 @@
 }
 
 @define-mixin text $color: $dark-grey {
-  font-size: 14px;
+  margin: 0;
+  font-size: $font-size-sm;
   font-weight: normal;
   color: $color;
-  line-height: 24px;
+  line-height: 1.7em;
 
   @media ($desktop-width) {
-    font-size: 18px;
+    font-size: $font-size-md;
   }
 }
 
 @define-mixin heading $color: $black{
-  font-size: 18px;
+  margin: 0;
+  font-size: $font-size-md;
   font-weight: bold;
   color: $color;
+  line-height: 1em;
 }
 
 @define-mixin form-text $color: $dark-grey {
-  font-size: 18px;
+  margin: 0;
+  font-size: $font-size-md;
   font-weight: normal;
   color: $color;
 }
@@ -68,9 +67,9 @@
   text-transform: uppercase;
   text-align: center;
   color: $pink;
-  
+
   @media ($tablet-width) {
-    top: -10px;
+    position: static;
     padding: 0 20px;
     background-color: $white;
   }
