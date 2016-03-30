@@ -20,7 +20,7 @@
   var slides = prices.querySelectorAll(".carousel-cell");
 
 
-  if (window.innerWidth > 699) {
+  if (window.innerWidth >= 700) {
     prices.classList.remove("carousel");
     prices.classList.remove("js-flickity");
 

@@ -5,7 +5,13 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
       center: {lat: 59.93575, lng: 30.3217536},
       scrollwheel: false,
-      zoom: 15
+      zoom: 15,
+      zoomControl: false,
+      mapTypeControl: false,
+      scaleControl: false,
+      streetViewControl: false,
+      rotateControl: false,
+      disableDefaultUI: true
     });
 
     var image = "../img/icon-map-marker.svg";
