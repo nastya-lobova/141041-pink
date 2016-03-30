@@ -18,7 +18,9 @@
     display: none;
 
     @media ($tablet-width) {
+      display: block;
       margin: 0;
+      background-color: $white;
     }
 
     @media ($desktop-width) {
@@ -34,11 +36,11 @@
       display: none;
 
       @media ($tablet-width) {
-        display: block;
-        padding-left: 309px;
-        padding-top: 95px;
-        padding-bottom: 50px;
-        background-color: $white;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 53px;
+        padding-bottom: 30px;
+        margin: 0 5.7%;
       }
 
       @media ($desktop-width) {
@@ -53,28 +55,40 @@
   }
 
   &__image{
-    position: absolute;
-    width: 170px;
-    height: 280px;
-    background-color: $pink;
-    bottom: 0;
-    left: 50%;
-    margin-left: -85px;
+    &--left{
+      @media ($tablet-width){
 
-    @media ($tablet-width) {
-      width: 270px;
-      height: 480px;
-      left: 0;
-      margin-left: 0;
+        padding: 57px 20px 25px;
+        background: url(../img/icon-timer.svg) no-repeat;
+        background-size: 100%;
+        margin-right: 70px;
     }
+    }
+  }
 
-    @media ($desktop-width) {
-      position: static;
-      width: 180px;
-      height: 300px;
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 54px;
+  &__inner {
+    @media ($tablet-width) {
+      margin-top: 36px;
+    }
+  }
+
+
+  &__icon {
+
+    &--left{
+
+      @media ($tablet-width) {
+        width: 174px;
+        height: 174px;
+        display: block;
+        text-align: center;
+        line-height: 174px;
+        border-radius: 50%;
+        border: 13px solid $pink;
+        font-size: 100px;
+        font-weight: bold;
+        color: $pink;
+      }
     }
   }
 
@@ -89,6 +103,9 @@
         font-size: 30px;
         line-height: 1.2em;
         margin-bottom: 12px;
+        @media ($tablet-width) {
+          max-width: 170px;
+        }
       }
     }
 

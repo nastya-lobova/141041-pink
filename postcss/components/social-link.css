@@ -10,7 +10,16 @@
   border: 3px solid $border-color;
   margin-right: 10px;
 
-  &:last-child{
+  &:hover {
+    border-color: $dark-grey;
+  }
+
+  &:active {
+    border-color: $dark-grey;
+    opacity: 0.3;
+  }
+
+  &:last-child {
     margin-right: 0;
   }
 }

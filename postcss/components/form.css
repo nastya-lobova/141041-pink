@@ -77,7 +77,7 @@
       margin-bottom: 20px;
     }
 
-    &-hide {
+    &--hide {
       display: none;
 
       @media ($desktop-width) {
@@ -85,7 +85,7 @@
       }
     }
 
-    &-pink {
+    &--pink {
       color: $pink;
     }
   }
@@ -100,7 +100,7 @@
       line-height: 1.7em;
     }
 
-    &-hide {
+    &--hide {
       display: none;
 
       @media ($tablet-width) {

@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   align-items: center;
+  vertical-align:middle;
   width: 130px;
   position: relative;
 
@@ -10,7 +11,6 @@
 
   &__text {
     font-size: $font-size-sm;
-    margin-right: 15px;
     vertical-align:middle;
 
     @media ($desktop-width) {
@@ -21,14 +21,19 @@
   &__link {
     display: inline-block;
     vertical-align: middle;
-    width: 30px;
-    height: 40px;
     font: 0/0 a;
     color: transparent;
-    background: url(../img/logo-htmlacademy.svg) no-repeat center;
+    margin-left: 10px;
 
-    @media ($tablet-width) {
-      vertical-align: bottom;
+  }
+  &__image{
+
+    &:hover > .copyright__icon{
+      fill: $dark-grey;
+    }
+    &:active > .copyright__icon{
+      fill: $dark-grey;
+      opacity: 0.3;
     }
   }
 }
