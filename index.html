@@ -36,8 +36,9 @@
                 c0.225,0.291,0.354,0.547,0.354,0.936c0,0.676-0.577,1.288-1.285,1.288c-0.482,0-0.807-0.259-1.03-0.58l-8.401-10.464l-4.863,4.861
                 v4.895c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"/>
               </g>
+              <g class="logo__icon  logo__icon--full">
               <path fill="#FFFFFF" d="M60.498,28.266"/>
-              <path class="logo__icon  logo__icon--full" fill="#ffffff" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0
+              <path  fill="#ffffff" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0
               c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073
               c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531
               S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0
@@ -49,6 +50,7 @@
               c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531
               c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531
               c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"/>
+            </g>
             </svg>
           </a>
 
@@ -58,15 +60,11 @@
               <svg class="main-menu__btn-hamburger" version="1.0" id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
                 <g id="miu">
-                  <g id="editor_list_view_hambuger_menu_glyph">
-                    <g>
-                      <path id="path-1" fill="#fff" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671
-                      c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98
-                      c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z
-                      M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01
-                      v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                    </g>
-                  </g>
+                  <path id="path-1" fill="#fff" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671
+                  c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98
+                  c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z
+                  M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01
+                  v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
                 </g>
               </svg>
               <svg class="main-menu__btn-cross" version="1.0" id="cross-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -230,18 +228,18 @@
     <!-- Prices -->
     <div class="prices  ">
       <div class="prices__wrap">
-        <div class="price  price--options">
-          <div class="price__item  price__item--options">
-            <p class="price__option">Розовый фильтр</p>
+        <div class="prices__list  carousel js-flickity"  data-flickity-options='{ "initialIndex": 1, "cellSelector": ".carousel-cell" }'>
+          <div class="price  price--options">
+            <div class="price__item  price__item--options">
+              <p class="price__option">Розовый фильтр</p>
+            </div>
+            <div class="price__item  price__item--options">
+              <p class="price__option">Смайлики</p>
+            </div>
+            <div class="price__item  price__item--options">
+              <p class="price__option">Комментарии</p>
+            </div>
           </div>
-          <div class="price__item  price__item--options">
-            <p class="price__option">Смайлики</p>
-          </div>
-          <div class="price__item  price__item--options">
-            <p class="price__option">Комментарии</p>
-          </div>
-        </div>
-        <div class="prices__list  carousel js-flickity"  data-flickity-options='{ "initialIndex": 1 }'>
 
           <!-- Price -->
           <div class="price  carousel-cell">
@@ -324,7 +322,7 @@
           </p>
           <p class="contacts__item  contacts__item--email">
             <b class="contacts__heading">Пишите:</b><br>
-            <a class="contacts__link" href="#">mail@htmlacademy.ru</a>
+            <a class="contacts__link  contacts__link--email" href="#">mail@htmlacademy.ru</a>
           </p>
           <p class="contacts__item  contacts__item--address">
             <b class="contacts__heading">Приезжайте в гости:</b><br>
