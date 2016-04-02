@@ -16,6 +16,18 @@
 })();
 
 (function(){
+  var inputTel = document.querySelector(".input--tel");
+  var inputEmail = document.querySelectorAll(".input--email");
+
+
+  if (window.innerWidth >= 700) {
+    inputTel.placeholder = "+7 XXX XXX-XX-XX";
+    inputEmail.placeholder = "абракадабка";
+
+  }
+})();
+
+(function(){
   var prices = document.querySelector(".prices__list");
   var slides = prices.querySelectorAll(".carousel-cell");
 
