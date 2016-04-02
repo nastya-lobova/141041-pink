@@ -32,14 +32,13 @@
 
     @media ($desktop-width) {
       min-height: 120px;
-      margin-top: 55px;
     }
   }
 
   &__title {
     @mixin title;
     text-align: center;
-    margin-bottom: 34px;
+    margin-bottom: 38px;
 
     @media ($tablet-width) {
       min-height: 90px;
@@ -48,14 +47,16 @@
 
     @media ($desktop-width) {
       line-height: 1.2;
+      margin-bottom: 60px;
     }
   }
 
   &__item {
-    margin-bottom: 18px;
+    margin: 0;
+    margin-bottom: 20px;
 
     @media ($tablet-width) {
-      width: 45%;
+      width: 50%;
       text-align: center;
     }
 
@@ -80,5 +81,14 @@
     font-weight: lighter;
     font-size: $font-size-lg;
     text-decoration: none;
+
+    &--email:hover {
+      color: $color-text;
+      text-decoration: underline;
+    }
+    &--email:active {
+      color: rgba(40, 54, 69, 0.3);
+      text-decoration: none;
+    }
   }
 }

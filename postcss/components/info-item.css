@@ -27,6 +27,7 @@
       margin: 0;
       padding: 0;
       width: auto;
+      background-color: transparent;
     }
   }
 
@@ -38,17 +39,18 @@
       @media ($tablet-width) {
         display: flex;
         justify-content: space-between;
-        padding-top: 53px;
+        padding-top: 57px;
         padding-bottom: 30px;
         margin: 0 5.7%;
       }
 
       @media ($desktop-width) {
+        width: 940px;
+        margin: 0 auto;
         text-align: left;
-        padding-left: 366px;
         padding-right: 0;
-        padding-top: 140px;
-        padding-bottom: 97px;
+        padding-top: 28px;
+        padding-bottom: 50px;
         background-color: transparent;
       }
     }
@@ -63,12 +65,19 @@
         background-size: 100%;
         margin-right: 70px;
     }
+    @media ($desktop-width) {
+      padding: 69px 25px 40px;
+      margin-right: 67px;
+    }
     }
   }
 
   &__inner {
     @media ($tablet-width) {
       margin-top: 36px;
+    }
+    @media ($desktop-width) {
+      margin-top: 87px;
     }
   }
 
@@ -89,6 +98,13 @@
         font-weight: bold;
         color: $pink;
       }
+      @media ($desktop-width) {
+        width: 215px;
+        height: 215px;
+        font-size: 120px;
+        line-height: 200px;
+        border: 17px solid $pink;
+      }
     }
   }
 
@@ -106,12 +122,16 @@
         @media ($tablet-width) {
           max-width: 170px;
         }
+        @media ($desktop-width) {
+          max-width: none;
+        }
       }
     }
 
     @media ($desktop-width) {
       font-size: 30px;
       margin: 0;
+      margin-bottom: 25px;
 
       &--left {
         font-size: 30px;
@@ -124,14 +144,13 @@
   &__text {
     @mixin text;
 
-    @media ($tablet-width) {
-      &--left {
-        margin-bottom: 9px;
-      }
-    }
 
-    @media ($desktop-width) {
-      &--left {
+    &--left {
+      @media ($tablet-width) {
+        margin-bottom: 14px;
+      }
+
+      @media ($desktop-width) {
         margin-bottom: 31px;
       }
     }

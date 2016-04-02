@@ -1,8 +1,6 @@
 .info {
 
-  @media ($desktop-width) {
-    padding-bottom: 50px;
-  }
+
 
   &__header-wrap{
     padding: 40px 0 30px;
@@ -16,7 +14,7 @@
     }
 
     @media ($desktop-width) {
-      padding: 67px 0 78px;
+      padding: 64px 0 78px;
       width: 940px;
       margin: 0 auto;
 
@@ -28,6 +26,13 @@
     display: flex;
     flex-direction: column-reverse;
     overflow: hidden;
+
+    @media ($tablet-width) {
+      flex-direction: row;
+    }
+    @media ($desktop-width) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -51,12 +56,13 @@
   &__image{
     width: 155px;
     height: auto;
-    margin-bottom: -42px;
+    margin-bottom: -46px;
 
     @media ($tablet-width) {
       width: 270px;
       left: 0;
       margin-left: 0;
+      margin-bottom: -5px;
 
     }
 
@@ -66,7 +72,6 @@
       height: auto;
       display: block;
       margin: 0 auto;
-      margin-bottom: 54px;
     }
 
     &--hide{
@@ -80,8 +85,8 @@
   }
 
   &__items{
-    background: $light-grey url("../img/bg-triangle-white.svg") top left no-repeat;
-    background-size: contain;
+    background: $light-grey url("../img/bg-triangle-white.svg") -5px 0 no-repeat;
+    background-size: 100%;
   }
 
   &__items-wrap{
@@ -91,7 +96,6 @@
     padding-bottom: 10px;
 
     @media ($tablet-width) {
-      padding-left: 311px;
       padding-bottom: 0;
       padding-top: 77px;
       margin: 0 5.7%;
@@ -112,11 +116,14 @@
     @media ($tablet-width) {
       position: static;
       margin-left: 5.7%;
-      float: left;
     }
 
     @media ($desktop-width) {
-
+      display: flex;
+      justify-content: space-between;
+      width: 940px;
+      margin: 0 auto;
+      margin-bottom: 50px;
     }
   }
 }

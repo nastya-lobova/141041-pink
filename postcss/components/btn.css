@@ -7,16 +7,66 @@
   text-align: center;
   @mixin heading $white;
 
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+
+  &:active {
+    background-color: $white;
+    color: rgba(210, 40, 86, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--grey {
+    border-color: #dddfe0;
+    color: #dddfe0;
+    background-color: transparent;
+
+    &:hover {
+      border-color: #b5b9be;
+      color: #dddfe0;
+      background-color: transparent;
+    }
+
+    &:active {
+      background-color: #b5b9be;
+      color: #ccced2;
+      opacity: 0.3;
+    }
+  }
+
   &--pink {
     color: $pink;
     border: 2px solid $pink;
     background-color: transparent;
+
+    &:hover {
+      background-color: $pink;
+      color: $white;
+    }
+    &:active {
+      background-color: $pink;
+      color: $white;
+      opacity: 0.3;
+    }
   }
 
-  &--disabled {
-    border-color: #dddfe0;
-    color: #dddfe0;
-    background-color: transparent;
+  &--green {
+    background-color: #2aab6d;
+    color: $white;
+
+    &:hover {
+      background-color: #1c9b5e;
+      color: $white;
+    }
+    
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--square {
