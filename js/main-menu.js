@@ -15,17 +15,7 @@
   });
 })();
 
-(function(){
-  var inputTel = document.querySelector(".input--tel");
-  var inputEmail = document.querySelectorAll(".input--email");
 
-
-  if (window.innerWidth >= 700) {
-    inputTel.placeholder = "+7 XXX XXX-XX-XX";
-    inputEmail.placeholder = "абракадабка";
-
-  }
-})();
 
 (function(){
   var prices = document.querySelector(".prices__list");
@@ -39,6 +29,18 @@
     for (var i = 0; i < slides.length; i++){
       (slides[i]).classList.remove("carousel-cell");
     }
+
+  }
+})();
+
+(function(){
+  var inputTel = document.querySelector(".input--tel");
+  var inputEmail = document.querySelector(".input--email");
+
+
+  if (window.innerWidth >= 700) {
+    inputTel.placeholder = "+7 XXX XXX-XX-XX";
+    inputEmail.placeholder = "Введите почту";
 
   }
 })();
