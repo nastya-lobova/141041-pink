@@ -182,7 +182,7 @@
       @media ($desktop-width) {
         width: 940px;
         padding-top: 107px;
-        padding-bottom: 120px;
+        padding-bottom: 90px;
       }
     }
   }

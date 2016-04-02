@@ -25,6 +25,8 @@
   }
 
   @media ($desktop-width) {
+    width: 1400px;
     height: 503px;
+    margin: 0 auto;
   }
 }
