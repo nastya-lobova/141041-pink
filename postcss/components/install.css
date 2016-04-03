@@ -1,7 +1,7 @@
 .install {
   background-color: #1d2631;
-  width: 100%;
-  padding: 30px 0;
+  padding-top: 28px;
+  padding-bottom: 30px;
 
   @media ($tablet-width) {
     width: 300px;
