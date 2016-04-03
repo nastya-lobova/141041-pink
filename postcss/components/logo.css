@@ -1,6 +1,7 @@
 .logo {
   width: 80px;
   height: 30px;
+  cursor: pointer;
 
   @media ($tablet-width) {
     height: 50px;
@@ -10,21 +11,47 @@
   &--full {
     width: 150px;
   }
+  &:hover .logo__icon path {
+    fill: $pink;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+
+  &__image {
+    &:hover .logo__icon path {
+      fill: $pink;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
   &__icon {
 
-    &--full {
-      display: none;
+    @media ($tablet-width) {
     }
 
-    @media ($tablet-width) {
-      fill: #fff;
+    &--short{
+      transform: translate(-72px, -17px);
 
-      &--short {
-        display: none;
+      @media($tablet-width) {
+        transform: translate(0px, 0px);
       }
+    }
 
-      &--full {
+    &--full {
+      display: none;
+
+      @media ($tablet-width) {
+        display: block;
+      }
+    }
+
+    &--stars {
+      display: none;
+
+      @media ($desktop-width) {
         display: block;
       }
     }

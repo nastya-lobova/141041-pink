@@ -58,32 +58,28 @@
   }
 
   &__image {
-    background-color: rgba(0, 232, 217, 0.2);
+    background-color: $light-grey;
     display: block;
-    height: 180px;
+    max-width: 100%;
+    height: auto;
     margin: 0 -15px 17px;
 
     @media ($tablet-width) {
-      height: 300px;
       margin: 0 -30px 25px;
     }
 
     @media ($desktop-width) {
-      height: 400px;
       margin: 0 -30px 25px;
     }
 
     &--day {
-      height: 138px;
-      margin: 0 -35px 17px;
+      margin: 0 -35px 13px;
 
       @media ($tablet-width) {
-        height: 510px;
         margin: 0 -70px  23px;
       }
 
       @media ($desktop-width) {
-        height: 505px;
         margin: 0 -160px  23px;
       }
     }
@@ -106,10 +102,12 @@
 
     @media ($tablet-width) {
       margin-bottom: 0;
+      min-height: 4em;
     }
 
     @media ($desktop-width) {
       font-size: $font-size-sm;
+      min-height: none;
     }
   }
 

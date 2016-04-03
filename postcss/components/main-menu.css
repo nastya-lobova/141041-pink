@@ -72,7 +72,10 @@
     }
 
     &:hover {
-      color: $hover;
+      color: $pink;
+    }
+    &:active {
+      color: rgba(210, 40, 86 ,0.3);
     }
   }
 
@@ -88,6 +91,10 @@
       display: none;
     }
 
+    &:focus {
+      outline: none;
+    }
+
     &-hamburger {
 
       &--hide {
@@ -101,6 +108,12 @@
       &--show {
         display: block;
       }
+    }
+    &:hover path {
+      fill: $pink;
+    }
+    &:active path {
+      opacity: 0.3;
     }
   }
 }

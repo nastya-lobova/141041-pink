@@ -54,6 +54,8 @@
     margin: 0 -20px;
     border-top: 2px solid #dddfe0;
     padding: 37px 20px 10px;
+    display: flex;
+    flex-direction: column;
 
     @media ($tablet-width) {
       margin: 0;
@@ -64,7 +66,7 @@
     }
 
     @media ($desktop-width) {
-      display: flex;
+      flex-direction: row;
       justify-content: space-between;
       width: 400px;
     }

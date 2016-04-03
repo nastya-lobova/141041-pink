@@ -14,20 +14,21 @@
     @media ($desktop-width) {
       width: 940px;
       margin: 0 auto;
-      padding: 60px 0 5px;
+      padding: 73px 0 5px;
     }
   }
 
   &__list {
     margin-bottom: 27px;
-    
+
     @media ($tablet-width) {
       margin: 0;
       padding-bottom: 24px;
     }
 
     @media ($desktop-width) {
-      padding: 125px 120px 0;
+      padding: 115px 120px 0;
+      background: url(../img/icon-quotes.svg) top center no-repeat;
     }
   }
 
@@ -66,6 +67,14 @@
     opacity: 1;
     background: #bec2c7;
     vertical-align: middle;
+
+    &:hover {
+      background-color: #868e97;
+    }
+
+    &:active {
+      background-color: #e9ebec;
+    }
   }
   /* fill-in selected dot */
   & .flickity-page-dots .dot.is-selected {

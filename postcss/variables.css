@@ -3,6 +3,9 @@
   $mobile-width: (max-width: 320px);
   $tablet-width: (min-width: 700px);
   $desktop-width: (min-width: 1200px);
+  $retina-mobile: (min-resolution: 144dpi);
+  $retina-tablet: (($tablet-width) and (min-resolution: 144dpi));
+  $retina-desktop: (($desktop-width) and (min-resolution: 144dpi));
 
 /* Colors */
 

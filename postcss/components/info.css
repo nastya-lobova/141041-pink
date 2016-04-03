@@ -1,9 +1,6 @@
 .info {
 
-  @media ($desktop-width) {
-    height: 1313px;
-    padding-bottom: 50px;
-  }
+
 
   &__header-wrap{
     padding: 40px 0 30px;
@@ -17,10 +14,24 @@
     }
 
     @media ($desktop-width) {
-      padding: 67px 0 78px;
+      padding: 64px 0 78px;
       width: 940px;
       margin: 0 auto;
 
+    }
+  }
+
+  &__list{
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+
+    @media ($tablet-width) {
+      flex-direction: row;
+    }
+    @media ($desktop-width) {
+      flex-direction: column;
     }
   }
 
@@ -42,20 +53,50 @@
     }
   }
 
-  &__items{
-    background: $light-grey url("../img/bg-triangle-white.svg") top left no-repeat;
-    background-size: contain;
+  &__image{
+    width: 155px;
+    height: auto;
+    margin-bottom: -46px;
+
+    @media ($tablet-width) {
+      width: 270px;
+      left: 0;
+      margin-left: 0;
+      margin-bottom: -5px;
+
+    }
+
+    @media ($desktop-width) {
+      position: static;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &--hide{
+      display: none;
+
+      @media ($desktop-width) {
+        display: inline;
+      }
+    }
+
   }
 
-  &__list-wrap{
+  &__items{
+    background: $light-grey url("../img/bg-triangle-white.svg") -5px 0 no-repeat;
+    background-size: 100%;
+  }
+
+  &__items-wrap{
     position: relative;
     margin: 0 6.25%;
     padding-top: 85px;
-    padding-bottom: 284px;
+    padding-bottom: 10px;
 
     @media ($tablet-width) {
-      padding-left: 311px;
-      padding-bottom: 5px;
+      padding-bottom: 0;
       padding-top: 77px;
       margin: 0 5.7%;
     }
@@ -65,6 +106,24 @@
       padding: 0;
       width: 940px;
       margin: 0 auto;
+      justify-content: space-between;
+    }
+  }
+
+  &__image-wrap{
+    margin: 0 auto;
+
+    @media ($tablet-width) {
+      position: static;
+      margin-left: 5.7%;
+    }
+
+    @media ($desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      width: 940px;
+      margin: 0 auto;
+      margin-bottom: 50px;
     }
   }
 }

@@ -8,6 +8,17 @@
    width: 200px;
    position: relative;
 
+   &__icon {
+
+     $--active path {
+       fill: $pink;
+     }
+
+     &:hover path {
+       fill: #8d949b;
+     }
+   }
+
    @media ($tablet-width) {
      display: block;
      width: auto;

@@ -1,6 +1,6 @@
 .prices {
-  background: $light-grey url("../img/bg-triangle-white.svg") no-repeat;
-  background-size: contain;
+  background: $light-grey url("../img/bg-triangle-white.svg") -5px 0 no-repeat;
+  background-size: 100%;
 
   &__wrap{
     padding-top: 92px;
@@ -42,6 +42,14 @@
     opacity: 1;
     background: #bec2c7;
     vertical-align: middle;
+
+    &:hover {
+      background-color: #868e97;
+    }
+
+    &:active {
+      background-color: #e9ebec;
+    }
   }
   /* fill-in selected dot */
   & .flickity-page-dots .dot.is-selected {

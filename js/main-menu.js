@@ -15,18 +15,32 @@
   });
 })();
 
+
+
 (function(){
   var prices = document.querySelector(".prices__list");
   var slides = prices.querySelectorAll(".carousel-cell");
 
 
-  if (window.innerWidth > 699) {
+  if (window.innerWidth >= 700) {
     prices.classList.remove("carousel");
     prices.classList.remove("js-flickity");
 
     for (var i = 0; i < slides.length; i++){
       (slides[i]).classList.remove("carousel-cell");
     }
+
+  }
+})();
+
+(function(){
+  var inputTel = document.querySelector(".input--tel");
+  var inputEmail = document.querySelector(".input--email");
+
+
+  if (window.innerWidth >= 700) {
+    inputTel.placeholder = "+7 XXX XXX-XX-XX";
+    inputEmail.placeholder = "Введите почту";
 
   }
 })();
