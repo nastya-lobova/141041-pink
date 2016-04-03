@@ -4,9 +4,9 @@
   background-repeat: no-repeat;
   background-position: center top;
 
-  @media (min-resolution: 144dpi),
-         (min-resolution: 1.5dppx) {
+  @media ($retina-mobile) {
     background-image: url(../img/bg-back-mobile@2x.jpg);
+    background-size: 700px auto;
   }
 
   @media ($tablet-width) {
@@ -15,16 +15,23 @@
     background-position: center top;
   }
 
-  @media ($tablet-width) and (min-resolution: 144dpi),
-         (min-resolution: 1.5dppx) {
+  @media ($retina-tablet) {
     background-image: url(../img/bg-back-tablet@2x.jpg);
+    background-size: 1200px auto;
   }
 
   @media ($desktop-width) {
     background: url(../img/bg-back-desktop.jpg);
     background-repeat: no-repeat;
     background-position: center top;
+    background-size: 2560px;
   }
+  @media ($retina-desktop) {
+    background-image: url(../img/bg-back-desktop.jpg);
+    background-size: 2560px;
+
+  }
+
 
   &--main {
     background: url(../img/iphone-hand-mobile.png),
@@ -33,8 +40,7 @@
     background-repeat: no-repeat;
     background-position: 0 174px, center top;
 
-    @media (min-resolution: 144dpi),
-           (min-resolution: 1.5dppx) {
+    @media ($retina-mobile) {
         background: url(../img/iphone-hand-mobile@2x.png),
                     url(../img/bg-back-mobile@2x.jpg);
         background-position: 0 174px, center top;
@@ -49,8 +55,7 @@
       background-position: 0 bottom, center top;
     }
 
-    @media ($tablet-width) and (min-resolution: 144dpi),
-           (min-resolution: 1.5dppx) {
+    @media ($retina-tablet) {
       background: url(../img/iphone-hand-tablet@2x.png),
                  url(../img/bg-back-tablet@2x.jpg);
       background-position: 0 174px, center top;
@@ -62,14 +67,14 @@
       background: url(../img/iphone-hand-desktop@1x.png),
                   url(../img/bg-back-desktop.jpg);
       background-repeat: no-repeat;
-      background-position: 97% 100%, center top;
+      background-position: 97% bottom, center top;
     }
-    @media ($desktop-width) and (min-resolution: 144dpi),
-           (min-resolution: 1.5dppx) {
+    @media ($retina-desktop) {
       background: url(../img/iphone-hand-desktop@2x.png),
                  url(../img/bg-back-desktop.jpg);
       background-repeat: no-repeat;
-      background-position: 97% 100%, center top;
+      background-position: 97% bottom, center top;
+      background-size: 1050px auto, 2560px auto;
     }
   }
 
@@ -176,7 +181,7 @@
         width: 620px;
         margin: 0 auto;
         padding-top: 92px;
-        padding-bottom: 109px;
+        padding-bottom: 90px;
       }
 
       @media ($desktop-width) {
