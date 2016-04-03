@@ -1,0 +1,147 @@
+.input-range {
+  display: none;
+  margin-bottom: 30px;
+  margin: 0 auto;
+
+  &--active{
+    position: absolute;
+    display: block;
+    left: -17px;
+    bottom: -43px;
+  }
+
+  @media ($tablet-width) {
+    display: block;
+    &--active{
+      position: static;
+      display: block;
+    }
+  }
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 240px;
+
+  &:focus {
+    outline: none;
+    background: $dark-grey;
+  }
+  /*
+  &:focus::-webkit-slider-runnable-track {
+    background: $dark-grey;
+  }
+  &:focus::-ms-fill-lower {
+    background: $dark-grey;
+  }
+  &:focus::-ms-fill-upper {
+    background: $dark-grey;
+  }*/
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 2px solid $pink;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -5px;
+
+    &:active {
+      background: $pink;
+    }
+  }
+
+  &::-moz-range-thumb {
+    border: 2px solid $pink;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: $white;
+    cursor: pointer;
+
+    &:active {
+      background: $pink;
+    }
+  }
+
+  &::-ms-thumb {
+    border: 2px solid $pink;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+
+    &:active {
+      background: $pink;
+    }
+  }
+
+  &::-ms-track {
+    width: 240px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 240px;
+    height: 2px;
+    cursor: pointer;
+    background: $dark-grey;
+  }
+
+  &::-moz-range-track {
+    width: 240px;
+    height: 2px;
+    cursor: pointer;
+    background: $dark-grey;
+  }
+
+  &::-ms-track {
+    width: 240px;
+    height: 2px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  &::-ms-fill-lower {
+    background: $dark-grey;
+  }
+
+  &::-ms-fill-upper {
+    background: $dark-grey;
+  }
+
+  @media ($tablet-width) {
+    &::-ms-track{
+      width: 200px;
+    }
+    &::-webkit-slider-runnable-track{
+      width: 200px;
+    }
+    &::-moz-range-track{
+      width: 200px;
+    }
+  }
+  @media ($desktop-width){
+    &::-ms-track{
+      width: 290px;
+    }
+    &::-webkit-slider-runnable-track{
+      width: 290px;
+    }
+    &::-moz-range-track{
+      width: 290px;
+    }
+  }
+}

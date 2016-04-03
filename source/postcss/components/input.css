@@ -1,0 +1,62 @@
+.input {
+  height: 62px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 0 20px;
+  font-size: 18px;
+  border: 2px solid $border-color2;
+  border-radius: 2px;
+  font-family: "Open sans";
+
+  &:hover {
+    border-color: $color-text;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+
+  @media ($tablet-width) {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  &--email {
+    @media ($tablet-width){
+      background-image: url(../img/icon-mail.svg);
+      background-repeat: no-repeat;
+      background-position: right 20px center;
+    }
+  }
+
+  &--tel {
+    @media ($tablet-width){
+      background-image: url(../img/icon-phone.svg);
+      background-repeat: no-repeat;
+      background-position: right 20px center;
+    }
+  }
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  @mixin form-text;
+}
+input[type="text"]::-moz-placeholder {
+  @mixin form-text;
+  opacity: 1;
+}
+input[type="email"]::-webkit-input-placeholder {
+  @mixin form-text;
+}
+input[type="email"]::-moz-placeholder {
+  @mixin form-text;
+  opacity: 1;
+}
+input[type="tel"]::-webkit-input-placeholder {
+  @mixin form-text;
+}
+input[type="tel"]::-moz-placeholder {
+  @mixin form-text;
+  opacity: 1;
+}

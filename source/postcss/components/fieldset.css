@@ -1,0 +1,16 @@
+.fieldset {
+  position: relative;
+  margin: 0;
+  border: none;
+
+  @media ($tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+
+  @media ($desktop-width) {
+    margin: 0;
+    margin-bottom: 60px;
+  }
+}

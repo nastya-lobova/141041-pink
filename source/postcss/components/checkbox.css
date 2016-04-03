@@ -1,0 +1,33 @@
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+
+  &__indicator{
+    position: absolute;
+    top: -5px;
+    left: -70px;
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 2px solid $color-border;
+    background-color: $white;
+
+    &:hover {
+      border-color: $color-text;
+    }
+
+    &:active {
+      border-color: $pink;
+    }
+
+    @media ($tablet-width) {
+      left: -59px;
+    }
+  }
+
+  &:checked ~ .checkbox__indicator {
+      background: $white url(../img/icon-yes-pink.svg) 50% 48% no-repeat;
+  }
+}

@@ -1,0 +1,72 @@
+.install {
+  background-color: #1d2631;
+  padding-top: 28px;
+  padding-bottom: 30px;
+
+  @media ($tablet-width) {
+    width: 300px;
+    padding: 0;
+    background: transparent;
+  }
+
+  &__wrap {
+    width: 280px;
+    margin: 0 auto;
+
+    @media ($tablet-width) {
+      width: auto;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 30px;
+    text-decoration: none;
+
+    @media ($tablet-width) {
+      padding: 15px 46px 17px;
+      margin-bottom: 45px;
+    }
+
+    @media ($desktop-width) {
+      font-size: 21px;
+      padding: 13px 29px 16px;
+      margin-bottom: 66px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;;
+    align-items: baseline;
+    padding: 0;
+    margin-bottom: 19px;
+
+    @media ($tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    @media ($desktop-width) {
+      margin-bottom: 49px;
+    }
+  }
+
+  &__link{
+    margin-right: 37px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__description {
+    @mixin text $white;
+    text-align: center;
+    font-weight: lighter;
+    margin: 0;
+
+    @media ($tablet-width) {
+      font-size: $font-size-md;
+      line-height: 1.4em;
+    }
+  }
+}
