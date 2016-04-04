@@ -151,6 +151,6 @@ gulp.task("serve", ["style"], function() {
     ui: false
   });
 
-  gulp.watch(config.build + "postcss/**/*.css", ["style"]);
-  gulp.watch(config.build + "*.html").on("change", server.reload);
+  gulp.watch(config.source + "postcss/**/*.css", ["style"]);
+  gulp.watch(config.source + "*.html", ["copy:html"]).on("change", server.reload);
 });
