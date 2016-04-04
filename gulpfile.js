@@ -20,7 +20,6 @@ var rename = require("gulp-rename");
 // Минификаторы
 var imagemin = require("gulp-imagemin");
 var svgmin = require("gulp-svgmin");
-var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
 var minify = require("gulp-csso");
 // Очистка папки
@@ -52,6 +51,7 @@ var config = {
   node_modules: "node_modules/"
 };
 
+// Массив скриптов
 var scripts = [
   config.node_modules + "flickity/dist/flickity.pkgd.min.js",
   config.source + "js/*.js"
@@ -59,8 +59,6 @@ var scripts = [
 
 // Copy script plugins
 gulp.task("copy:vendor-script", function() {
-  gulp.src(config.node_modules + "flickity/dist/flickity.pkgd.min.js")
-    .pipe(gulp.dest(config.source + "js/vendor"))
   gulp.src(config.node_modules + "picturefill/dist/picturefill.min.js")
     .pipe(gulp.dest(config.build + "js/vendor"))
 });
@@ -125,19 +123,10 @@ gulp.task("svg", function () {
     .pipe(gulp.dest(config.build + "img"));
 });
 
-// Remove comment html
-gulp.task("htmlmin", function() {
+// Copy html
+gulp.task("copy:html", function() {
   return gulp.src(config.source + "*.html")
     .pipe(gulp.dest(config.build))
-    .pipe(htmlmin({
-      removeComments: true,
-      collapseWhitespace: true
-    }))
-    .pipe(rename({
-      suffix: ".min",
-      extname: ".html"
-    }))
-    .pipe(gulp.dest(config.build));
 });
 
 // Build
@@ -146,17 +135,17 @@ gulp.task("build", function(callback) {
     ["clean"],
     ["copy:vendor-script"],
     ["copy:fonts"],
+    ["copy:html"],
     ["style"],
     ["image"],
     ["svg"],
-    ["htmlmin"],
     ["script"], callback
   );
 });
 
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: ".",
+    server: config.build,
     notify: false,
     open: true,
     ui: false
