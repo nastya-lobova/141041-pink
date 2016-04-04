@@ -34,13 +34,13 @@
     @media ($desktop-width) {
       max-width: 20%;
     }
+  }
 
-    &--hide {
-      display: none;
+  &__title--hide {
+    display: none;
 
-      @media ($tablet-width) {
-         display: block;
-      }
+    @media ($tablet-width) {
+       display: block;
     }
   }
 }

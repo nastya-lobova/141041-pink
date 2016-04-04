@@ -3,16 +3,17 @@
   margin-bottom: 30px;
   margin: 0 auto;
 
+  @media ($tablet-width) {
+    display: block;
+  }
+
   &--active{
     position: absolute;
     display: block;
     left: -17px;
     bottom: -43px;
-  }
 
-  @media ($tablet-width) {
-    display: block;
-    &--active{
+    @media ($tablet-width) {
       position: static;
       display: block;
     }

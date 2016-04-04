@@ -11,49 +11,47 @@
   &--full {
     width: 150px;
   }
+
   &:hover .logo__icon path {
     fill: $pink;
   }
+
   &:active {
     opacity: 0.3;
   }
 
   &__image {
+
     &:hover .logo__icon path {
       fill: $pink;
     }
+
     &:active {
       opacity: 0.3;
     }
   }
 
-  &__icon {
+  &__icon--short{
+    transform: translate(-72px, -17px);
+
+    @media($tablet-width) {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  &__icon--full {
+    display: none;
 
     @media ($tablet-width) {
+      display: block;
     }
+  }
 
-    &--short{
-      transform: translate(-72px, -17px);
+  &__icon--stars {
+    display: none;
 
-      @media($tablet-width) {
-        transform: translate(0px, 0px);
-      }
-    }
-
-    &--full {
-      display: none;
-
-      @media ($tablet-width) {
-        display: block;
-      }
-    }
-
-    &--stars {
-      display: none;
-
-      @media ($desktop-width) {
-        display: block;
-      }
+    @media ($desktop-width) {
+      display: block;
     }
   }
 }

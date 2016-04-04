@@ -1,7 +1,23 @@
-.checkbox {
+.checkbox {  
   position: absolute;
   opacity: 0;
   z-index: -1;
+
+  @media ($tablet-width) {
+    left: -59px;
+  }
+
+  &:hover {
+    border-color: $color-text;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+
+  &:checked ~ .checkbox__indicator {
+      background: $white url(../img/icon-yes-pink.svg) 50% 48% no-repeat;
+  }
 
   &__indicator{
     position: absolute;
@@ -13,21 +29,5 @@
     height: 35px;
     border: 2px solid $color-border;
     background-color: $white;
-
-    &:hover {
-      border-color: $color-text;
-    }
-
-    &:active {
-      border-color: $pink;
-    }
-
-    @media ($tablet-width) {
-      left: -59px;
-    }
-  }
-
-  &:checked ~ .checkbox__indicator {
-      background: $white url(../img/icon-yes-pink.svg) 50% 48% no-repeat;
   }
 }

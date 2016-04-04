@@ -36,20 +36,13 @@
       margin: 0;
       flex-wrap: wrap;
     }
+  }
 
-    &-hide {
+  &__item:last-child{
+    margin-bottom: 0;
 
-      @media ($tablet-width) {
-        display: none;
-      }
-    }
-
-    &:last-child{
-      margin-bottom: 0;
-
-      @media ($desktop-width) {
-          margin-bottom: 0;
-      }
+    @media ($desktop-width) {
+        margin-bottom: 0;
     }
   }
 
@@ -59,13 +52,13 @@
       @mixin legend;
       max-width: 35%;
     }
+  }
 
-    &--hide {
-      display: none;
+  &__title--hide {
+    display: none;
 
-      @media ($tablet-width) {
-        display: block;
-      }
+    @media ($tablet-width) {
+      display: block;
     }
   }
 

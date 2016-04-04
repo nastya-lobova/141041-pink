@@ -37,12 +37,18 @@
 
     @media ($desktop-width) {
       display: block;
+    }
 
-      &.next {
+    &.next {
+
+      @media ($desktop-width) {
         right: -10px;
       }
+    }
 
-      &.previous {
+    &.previous {
+
+      @media ($desktop-width) {
         left: -10px;
       }
     }

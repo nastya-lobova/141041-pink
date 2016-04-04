@@ -28,13 +28,13 @@
       min-height: 65px;
       margin-bottom: 50px;
     }
+  }
 
-    &:last-child {
+  &__item:last-child {
+    margin-bottom: 0;
+
+    @media ($desktop-width) {
       margin-bottom: 0;
-
-      @media ($desktop-width) {
-        margin-bottom: 0;
-      }
     }
   }
 

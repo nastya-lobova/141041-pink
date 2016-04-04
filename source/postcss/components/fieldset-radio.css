@@ -30,13 +30,13 @@
     @media ($desktop-width) {
       max-width: 80%;
     }
+  }
 
-    &--hide {
-      display: none;
+  &__title--hide {
+    display: none;
 
-      @media ($tablet-width) {
-        display: block;
-      }
+    @media ($tablet-width) {
+      display: block;
     }
   }
 

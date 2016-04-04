@@ -24,13 +24,14 @@
     font: 0/0 a;
     color: transparent;
     margin-left: 10px;
-
   }
+
   &__image{
 
     &:hover > .copyright__icon{
       fill: $dark-grey;
     }
+    
     &:active > .copyright__icon{
       fill: $dark-grey;
       opacity: 0.3;

@@ -31,17 +31,17 @@
     @media ($desktop-width) {
       padding: 90px 70px 70px;
     }
+  }
 
-    &--photo {
-      padding: 20px 20px 40px;
+  &__header--photo {
+    padding: 20px 20px 40px;
 
-      @media ($tablet-width) {
-        padding: 42px 20px 70px;
-      }
+    @media ($tablet-width) {
+      padding: 42px 20px 70px;
+    }
 
-      @media ($desktop-width) {
-        padding: 4px 20px 70px;
-      }
+    @media ($desktop-width) {
+      padding: 4px 20px 70px;
     }
   }
 
@@ -64,7 +64,6 @@
     text-align: center;
     text-transform: uppercase;
 
-
     @media ($tablet-width) {
       margin-bottom: 0;
       text-transform: none;
@@ -76,18 +75,18 @@
       text-transform: uppercase;
       margin-bottom: 20px;
     }
+  }
 
-    &--hide {
-      display: none;
+  &__required--hide {
+    display: none;
 
-      @media ($desktop-width) {
-        display: inline;
-      }
+    @media ($desktop-width) {
+      display: inline;
     }
+  }
 
-    &--pink {
-      color: $pink;
-    }
+  &__required--pink {
+    color: $pink;
   }
 
   &__text {
@@ -99,13 +98,13 @@
       font-size: $font-size-lg;
       line-height: 1.7em;
     }
+  }
 
-    &--hide {
-      display: none;
+  &__text--hide {
+    display: none;
 
-      @media ($tablet-width) {
-        display: inline;
-      }
+    @media ($tablet-width) {
+      display: inline;
     }
   }
 }

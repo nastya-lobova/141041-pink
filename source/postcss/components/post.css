@@ -30,30 +30,30 @@
       margin: 0 auto 50px;
       padding: 0 30px 23px;
     }
+  }
 
-    &:before {
-      position:absolute;
-      display: block;
-      top: 0;
-      right: 0;
-      width: 140px;
-      height: 36px;
-      content: "Панорама дня";
-      text-align: center;
-      font-weight: bold;
-      font-size: 12px;
-      text-transform: uppercase;
-      line-height: 36px;
-      background-color: $pink;
-      color: $white;
+  &--day::before {
+    position:absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 140px;
+    height: 36px;
+    content: "Панорама дня";
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 36px;
+    background-color: $pink;
+    color: $white;
 
-      @media ($tablet-width) {
-        top: 56px;
-      }
+    @media ($tablet-width) {
+      top: 56px;
+    }
 
-      @media ($desktop-width) {
-         top: 52px;
-      }
+    @media ($desktop-width) {
+       top: 52px;
     }
   }
 
@@ -71,17 +71,17 @@
     @media ($desktop-width) {
       margin: 0 -30px 25px;
     }
+  }
 
-    &--day {
-      margin: 0 -35px 13px;
+  &__image--day {
+    margin: 0 -35px 13px;
 
-      @media ($tablet-width) {
-        margin: 0 -70px  23px;
-      }
+    @media ($tablet-width) {
+      margin: 0 -70px  23px;
+    }
 
-      @media ($desktop-width) {
-        margin: 0 -160px  23px;
-      }
+    @media ($desktop-width) {
+      margin: 0 -160px  23px;
     }
   }
 
@@ -124,41 +124,41 @@
       margin-left: 0;
       bottom: 26px;
     }
+  }
 
-    &:before {
-      position: absolute;
-      top: 3px;
-      left: -32px;
-      content: "";
-      display: block;
-      width: 20px;
-      height: 20px;
-      background: url(../img/icon-heart.svg) no-repeat;
+  &__like::before {
+    position: absolute;
+    top: 3px;
+    left: -32px;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon-heart.svg) no-repeat;
 
-      @media ($tablet-width) {
-        left: auto;
-        right: -158px;
-      }
+    @media ($tablet-width) {
+      left: auto;
+      right: -158px;
     }
+  }
 
-    &--day {
+  &__like--day {
 
-      @media ($tablet-width) {
-        top: 535px;
-        right: 60px;
-      }
-
-      &:before {
-
-        @media ($tablet-width) {
-          right: -36px;
-        }
-      }
+    @media ($tablet-width) {
+      top: 535px;
+      right: 60px;
     }
+  }
 
-    &-link {
-      color: $pink;
-      text-decoration: none;
+  &__like--day::before {
+
+    @media ($tablet-width) {
+      right: -36px;
     }
+  }
+
+  &__like-link {
+    color: $pink;
+    text-decoration: none;
   }
 }

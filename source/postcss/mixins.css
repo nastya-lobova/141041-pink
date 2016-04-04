@@ -69,8 +69,8 @@
   color: $pink;
 
   @media ($tablet-width) {
-    position: static;
     padding: 0 20px;
     background-color: $white;
+    top: -10px;
   }
 }

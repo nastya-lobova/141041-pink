@@ -22,10 +22,10 @@
       margin-left: auto;
       transform: translateX(20px);
     }
+  }
 
-    &--hide {
-      display: none;
-    }
+  &__list--hide {
+    display: none;
   }
 
   &__item{
@@ -37,12 +37,12 @@
     @media ($desktop-width) {
       margin-right: 40px;
     }
+  }
 
-    &:last-child{
+  &__item:last-child{
 
-      @media ($desktop-width) {
-        margin-right: 0;
-      }
+    @media ($desktop-width) {
+      margin-right: 0;
     }
   }
 
@@ -74,6 +74,7 @@
     &:hover {
       color: $pink;
     }
+
     &:active {
       color: rgba(210, 40, 86 ,0.3);
     }
@@ -95,23 +96,22 @@
       outline: none;
     }
 
-    &-hamburger {
-
-      &--hide {
+    &-hamburger--hide {
         display: none;
-      }
     }
 
     &-cross {
       display: none;
-
-      &--show {
-        display: block;
-      }
     }
+
+    &-cross--show {
+      display: block;
+    }
+
     &:hover path {
       fill: $pink;
     }
+    
     &:active path {
       opacity: 0.3;
     }

@@ -48,6 +48,7 @@
       background-color: $pink;
       color: $white;
     }
+    
     &:active {
       background-color: $pink;
       color: $white;
@@ -63,7 +64,7 @@
       background-color: #1c9b5e;
       color: $white;
     }
-    
+
     &:active {
       opacity: 0.3;
     }

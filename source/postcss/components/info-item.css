@@ -31,44 +31,40 @@
     }
   }
 
-  &__wrap{
+  &__wrap--left{
+    display: none;
 
-    &--left{
-      display: none;
+    @media ($tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 57px;
+      padding-bottom: 30px;
+      margin: 0 5.7%;
+    }
 
-      @media ($tablet-width) {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 57px;
-        padding-bottom: 30px;
-        margin: 0 5.7%;
-      }
-
-      @media ($desktop-width) {
-        width: 940px;
-        margin: 0 auto;
-        text-align: left;
-        padding-right: 0;
-        padding-top: 28px;
-        padding-bottom: 50px;
-        background-color: transparent;
-      }
+    @media ($desktop-width) {
+      width: 940px;
+      margin: 0 auto;
+      text-align: left;
+      padding-right: 0;
+      padding-top: 28px;
+      padding-bottom: 50px;
+      background-color: transparent;
     }
   }
 
-  &__image{
-    &--left{
-      @media ($tablet-width){
+  &__image--left{
+    @media ($tablet-width){
 
-        padding: 57px 20px 25px;
-        background: url(../img/icon-timer.svg) no-repeat;
-        background-size: 100%;
-        margin-right: 70px;
+      padding: 57px 20px 25px;
+      background: url(../img/icon-timer.svg) no-repeat;
+      background-size: 100%;
+      margin-right: 70px;
     }
+
     @media ($desktop-width) {
       padding: 69px 25px 40px;
       margin-right: 67px;
-    }
     }
   }
 
@@ -81,30 +77,26 @@
     }
   }
 
+  &__icon--left{
 
-  &__icon {
-
-    &--left{
-
-      @media ($tablet-width) {
-        width: 174px;
-        height: 174px;
-        display: block;
-        text-align: center;
-        line-height: 174px;
-        border-radius: 50%;
-        border: 13px solid $pink;
-        font-size: 100px;
-        font-weight: bold;
-        color: $pink;
-      }
-      @media ($desktop-width) {
-        width: 215px;
-        height: 215px;
-        font-size: 120px;
-        line-height: 200px;
-        border: 17px solid $pink;
-      }
+    @media ($tablet-width) {
+      width: 174px;
+      height: 174px;
+      display: block;
+      text-align: center;
+      line-height: 174px;
+      border-radius: 50%;
+      border: 13px solid $pink;
+      font-size: 100px;
+      font-weight: bold;
+      color: $pink;
+    }
+    @media ($desktop-width) {
+      width: 215px;
+      height: 215px;
+      font-size: 120px;
+      line-height: 200px;
+      border: 17px solid $pink;
     }
   }
 
@@ -114,48 +106,49 @@
 
     @media ($tablet-width) {
       margin-bottom: 15px;
-
-      &--left {
-        font-size: 30px;
-        line-height: 1.2em;
-        margin-bottom: 12px;
-        @media ($tablet-width) {
-          max-width: 170px;
-        }
-        @media ($desktop-width) {
-          max-width: none;
-        }
-      }
     }
 
     @media ($desktop-width) {
       font-size: 30px;
       margin: 0;
       margin-bottom: 25px;
-
-      &--left {
-        font-size: 30px;
-        line-height: 1.2em;
-        margin-bottom: 12px;
-        margin-bottom: 23px;
-      }
     }
   }
+
+  &__heading--left {
+    font-size: 30px;
+    line-height: 1.2em;
+    margin-bottom: 12px;
+
+    @media ($tablet-width) {
+      max-width: 170px;
+    }
+
+    @media ($desktop-width) {
+      max-width: none;
+      font-size: 30px;
+      line-height: 1.2em;
+      margin-bottom: 12px;
+      margin-bottom: 23px;
+    }
+  }
+
   &__text {
     @mixin text;
+  }
 
+  &__text--left {
+    @media ($tablet-width) {
+      margin-bottom: 14px;
+    }
 
-    &--left {
-      @media ($tablet-width) {
-        margin-bottom: 14px;
-      }
-
-      @media ($desktop-width) {
-        margin-bottom: 31px;
-      }
+    @media ($desktop-width) {
+      margin-bottom: 31px;
     }
   }
+
   &__link{
+    
     @media ($tablet-width) {
       font-size: $font-size-sm;
       color: $pink;
