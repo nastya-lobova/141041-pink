@@ -1,6 +1,0 @@
-.label-checkbox {
-  position: relative;
-  display: inline-block;
-  @mixin form-text;
-  cursor: pointer;
-}

@@ -1,7 +1,9 @@
 "use strict";
 
 var gulp = require("gulp");
+// Обработчик ошибок плагинов
 var plumber = require("gulp-plumber");
+// Плагины postcss
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var importcss = require("postcss-import");
@@ -11,17 +13,24 @@ var sassvar = require("postcss-advanced-variables")
 var mixins = require("postcss-mixins");
 var minmax = require("postcss-media-minmax");
 var mqpacker = require("css-mqpacker");
+// Обновление браузера
 var server = require("browser-sync");
-var minify = require("gulp-csso");
+// Переименование файлов
 var rename = require("gulp-rename");
+// Минификаторы
 var imagemin = require("gulp-imagemin");
 var svgmin = require("gulp-svgmin");
-var clean = require("gulp-clean");
 var htmlmin = require("gulp-htmlmin");
-var concat = require("gulp-concat");
 var uglify = require("gulp-uglify");
+var minify = require("gulp-csso");
+// Очистка папки
+var clean = require("gulp-clean");
+// Соединение скриптов в один
+var concat = require("gulp-concat");
+// Последовательная загрузка плагинов
 var runSequence = require("gulp-run-sequence");
 var mystyle = "source/postcss/style.css";
+// Массив плагинов postcss
 var pluginList = [
   importcss(),
   mixins(),
@@ -36,31 +45,36 @@ var pluginList = [
     "last 2 Edge versions"
   ]})
 ]
+// Путь файлов
+var config = {
+  build: "build/",
+  source: "source/",
+  node_modules: "node_modules/"
+};
+
+var scripts = [
+  config.node_modules + "flickity/dist/flickity.pkgd.min.js",
+  config.source + "js/*.js"
+];
+
+// Copy script plugins
+gulp.task("copy:vendor-script", function() {
+  gulp.src(config.node_modules + "flickity/dist/flickity.pkgd.min.js")
+    .pipe(gulp.dest(config.source + "js/vendor"))
+  gulp.src(config.node_modules + "picturefill/dist/picturefill.min.js")
+    .pipe(gulp.dest(config.build + "js/vendor"))
+});
 
 // Clean
 gulp.task("clean", function () {
-  return gulp.src("build/*", {read: false})
+  return gulp.src(config.build + "*", {read: false})
     .pipe(clean())
 });
 
-// Copy
-gulp.task("copy", function() {
-  gulp.src("source/img/**")
-    .pipe(gulp.dest("build/img"))
-  gulp.src("source/fonts/**/*.{woff,woff2}")
-    .pipe(gulp.dest("build/fonts"))
-  gulp.src("source/*.html")
-    .pipe(gulp.dest("build"))
-  gulp.src("source/js/vendor/*.js")
-    .pipe(gulp.dest("build/js/vendor"))
-});
-
-// Copy css plugins
-gulp.task("copyStylePlugins", function() {
-  gulp.src("node_modules/flickity/dist/flickity.min.css")
-    .pipe(gulp.dest("source/postcss/vendor"))
-  gulp.src("node_modules/normalize.css/normalize.css")
-    .pipe(gulp.dest("source/postcss/vendor"))
+// Copy fonts
+gulp.task("copy:fonts", function() {
+  gulp.src(config.source + "fonts/**/*.{woff,woff2}")
+    .pipe(gulp.dest(config.build + "fonts"))
 });
 
 // Combine styles
@@ -68,74 +82,75 @@ gulp.task("style", function() {
   gulp.src(mystyle)
     .pipe(plumber())
     .pipe(postcss(pluginList))
-    .pipe(gulp.dest("source/css"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest(config.build + "css"))
     .pipe(minify())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(rename({
+      suffix: ".min",
+      extname: ".css"
+    }))
+    .pipe(gulp.dest(config.build + "css"))
     .pipe(server.reload({stream: true}));
 });
 
 // Combine script
 gulp.task("script", function() {
-  return gulp.src(["source/js/*.js"])
+  return gulp.src(scripts)
     .pipe(plumber())
     .pipe(concat("script.js"))
-    .pipe(gulp.dest("source/js"))
-    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest(config.build + "js"))
     .pipe(uglify())
-    .pipe(rename("script.min.js"))
-    .pipe(gulp.dest("build/js"));
-})
-
-// Copy plugins
-gulp.task("copyPlugins", function() {
-  gulp.src("node_modules/flickity/dist/flickity.pkgd.min.js")
-    .pipe(gulp.dest("source/js/vendor"))
-  gulp.src("node_modules/picturefill/dist/picturefill.min.js")
-    .pipe(gulp.dest("source/js/vendor"))
+    .pipe(rename({
+      suffix: ".min",
+      extname: ".js"
+    }))
+    .pipe(gulp.dest(config.build + "js"));
 });
 
 // Image optimization
-gulp.task("images", function() {
-  return gulp.src("build/img/**/*.{png,jpg,gif}")
+gulp.task("image", function() {
+  return gulp.src(config.source + "img/**/*.{png,jpg,gif}")
+  .pipe(gulp.dest(config.build + "img"))
   .pipe(imagemin({
     optimizationLevel: 3,
     progressive: true
   }))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest(config.build + "img"));
 });
 
 // Svg minify
 gulp.task("svg", function () {
-  return gulp.src("build/img/**/*.svg")
+  return gulp.src(config.source + "img/**/*.svg")
+    .pipe(gulp.dest(config.build + "img"))
     .pipe(svgmin())
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest(config.build + "img"));
 });
 
 // Remove comment html
 gulp.task("htmlmin", function() {
-  return gulp.src("build/*.html")
+  return gulp.src(config.source + "*.html")
+    .pipe(gulp.dest(config.build))
     .pipe(htmlmin({
       removeComments: true,
       collapseWhitespace: true
     }))
     .pipe(rename({
-      suffix: ".min"
+      suffix: ".min",
+      extname: ".html"
     }))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest(config.build));
 });
 
 // Build
-gulp.task("build", function() {
+gulp.task("build", function(callback) {
   runSequence(
-    "clean",
-    "copy",
-    "style",
-    "images",
-    "svg",
-    "htmlmin",
-    "script"
+    ["clean"],
+    ["copy:vendor-script"],
+    ["copy:fonts"],
+    ["style"],
+    ["image"],
+    ["svg"],
+    ["htmlmin"],
+    ["script"], callback
   );
 });
 
@@ -147,6 +162,6 @@ gulp.task("serve", ["style"], function() {
     ui: false
   });
 
-  gulp.watch("source/postcss/**/*.css", ["style"]);
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch(config.build + "postcss/**/*.css", ["style"]);
+  gulp.watch(config.build + "*.html").on("change", server.reload);
 });
