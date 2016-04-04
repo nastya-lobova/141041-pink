@@ -42,7 +42,7 @@
   "scripts": {
     "test": "editorconfig-tools check *",
     "build": "gulp build",
-    "start": "gulp serve"
+    "start": "npm run build && gulp serve"
   },
   "engines": {
     "node": "^5.0.0"
