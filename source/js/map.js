@@ -1,8 +1,9 @@
-
 function initMap() {
   // Create a map object and specify the DOM element for display.
+   var myMap = document.getElementById("map");
 
-    var map = new google.maps.Map(document.getElementById("map"), {
+   if ( map != undefined ) {
+    var map = new google.maps.Map(myMap, {
       center: {lat: 59.93575, lng: 30.3217536},
       scrollwheel: false,
       zoom: 15,
@@ -21,4 +22,5 @@ function initMap() {
       position: myLatLng,
       icon: image
     });
+  }
 }
