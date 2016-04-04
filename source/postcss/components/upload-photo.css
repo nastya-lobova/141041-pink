@@ -16,10 +16,10 @@
   }
 
   &__wrap{
-
+    
     @media ($tablet-width) {
-        display: flex;
-        justify-content: space-between;
+      display: flex;
+      justify-content: space-between;
     }
   }
 

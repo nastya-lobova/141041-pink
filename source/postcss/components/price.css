@@ -152,6 +152,7 @@
     @media ($desktop-width) {
       font-size: $font-size-md;
     }
+  }
 
   &__option-hide {
     @media ($tablet-width) {
