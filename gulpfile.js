@@ -152,5 +152,6 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch(config.source + "postcss/**/*.css", ["style"]);
+  gulp.watch(config.source + "js/*.js", ["script"]);
   gulp.watch(config.source + "*.html", ["copy:html"]).on("change", server.reload);
 });
