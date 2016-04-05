@@ -87,7 +87,18 @@
     border: 3px solid $dark-grey;
     background: white;
   }
-  .carousel-cell {
+  & .carousel-cell {
     height: auto; /* height of carousel */
+  }
+
+  & .carousel-cell--freejs{
+    margin-bottom: 20px;
+
+    @media ($tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+  & .carousel-cell--freejs:last-child {
+    margin-bottom: 0;
   }
 }

@@ -56,9 +56,26 @@
     border: 3px solid $dark-grey;
     background: white;
   }
-  .carousel-cell {
+  & .carousel-cell {
     width: 282px;
     height: auto; /* height of carousel */
     margin-right: 0;
+  }
+
+  & .carousel-cell--freejs{
+    margin: 0 auto 20px;
+
+    @media ($tablet-width) {
+      width: 153px;
+      margin: 0;
+    }
+
+    @media ($desktop-width) {
+      width: 233px;
+    }
+  }
+
+  & .carousel-cell--freejs:last-child {
+    margin-bottom: 0;
   }
 }

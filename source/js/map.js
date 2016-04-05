@@ -2,7 +2,10 @@ function initMap() {
   // Create a map object and specify the DOM element for display.
    var myMap = document.getElementById("map");
 
-   if ( map != undefined ) {
+   if ( myMap != undefined ) {
+
+    myMap.classList.remove(map-freejs);
+     
     var map = new google.maps.Map(myMap, {
       center: {lat: 59.93575, lng: 30.3217536},
       scrollwheel: false,

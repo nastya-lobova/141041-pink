@@ -1,9 +1,9 @@
 .main-menu {
 
   &__list {
-    position: absolute;
+    /*position: absolute;
     top: 100%;
-    left: 0;
+    left: 0;*/
     width: 100%;
     margin: 0;
     padding: 0;
@@ -26,6 +26,12 @@
 
   &__list--hide {
     display: none;
+  }
+
+  &__list--open{
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 
   &__item{
@@ -111,7 +117,7 @@
     &:hover path {
       fill: $pink;
     }
-    
+
     &:active path {
       opacity: 0.3;
     }
