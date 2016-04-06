@@ -7,16 +7,16 @@
     background-color: transparent;
     border: 2px solid $color-border;
     border-radius: 2px;
-    margin-bottom: 58px;
+    margin-bottom: 65px;
   }
 
   @media ($desktop-width) {
     min-height: 115px;
     width: 940px;
     margin: 0 auto;
-    margin-bottom: 58px;
-    padding-bottom: 16px;
-    padding-top: 33px;
+    margin-bottom: 66px;
+    padding-bottom: 0;
+    padding-top: 42px;
   }
 
   &__item {
@@ -35,6 +35,13 @@
       width: 374px;
       margin: 0;
       flex-wrap: wrap;
+    }
+  }
+
+  &__item-hide {
+
+    @media ($tablet-width) {
+      display: none;
     }
   }
 
@@ -67,7 +74,7 @@
     @media ($tablet-width) {
       width: auto;
       margin: 0;
-      padding: 0 60px;
+      padding: 7px 60px 0;
     }
 
     @media ($desktop-width) {

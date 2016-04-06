@@ -7,14 +7,14 @@
     background-color: transparent;
     border: 2px solid $color-border;
     border-radius: 2px;
-    padding: 50px 0 55px;
-    margin-bottom: 56px;
+    padding: 58px 0 55px;
+    margin-bottom: 65px;
   }
 
   @media ($desktop-width) {
     width: 940px;
-    padding: 49px 0 62px;
-    margin-bottom: 58px;
+    padding: 58px 0 6px;
+    margin-bottom: 65px;
   }
 
   &__title {
@@ -60,17 +60,52 @@
     @media ($desktop-width) {
       width: 25%;
       padding-left: 60px;
+
     }
 
     &:last-child {
       margin-bottom: 0;
     }
+  }
 
-    &:nth-last-child(-n+3) {
+  &__option--2 {
 
-      @media ($desktop-width) {
-        margin-bottom: 0;
-      }
+    @media ($desktop-width) {
+      order: 4;
+    }
+  }
+
+  &__option--3 {
+
+    @media ($desktop-width) {
+      order: 2;
+    }
+  }
+
+  &__option--4 {
+
+    @media ($desktop-width) {
+      order: 5;
+    }
+  }
+  &__option--5 {
+
+    @media ($desktop-width) {
+      order: 3;
+    }
+  }
+
+  &__option--6 {
+
+    @media ($desktop-width) {
+      order: 5;
+    }
+  }
+
+  &__option:nth-last-child(-n+3) {
+
+    @media ($desktop-width) {
+      margin-bottom: 0;
     }
   }
 }

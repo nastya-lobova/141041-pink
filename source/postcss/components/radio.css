@@ -23,7 +23,11 @@
       border-color: $pink;
     }
 
-    &:before{
+    &:disabled {
+      opacity: 0.3;
+    }
+
+    &::before{
       position: absolute;
       top: 10px;
       left: 10px;

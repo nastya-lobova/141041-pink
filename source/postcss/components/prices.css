@@ -53,7 +53,7 @@
   }
   /* fill-in selected dot */
   & .flickity-page-dots .dot.is-selected {
-    border: 3px solid $dark-grey;
+    border: 3px solid $color-text;
     background: white;
   }
   & .carousel-cell {

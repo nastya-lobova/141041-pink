@@ -52,12 +52,14 @@
     }
 
     @media ($desktop-width) {
-      margin-bottom: 15px;
+      margin-bottom: 18px;
       line-height: 1.65em;
+    }
+  }
 
-      &__text-hide{
-        display: none;
-      }
+  &__text-hide{
+    @media ($desktop-width) {
+      display: none;
     }
   }
 }

@@ -7,15 +7,15 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  border: 3px solid $border-color;
+  border: 3px solid $color-border;
   margin-right: 10px;
 
   &:hover {
-    border-color: $dark-grey;
+    border-color: $color-text;
   }
 
   &:active {
-    border-color: $dark-grey;
+    border-color: $color-text;
     opacity: 0.3;
   }
 

@@ -1,34 +1,35 @@
 .post {
   background-color: $light-grey;
   margin-bottom: 23px;
-  padding: 0 15px 40px;
+  padding: 0 17px 41px;
   position: relative;
+  box-sizing: border-box;
 
   @media ($tablet-width) {
-    width: 240px;
-    padding: 0 32px 55px;
+    width: 300px;
+    padding: 0 27px 49px;
+    margin-bottom: 20px;
   }
 
   @media ($desktop-width) {
-    width: 240px;
-    padding: 0 32px 58px;
+    padding: 0 27px 58px;
     margin-bottom: 55px;
   }
 
   &--day {
-    width: 250px;
+    width: 240px;
     margin: 0 auto 22px;
 
     @media ($tablet-width) {
-      width: 560px;
-      margin: 0 auto 50px;
-      padding: 0 30px 23px;
+      width: 620px;
+      margin-bottom: 49px;
+      padding: 0 27px 19px;
     }
 
     @media ($desktop-width) {
-      width: 880px;
-      margin: 0 auto 50px;
-      padding: 0 30px 23px;
+      width: 940px;
+      margin-bottom: 52px;
+      padding: 0 27px 23px;
     }
   }
 
@@ -58,26 +59,30 @@
   }
 
   &__image {
-    background-color: $light-grey;
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 0 -15px 17px;
+    margin: 0 -17px 17px;
 
     @media ($tablet-width) {
-      margin: 0 -30px 25px;
+      margin: 0 -27px 25px;
     }
 
     @media ($desktop-width) {
-      margin: 0 -30px 25px;
+      margin: 0 -27px 25px;
     }
   }
 
+  &__image img {
+    background-color: $light-grey;
+    vertical-align: middle;
+  }
+
   &__image--day {
-    margin: 0 -35px 13px;
+    margin: 0 -35px 18px;
 
     @media ($tablet-width) {
-      margin: 0 -70px  23px;
+      margin: 0 -67px 23px;
     }
 
     @media ($desktop-width) {
@@ -88,6 +93,10 @@
   &__author-name {
     @mixin text;
     font-weight: bold;
+
+    @media ($desktop-width) {
+      font-size: $font-size-sm;
+    }
   }
 
   &__time {
@@ -107,7 +116,14 @@
 
     @media ($desktop-width) {
       font-size: $font-size-sm;
-      min-height: none;
+      min-height: 3em;
+    }
+  }
+
+  &__text--day {
+
+    @media ($desktop-width) {
+      min-height: 1.2em;
     }
   }
 
@@ -134,7 +150,10 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: url(../img/icon-heart.svg) no-repeat;
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 13px 12px;
 
     @media ($tablet-width) {
       left: auto;
@@ -145,8 +164,13 @@
   &__like--day {
 
     @media ($tablet-width) {
-      top: 535px;
-      right: 60px;
+      top: 536px;
+      right: 59px;
+    }
+
+    @media ($desktop-width) {
+      top: 534px;
+      right: 61px;
     }
   }
 

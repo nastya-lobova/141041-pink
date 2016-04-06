@@ -3,7 +3,7 @@
   &__wrap{
     width: 280px;
     margin: 0 auto;
-    padding: 48px 0 55px;
+    padding: 48px 0 58px;
 
     @media ($tablet-width) {
       width: 620px;
@@ -14,7 +14,7 @@
     @media ($desktop-width) {
       width: 940px;
       margin: 0 auto;
-      padding: 73px 0 5px;
+      padding: 70px 0 5px;
     }
   }
 
@@ -27,7 +27,7 @@
     }
 
     @media ($desktop-width) {
-      padding: 115px 120px 0;
+      padding: 112px 120px 0;
       background: url(../img/icon-quotes.svg) top center no-repeat;
     }
   }
@@ -84,7 +84,7 @@
   }
   /* fill-in selected dot */
   & .flickity-page-dots .dot.is-selected {
-    border: 3px solid $dark-grey;
+    border: 3px solid $color-text;
     background: white;
   }
   & .carousel-cell {

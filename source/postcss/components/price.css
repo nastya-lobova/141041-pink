@@ -11,7 +11,7 @@
 
   &__header {
     position: relative;
-    background-color: $dark-grey;
+    background-color: $color-text;
     text-align: center;
     text-transform: uppercase;
     padding: 22px 0 19px;
@@ -141,9 +141,9 @@
   &__option {
     margin: 0;
     text-transform: uppercase;
-    font-size: $font-size-text;
+    font-size: $font-size-sm;
     line-height: 1.7em;
-    color: $dark-grey;
+    color: $color-text;
 
     @media ($tablet-width) {
       text-transform: none;

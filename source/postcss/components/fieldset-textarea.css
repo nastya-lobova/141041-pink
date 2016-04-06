@@ -5,13 +5,14 @@
     order:5;
     border: 2px solid $color-border;
     border-radius: 2px;
-    padding: 40px 0 51px;
+    padding: 45px 0 51px;
     margin-bottom: 66px;
   }
 
   @media ($desktop-width) {
     width: 940px;
-    padding: 34px 0 45px;
+    padding: 42px 0 43px;
+    margin-bottom: 65px;
   }
 
   &__wrap {

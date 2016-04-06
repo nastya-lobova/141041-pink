@@ -2,7 +2,7 @@
 
   &__text {
     @mixin text;
-    line-height: 2.2em;
+    line-height: 2.1em;
 
     @media ($tablet-width) {
       line-height: 30px;
@@ -18,6 +18,10 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
+
+    @media ($desktop-width) {
+      margin-bottom: -55px;
+    }
   }
 
   &__header {
@@ -26,11 +30,11 @@
     text-align: center;
 
     @media ($tablet-width) {
-      padding: 90px 70px 43px;
+      padding: 92px 70px 41px;
     }
 
     @media ($desktop-width){
-      padding: 92px 300px 55px;
+      padding: 92px 300px 53px;
     }
   }
 }

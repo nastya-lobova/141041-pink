@@ -7,7 +7,10 @@
   var list = header.querySelector(".main-menu__list");
 
   if( menu != undefined || button != undefined || iconCross != undefined || iconHam != undefined || list != undefined) {
-    header.classList.remove("page-header--main--open");
+    if (header.classList.contains("page-header--main-open")) {
+      header.classList.remove("page-header--main-open");
+    }
+    header.classList.remove("page-header--open");
     menu.classList.remove("page-header__menu-inner--open");
     iconCross.classList.remove("main-menu__btn-cross--show");
     iconHam.classList.remove("main-menu__btn-hamburger--hide");

@@ -4,8 +4,8 @@ function initMap() {
 
    if ( myMap != undefined ) {
 
-    myMap.classList.remove(map-freejs);
-     
+    myMap.classList.remove("map--freejs");
+
     var map = new google.maps.Map(myMap, {
       center: {lat: 59.93575, lng: 30.3217536},
       scrollwheel: false,

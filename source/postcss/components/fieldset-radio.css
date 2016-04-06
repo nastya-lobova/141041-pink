@@ -7,15 +7,15 @@
     background-color: transparent;
     border: 2px solid $color-border;
     border-radius: 2px;
-    padding: 50px 0 63px;
-    margin-bottom: 55px;
+    padding: 56px 0 63px;
+    margin-bottom: 65px;
   }
 
   @media ($desktop-width) {
     width: 432px;
     height: auto;
-    padding: 52px 0 60px;
-    margin-bottom: 60px;
+    padding: 62px 0 60px;
+    margin-bottom: 64px;
     align-self: flex-end;
   }
 

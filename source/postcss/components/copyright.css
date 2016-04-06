@@ -26,14 +26,14 @@
     margin-left: 10px;
   }
 
-  &__image{
+  &__image {
 
     &:hover > .copyright__icon{
-      fill: $dark-grey;
+      fill: $color-text;
     }
-    
+
     &:active > .copyright__icon{
-      fill: $dark-grey;
+      fill: $color-text;
       opacity: 0.3;
     }
   }

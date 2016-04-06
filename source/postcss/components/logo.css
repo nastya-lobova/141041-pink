@@ -16,7 +16,8 @@
     fill: $pink;
   }
 
-  &:active {
+  &:active .logo__icon path {
+    fill: $white;
     opacity: 0.3;
   }
 
@@ -26,7 +27,8 @@
       fill: $pink;
     }
 
-    &:active {
+    &:active .logo__icon path{
+      fill: $white;
       opacity: 0.3;
     }
   }

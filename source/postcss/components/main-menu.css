@@ -1,9 +1,6 @@
 .main-menu {
 
   &__list {
-    /*position: absolute;
-    top: 100%;
-    left: 0;*/
     width: 100%;
     margin: 0;
     padding: 0;
@@ -53,6 +50,7 @@
   }
 
   &__link {
+    position: relative;
     display: block;
     padding: 15px 0 15px;
     text-align: center;
@@ -76,14 +74,34 @@
       line-height: normal;
       padding: 15px 20px 15px;
     }
+  }
 
-    &:hover {
-      color: $pink;
-    }
+  &__link:hover {
+    color: $pink;
 
-    &:active {
-      color: rgba(210, 40, 86 ,0.3);
+    @media ($desktop-width) {
+      color: $white;
     }
+  }
+
+  &__link:active {
+    color: rgba(210, 40, 86, 0.3);
+
+    @media ($desktop-width) {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &__link:hover::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: $white;
+    width: 100%;
+    left: 0;
+    transform: scale(0.75);
   }
 
   &__btn {
@@ -111,7 +129,7 @@
     }
 
     &-cross--show {
-      display: block;
+      display: inline-block;
     }
 
     &:hover path {

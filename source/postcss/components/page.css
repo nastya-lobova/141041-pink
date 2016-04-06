@@ -3,7 +3,7 @@
   margin: 0;
   font-family: $font-family;
   font-size: $font-size-sm;
-  color: $dark-grey;
+  color: $color-text;
 
   @media ($tablet-width) {
     min-width: 700px;
