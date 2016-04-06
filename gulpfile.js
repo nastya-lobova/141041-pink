@@ -81,7 +81,9 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(postcss(pluginList))
     .pipe(gulp.dest(config.build + "css"))
-    .pipe(minify())
+    .pipe(minify({
+      restructure: false
+    }))
     .pipe(rename({
       suffix: ".min",
       extname: ".css"
