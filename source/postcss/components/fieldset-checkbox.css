@@ -39,12 +39,12 @@
     }
 
     @media ($desktop-width) {
-      margin-top: 50px;
       display: flex;
-      padding: 0 58px;
+      flex-direction: column;
       flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 0;
+      padding: 0;
+      height: 180px;
+      padding-left: 60px;
     }
   }
 
@@ -58,8 +58,7 @@
     }
 
     @media ($desktop-width) {
-      width: 25%;
-      padding-left: 60px;
+      min-width: 250px;
 
     }
 
@@ -68,7 +67,7 @@
     }
   }
 
-  &__option--2 {
+  /*&__option--2 {
 
     @media ($desktop-width) {
       order: 4;
@@ -107,5 +106,5 @@
     @media ($desktop-width) {
       margin-bottom: 0;
     }
-  }
+  }*/
 }

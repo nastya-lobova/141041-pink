@@ -1,6 +1,7 @@
 .label-radio {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   @mixin form-text;
   cursor: pointer;
 }

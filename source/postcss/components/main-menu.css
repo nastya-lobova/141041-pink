@@ -134,12 +134,13 @@
         display: none;
     }
 
-    &-cross {
+    /*&-cross {
       display: none;
-    }
+    }*/
 
     &-cross--show {
       display: inline-block;
+      vertical-align: middle;
     }
 
     &:hover path {
@@ -149,5 +150,36 @@
     &:active path {
       opacity: 0.3;
     }
+
+    &--open btn-hamburger{
+        display: none;
+    }
+
+    &--open btn-cross{
+
+    }
+
+    & btn-hamburger{
+        display: inline-block;
+    }
+
+    & btn-cross{
+       display: none;
+    }
   }
+}
+.page-header__menu-inner .main-menu__btn-hamburger {
+  display: inline-block;
+}
+
+.page-header__menu-inner .main-menu__btn-cross {
+  display: none;
+}
+
+.page-header__menu-inner--open .main-menu__btn-hamburger {
+  display: none;
+}
+
+.page-header__menu-inner--open .main-menu__btn-cross {
+  display: inline-block;
 }

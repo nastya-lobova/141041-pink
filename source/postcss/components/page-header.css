@@ -105,12 +105,20 @@
       background-position: center 430px,center 256px;
     }
   }
-  
+
   &--main-open {
-    background-position: center 430px,center 256px;
+    background-position: center 430px, center 256px;
 
     @media ($retina-mobile) {
-      background-position: center 430px,center 256px;
+      background-position: center 430px, center 256px;
+    }
+
+    @media ($tablet-width) {
+      background-position: right bottom, center 256px;
+    }
+
+    @media ($retina-tablet) {
+      background-position: right bottom, center 256px;
     }
   }
 
