@@ -100,10 +100,20 @@
 
   &--open{
     background-position: center bottom;
+
+    @media ($retina-mobile) {
+      background-position: center 430px,center 256px;
+    }
   }
+  
   &--main-open {
-    background-position: center 426px, center 256px;
+    background-position: center 430px,center 256px;
+
+    @media ($retina-mobile) {
+      background-position: center 430px,center 256px;
+    }
   }
+
 
   &__menu{
     background-color: rgba(0, 0, 0, 0.3);
