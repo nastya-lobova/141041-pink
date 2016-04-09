@@ -40,17 +40,39 @@
     }
 
     &.next {
+      fill: #bec2c7;
 
       @media ($desktop-width) {
         right: -10px;
       }
+
+      &:hover path {
+        fill: #969da4;
+      }
+
+      &:active path {
+        fill: $light-gray-blue;
+      }
     }
 
     &.previous {
+      fill: #bec2c7;
 
       @media ($desktop-width) {
         left: -10px;
       }
+
+      &:hover path {
+        fill: #969da4;
+      }
+
+      &:active path {
+        fill: $light-gray-blue;
+      }
+    }
+
+    & .arrow {
+      fill: #bec2c7;
     }
   }
     /* position dots in carousel */

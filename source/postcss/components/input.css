@@ -17,6 +17,11 @@
     border-color: $pink;
   }
 
+  &:focus {
+    outline: none;
+    border-color: $pink;
+  }
+
   @media ($tablet-width) {
     flex-grow: 1;
     width: 100%;

@@ -24,19 +24,18 @@
 
   &--grey {
     border-color: #dddfe0;
-    color: #dddfe0;
+    color: rgba(40, 54, 69, 0.1);
     background-color: transparent;
 
     &:hover {
       border-color: #b5b9be;
-      color: #dddfe0;
+      color: rgba(40, 54, 69, 0.3);
       background-color: transparent;
     }
 
     &:active {
       background-color: #b5b9be;
-      color: #ccced2;
-      opacity: 0.3;
+      color: rgba(255, 255, 255, 0.3);
     }
   }
 
@@ -52,8 +51,7 @@
 
     &:active {
       background-color: $pink;
-      color: $white;
-      opacity: 0.3;
+      color: rgba(255, 255, 255, 0.3);
     }
   }
 
@@ -68,7 +66,13 @@
     }
 
     &:active {
-      opacity: 0.3;
+      background-color: #1c9b5e;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+      color: $white;
     }
   }
 
