@@ -53,7 +53,7 @@ var config = {
 
 // Массив скриптов
 var scripts = [
-  config.node_modules + "flickity/dist/flickity.pkgd.min.js",
+  config.node_modules + "flickity/dist/flickity.pkgd.js",
   config.source + "js/*.js"
 ];
 
