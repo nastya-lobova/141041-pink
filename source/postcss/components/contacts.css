@@ -100,12 +100,12 @@
     text-decoration: none;
     line-height: 1.2em;
 
-    &--email:hover {
+    &:hover {
       color: $color-text;
       text-decoration: underline;
     }
 
-    &--email:active {
+    &:active {
       color: rgba(40, 54, 69, 0.3);
       text-decoration: none;
     }

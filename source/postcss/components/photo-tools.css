@@ -10,6 +10,14 @@
 
    &__icon {
 
+     & path {
+       fill: #b5b9be;
+
+       @media ($tablet-width) {
+         fill: $pink;
+       }
+     }
+
      &--active path {
        fill: $pink;
      }

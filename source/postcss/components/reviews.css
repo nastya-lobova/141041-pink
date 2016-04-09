@@ -53,6 +53,13 @@
       &:active path {
         fill: $light-gray-blue;
       }
+
+      & svg {
+        width: 100px;
+        height: 100px;
+        left: -65px;
+        top: -63px;
+      }
     }
 
     &.previous {
@@ -68,6 +75,13 @@
 
       &:active path {
         fill: $light-gray-blue;
+      }
+
+      & svg {
+        width: 100px;
+        height: 100px;
+        left: 10px;
+        top: -4px;
       }
     }
 
