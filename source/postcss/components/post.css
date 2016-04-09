@@ -22,11 +22,13 @@
 
     @media ($tablet-width) {
       width: 700px;
+      margin: 0 auto;
       margin-bottom: 50px;
     }
 
     @media ($desktop-width) {
       width: 1200px;
+      margin: 0 auto;
       margin-bottom: 51px;
 
     }

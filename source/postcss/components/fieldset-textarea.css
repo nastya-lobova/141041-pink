@@ -29,7 +29,7 @@
     top: 59px;
 
     @media ($tablet-width) {
-       max-width: auto;
+      max-width: 30%;
     }
 
     @media ($desktop-width) {

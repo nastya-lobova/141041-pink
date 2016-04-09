@@ -61,12 +61,17 @@
       background-size: 100%;
       margin-right: 69px;
       height: 200px;
+      width: 200px;
+      flex-shrink: 0;
+
     }
 
     @media ($desktop-width) {
       padding: 69px 25px 40px;
       margin-right: 67px;
+      width:250px;
       height: 250px;
+      flex-shrink: 0;
     }
   }
 
@@ -152,7 +157,7 @@
   }
 
   &__text--left {
-    
+
     @media ($tablet-width) {
       margin-bottom: 12px;
     }

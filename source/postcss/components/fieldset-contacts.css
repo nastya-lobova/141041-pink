@@ -59,6 +59,10 @@
       @mixin legend;
       max-width: 35%;
     }
+
+    @media ($desktop-width) {
+      max-width: 25%;
+    }
   }
 
   &__title--hide {

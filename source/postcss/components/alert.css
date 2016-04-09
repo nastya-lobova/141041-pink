@@ -6,7 +6,7 @@
   bottom: 0;
   margin: auto;
   width: 280px;
-  max-height: 290px;
+  max-height: 200px;
   padding: 45px 20px 50px;
   text-align: center;
   background-color: $white;
@@ -67,6 +67,14 @@
       font-size: 30px;
       line-height: 1.3em;
       margin-bottom: 23px;
+    }
+  }
+
+  &__title br {
+    display: none;
+
+    @media ($tablet-width) {
+      display: inline;
     }
   }
 
