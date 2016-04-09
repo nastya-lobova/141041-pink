@@ -9,6 +9,18 @@
     margin-right: 22px;
   }
 
+  &:hover + .radio__indicator{
+    border-color: $color-text;
+  }
+
+  &:active + .radio__indicator{
+    border-color: $pink;
+  }
+
+  &:disabled + .radio__indicator{
+    opacity: 0.3;
+  }
+
   &__indicator{
     position: absolute;
     top: 0;
@@ -20,18 +32,6 @@
     border-radius: 50%;
     background-color: $white;
     border: 2px solid $color-border;
-
-    &:hover {
-      border-color: $color-text;
-    }
-
-    &:active {
-      border-color: $pink;
-    }
-
-    &:disabled {
-      opacity: 0.3;
-    }
 
     &::before{
       position: absolute;

@@ -9,6 +9,18 @@
     margin-right: 22px;
   }
 
+  &:hover + .checkbox__indicator{
+    border-color: $color-text;
+  }
+
+  &:active + .checkbox__indicator{
+    border-color: $pink;
+  }
+
+  &:disabled + .checkbox__indicator{
+    opacity: 0.3;
+  }
+
   &:checked ~ .checkbox__indicator {
       background: $white url(../img/icon-yes-pink.svg) 50% 48% no-repeat;
   }
@@ -26,18 +38,6 @@
 
     @media ($tablet-width) {
       left: 0;
-    }
-
-    &:hover {
-      border-color: $color-text;
-    }
-
-    &:active {
-      border-color: $pink;
-    }
-
-    &:disabled {
-      opacity: 0.3;
     }
   }
 }
