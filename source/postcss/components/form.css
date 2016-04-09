@@ -9,7 +9,10 @@
   }
 
   &--photo{
-    margin-bottom: 0;
+
+    @media ($tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &__wrap{
@@ -30,26 +33,26 @@
   }
 
   &__header {
-    padding: 45px 20px 22px;
+    padding: 45px 20px 24px;
 
     @media ($tablet-width) {
       padding: 93px 40px 29px;
     }
 
     @media ($desktop-width) {
-      padding: 95px 70px 76px;
+      padding: 92px 70px 81px;
     }
   }
 
   &__header--photo {
-    padding: 20px 20px 40px;
+    padding: 21px 20px 44px;
 
     @media ($tablet-width) {
       padding: 46px 20px 70px;
     }
 
     @media ($desktop-width) {
-      padding: 63px 20px 65px;
+      padding: 60px 20px 67px;
     }
   }
 

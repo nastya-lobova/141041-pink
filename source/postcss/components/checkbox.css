@@ -1,10 +1,12 @@
 .checkbox {
-  position: absolute;
+  position: relative;
   opacity: 0;
-  z-index: -1;
+  width: 37px;
+  height: 37px;
+  margin-right: 32px;
 
   @media ($tablet-width) {
-    left: -59px;
+    margin-right: 22px;
   }
 
   &:hover {
@@ -25,8 +27,8 @@
 
   &__indicator{
     position: absolute;
-    top: -5px;
-    left: -70px;
+    top: 0;
+    left: 0;
     content: "";
     display: block;
     width: 35px;
@@ -35,7 +37,7 @@
     background-color: $white;
 
     @media ($tablet-width) {
-      left: -60px;
+      left: 0;
     }
   }
 }

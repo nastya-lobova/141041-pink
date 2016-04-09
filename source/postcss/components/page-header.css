@@ -38,7 +38,7 @@
   }
 
   @media ($retina-desktop) {
-    background-image: url(../img/bg-back-desktop.jpg);
+    background-image: url(../img/bg-back-desktop@2x.jpg);
     background-color: #2c3c4c;
     background-repeat: no-repeat;
     background-position: center top;
@@ -90,7 +90,7 @@
     }
     @media ($retina-desktop) {
       background: url(../img/iphone-hand-desktop@2x.png),
-                 url(../img/bg-back-desktop.jpg);
+                 url(../img/bg-back-desktop@2x.jpg);
       background-color: #2c3c4c;
       background-repeat: no-repeat;
       background-position: right bottom, center top;
@@ -136,6 +136,13 @@
       padding: 26px 0 29px;
       width: 940px;
       margin: 0 auto;
+    }
+  }
+
+  &__menu-wrap--main{
+
+    @media ($desktop-width) {
+      padding: 24px 0 29px;
     }
   }
 
@@ -261,4 +268,22 @@
       position: static;
     }
   }
+}
+
+.page-header__menu-inner .main-menu__btn-hamburger {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.page-header__menu-inner .main-menu__btn-cross {
+  display: none;
+}
+
+.page-header__menu-inner--open .main-menu__btn-hamburger {
+  display: none;
+}
+
+.page-header__menu-inner--open .main-menu__btn-cross {
+  display: inline-block;
+  vertical-align: baseline;
 }

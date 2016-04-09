@@ -60,6 +60,7 @@
   &--green {
     background-color: #2aab6d;
     color: $white;
+    border: none;
 
     &:hover {
       background-color: #1c9b5e;

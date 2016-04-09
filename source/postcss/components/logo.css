@@ -21,6 +21,14 @@
     opacity: 0.3;
   }
 
+  &--hover:active .logo__icon path {
+    fill: $color-text;
+  }
+
+  &--hover:active .logo__icon {
+    opacity: 0.3;
+  }
+
   &__image {
 
     &:hover .logo__icon path {

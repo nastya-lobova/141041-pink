@@ -15,7 +15,7 @@
     <header class="page-header  page-header--open">
 
       <div class="page-header__menu">
-        <div class="page-header__menu-wrap">
+        <div class="page-header__menu-wrap  page-header__menu-wrap--main">
           <div class="page-header__menu-inner  page-header__menu-inner--open">
             <a class="page-header__logo  logo" href="index.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375" preserveAspectRatio="none">
@@ -32,11 +32,11 @@
               </svg>
             </a>
 
-            <button class="main-menu__btn" type="button">
-              <svg class="main-menu__btn-hamburger  main-menu__btn-hamburger--hide" xmlns="http://www.w3.org/2000/svg" width="49.945" height="24.007" viewBox="0 0 49.945 24.007">
+            <button class="main-menu__btn  main-menu__btn--open" type="button">
+              <svg class="main-menu__btn-hamburger" xmlns="http://www.w3.org/2000/svg" width="49.945" height="24.007" viewBox="0 0 49.945 24.007">
                 <path fill="#fff" d="M1.137 0C.51 0 0 .428 0 1.01v1.98C0 3.55.494 4 1.14 4h47.67c.628 0 1.138-.427 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003C.51 10.003 0 10.43 0 11.013v1.98c0 .557.494 1.01 1.14 1.01h47.67c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002c-.627 0-1.137.43-1.137 1.01v1.982c0 .557.494 1.01 1.14 1.01h47.67c.628 0 1.138-.428 1.138-1.01v-1.98c0-.56-.494-1.012-1.138-1.012H1.137z"/>
               </svg>
-              <svg class="main-menu__btn-cross  main-menu__btn-cross--show" xmlns="http://www.w3.org/2000/svg" width="23.867" height="23.867" viewBox="0 0 23.867 23.867">
+              <svg class="main-menu__btn-cross" xmlns="http://www.w3.org/2000/svg" width="23.867" height="23.867" viewBox="0 0 23.867 23.867">
                 <path fill="#FFF" d="M15.087 11.933l8.56-8.56c.293-.292.293-.767 0-1.06L21.554.22c-.14-.14-.33-.22-.53-.22s-.392.08-.53.22l-8.56 8.56L3.373.22c-.283-.282-.78-.282-1.062 0L.22 2.313c-.293.293-.293.768 0 1.06l8.56 8.56-8.56 8.56c-.293.292-.293.767 0 1.06l2.093 2.095c.14.142.33.22.53.22s.39-.078.53-.22l8.56-8.56 8.56 8.56c.142.142.333.22.53.22.2 0 .39-.078.53-.22l2.094-2.094c.293-.294.293-.77 0-1.062l-8.56-8.56z"/>
               </svg>
             </button>
@@ -106,7 +106,7 @@
 
           <div class="fieldset-checkbox__options">
 
-            <div class="fieldset-checkbox__option  fieldset-checkbox__option--1">
+            <div class="fieldset-checkbox__option">
               <label class="label-checkbox">
                 <input class="checkbox" type="checkbox" checked>
                 <span class="checkbox__indicator"></span>
@@ -114,7 +114,7 @@
               </label>
             </div>
 
-            <div class="fieldset-checkbox__option  fieldset-checkbox__option--2">
+            <div class="fieldset-checkbox__option">
               <label class="label-checkbox">
                 <input class="checkbox" type="checkbox" checked>
                 <span class="checkbox__indicator"></span>
@@ -122,7 +122,7 @@
               </label>
             </div>
 
-            <div class="fieldset-checkbox__option  fieldset-checkbox__option--3">
+            <div class="fieldset-checkbox__option">
               <label class="label-checkbox">
                 <input class="checkbox" type="checkbox">
                 <span class="checkbox__indicator"></span>
@@ -130,7 +130,7 @@
               </label>
             </div>
 
-            <div class="fieldset-checkbox__option  fieldset-checkbox__option--4">
+            <div class="fieldset-checkbox__option">
               <label class="label-checkbox">
                 <input class="checkbox" type="checkbox">
                 <span class="checkbox__indicator"></span>
@@ -138,7 +138,7 @@
               </label>
             </div>
 
-            <div class="fieldset-checkbox__option  fieldset-checkbox__option--5">
+            <div class="fieldset-checkbox__option">
               <label class="label-checkbox">
                 <input class="checkbox" type="checkbox" checked>
                 <span class="checkbox__indicator"></span>
@@ -146,7 +146,7 @@
               </label>
             </div>
 
-            <div class="fieldset-checkbox__option  fieldset-checkbox__option--6">
+            <div class="fieldset-checkbox__option">
               <label class="label-checkbox">
                 <input class="checkbox" type="checkbox">
                 <span class="checkbox__indicator"></span>
@@ -275,6 +275,22 @@
       </div>
     </footer>
     <!-- /Footer -->
+
+    <div class="alert  alert--success  alert--success-hidden">
+      <div class="alert__inner">
+        <h3 class="alert__title">Ваша заявка отправлена</h3>
+        <p class="alert__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      </div>
+      <div class="alert__btn-inner">
+        <button class="alert__btn  alert__btn--success  btn  btn--green  btn--square">Закрыть окно</button>
+      </div>
+    </div>
+
+    <div class="alert  alert--failure  alert--failure-hidden">
+      <h3 class="alert__title">Что-то пошло<br> не так!</h3>
+      <p class="alert__text  alert__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="alert__btn  btn  btn--green  btn--square">Ок</button>
+    </div>
 
     <script src="js/script.min.js"></script>
   </body>

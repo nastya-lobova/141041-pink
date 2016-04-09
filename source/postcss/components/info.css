@@ -111,6 +111,7 @@
 
   &__image-wrap{
     margin: 0 auto;
+    text-align: center;
 
     @media ($tablet-width) {
       position: static;

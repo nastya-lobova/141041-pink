@@ -53,23 +53,25 @@
     }
   }
 
-  &__image--left{
+  &__image--left {
 
     @media ($tablet-width){
       padding: 57px 20px 25px;
       background: url(../img/icon-timer.svg) no-repeat;
       background-size: 100%;
       margin-right: 69px;
+      height: 200px;
     }
 
     @media ($desktop-width) {
       padding: 69px 25px 40px;
       margin-right: 67px;
+      height: 250px;
     }
   }
 
   &__inner {
-    
+
     @media ($tablet-width) {
       margin-top: 37px;
       padding-right: 5px;
@@ -80,7 +82,7 @@
     }
   }
 
-  &__icon--left{
+  &__icon--left {
 
     @media ($tablet-width) {
       width: 174px;
@@ -150,6 +152,7 @@
   }
 
   &__text--left {
+    
     @media ($tablet-width) {
       margin-bottom: 12px;
     }

@@ -1,19 +1,19 @@
 .fieldset-checkbox{
   background-color: $light-grey;
-  padding: 35px 0 56px;
+  padding: 35px 0 50px;
 
   @media ($tablet-width) {
     order:4;
     background-color: transparent;
     border: 2px solid $color-border;
     border-radius: 2px;
-    padding: 58px 0 55px;
+    padding: 52px 0 50px;
     margin-bottom: 65px;
   }
 
   @media ($desktop-width) {
     width: 940px;
-    padding: 58px 0 6px;
+    padding: 52px 0 56px;
     margin-bottom: 65px;
   }
 
@@ -30,36 +30,34 @@
     width: 280px;
     margin: 0 auto;
     padding: 0 20px;
-    margin-top: 82px;
+    margin-top: 77px;
 
     @media ($tablet-width) {
       width: auto;
       margin: 0;
-      padding-left: 60px;
+      padding-left: 58px;
+      padding-right: 0; 
     }
 
     @media ($desktop-width) {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      padding: 0;
-      height: 180px;
-      padding-left: 60px;
+      max-height: 120px;
+
     }
   }
 
   &__option {
-    position: relative;
-    padding-left: 70px;
-    margin-bottom: 56px;
+    padding-left: 0;
+    margin-bottom: 45px;
 
     @media ($tablet-width) {
-      padding-left: 58px;
+      padding-left: 0;
     }
 
     @media ($desktop-width) {
-      min-width: 250px;
-
+      min-width: 190px;
     }
 
     &:last-child {
@@ -67,44 +65,10 @@
     }
   }
 
-  /*&__option--2 {
-
-    @media ($desktop-width) {
-      order: 4;
-    }
-  }
-
-  &__option--3 {
-
-    @media ($desktop-width) {
-      order: 2;
-    }
-  }
-
-  &__option--4 {
-
-    @media ($desktop-width) {
-      order: 5;
-    }
-  }
-  &__option--5 {
-
-    @media ($desktop-width) {
-      order: 3;
-    }
-  }
-
-  &__option--6 {
-
-    @media ($desktop-width) {
-      order: 5;
-    }
-  }
-
-  &__option:nth-last-child(-n+3) {
+  &__option:nth-last-child(odd) {
 
     @media ($desktop-width) {
       margin-bottom: 0;
     }
-  }*/
+  }
 }

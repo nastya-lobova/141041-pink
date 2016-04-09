@@ -110,10 +110,4 @@
       text-decoration: none;
     }
   }
-
-  &__link-br {
-    @media ($desktop-width) {
-      display: none;
-    }
-  }
 }

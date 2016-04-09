@@ -1,21 +1,20 @@
 .fieldset-radio {
   background-color: $light-grey;
-  padding: 32px 0 49px;
+  padding: 25px 0 44px;
 
   @media ($tablet-width) {
     order:2;
     background-color: transparent;
     border: 2px solid $color-border;
     border-radius: 2px;
-    padding: 56px 0 63px;
+    padding: 52px 0 56px;
     margin-bottom: 65px;
   }
 
   @media ($desktop-width) {
     width: 432px;
     height: auto;
-    padding: 62px 0 60px;
-    margin-bottom: 64px;
+    margin-bottom: 65px;
     align-self: flex-end;
   }
 
@@ -43,8 +42,8 @@
   &__options {
     width: 280px;
     margin: 0 auto;
+    padding: 0 20px;
     margin-top: 82px;
-    padding-left: 20px;
 
     @media ($tablet-width) {
       width: auto;
@@ -58,18 +57,10 @@
   }
 
   &__option {
-    position: relative;
-    padding-left: 60px;
-    margin-bottom: 48px;
-
-    @media ($tablet-width) {
-      padding-left: 60px;
-      margin-bottom: 49px;
-    }
+    margin-bottom: 38px;
 
     @media ($desktop-width) {
       width: 70%;
-      padding-left: 60px;
     }
 
     &:last-child {
